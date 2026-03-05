@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Hamdy Quiz</title>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <style>
@@ -35,6 +35,12 @@ body::before {
 .page { display:none !important; position:relative; z-index:1; }
 .page.active { display:block !important; }
 #auth-page.active, #setup-page.active, #end-page.active { display:flex !important; flex-direction:column; align-items:center; }
+
+/* ===== USER CONTROLS ===== */
+.user-header-controls { position: absolute; top: 20px; left: 20px; z-index: 10; display: flex; align-items: center; gap: 10px; }
+.user-header-controls span { color: var(--text-dim); font-weight: bold; font-size: 14px; }
+.user-header-controls button { background: transparent; border: 1px solid var(--accent2); color: var(--accent2); padding: 5px 15px; border-radius: 8px; cursor: pointer; font-family: 'Cairo'; font-weight: bold; font-size: 13px; transition: all 0.2s; }
+.user-header-controls button:hover { background: rgba(255, 107, 157, 0.1); }
 
 /* ===== AUTH ===== */
 #auth-page { min-height:100vh; padding:40px 20px; justify-content: center; }
@@ -95,7 +101,7 @@ body::before {
 /* ===== BUTTONS ===== */
 .btn-primary { background:linear-gradient(135deg,var(--accent),#8b83ff); color:white; border:none; border-radius:14px; padding:16px 40px;
   font-family:'Cairo',sans-serif; font-size:17px; font-weight:700; cursor:pointer; transition:all .3s; box-shadow:0 4px 20px rgba(108,99,255,.4); display:block; margin:0 auto; width: 100%; max-width: 300px; }
-.btn-primary:hover { transform:translateY(-2px); box-shadow:0 8px 30px rgba(108,99,255,.5); }
+.btn-primary:hover:not(:disabled) { transform:translateY(-2px); box-shadow:0 8px 30px rgba(108,99,255,.5); }
 .btn-primary:disabled { opacity:.4; cursor:not-allowed; transform:none; }
 .btn-back { background:var(--surface2); border:1px solid var(--border); color:var(--text-dim); border-radius:10px; padding:10px 20px;
   font-family:'Cairo',sans-serif; font-size:14px; cursor:pointer; transition:all .2s; margin-bottom:24px; display:inline-flex; align-items:center; gap:6px; }
@@ -120,7 +126,7 @@ body::before {
 .score-divider { font-size:24px; color:var(--border); font-weight:300; }
 .game-title-small { font-size:22px; font-weight:900; background:linear-gradient(135deg,var(--accent),var(--accent2));
   -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
-.turn-indicator { font-size:12px; padding:4px 12px; border-radius:20px; font-weight:700; }
+.turn-indicator { font-size:12px; padding:4px 12px; border-radius:20px; font-weight:700; display:inline-block; }
 .turn-indicator.t1 { background:rgba(79,142,247,.15); color:var(--team1); border:1px solid rgba(79,142,247,.3); }
 .turn-indicator.t2 { background:rgba(247,97,79,.15); color:var(--team2); border:1px solid rgba(247,97,79,.3); }
 
@@ -147,7 +153,7 @@ body::before {
 .q-btn.done { background:var(--surface2) !important; border-color:var(--border) !important; color:var(--text-dim) !important; text-decoration:line-through; cursor:not-allowed; transform:none !important; }
 
 /* ===== QUESTION MODAL ===== */
-.modal-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,.85); backdrop-filter:blur(8px); z-index:1000; justify-content:center; align-items:center; padding:16px; }
+.modal-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,.85); backdrop-filter:blur(8px); z-index:1000; justify-content:center; align-items:center; padding:16px; overflow-y:auto; }
 .modal-overlay.open { display:flex; }
 .modal-box { background:var(--surface); border:1px solid var(--border); border-radius:22px; width:100%; max-width:680px; max-height:92vh; overflow-y:auto;
   box-shadow:0 24px 80px rgba(0,0,0,.6); animation:modal-in .3s cubic-bezier(.34,1.56,.64,1); }
@@ -174,7 +180,7 @@ body::before {
 /* Timer row */
 .timer-row { display:flex; align-items:center; gap:16px; margin-bottom:14px; background:var(--surface2); border-radius:14px; padding:12px 16px; }
 .timer-ring-wrap { position:relative; width:68px; height:68px; flex-shrink:0; }
-.timer-ring-wrap svg { transform:rotate(-90deg); }
+.timer-ring-wrap svg { transform:rotate(-90deg); width:100%; height:100%; }
 .timer-circle-bg { fill:none; stroke:var(--border); stroke-width:5; }
 .timer-circle-fg { fill:none; stroke-width:5; stroke-linecap:round; transition:stroke-dashoffset 1s linear,stroke .5s; stroke-dasharray:188; stroke-dashoffset:0; }
 .timer-num { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:20px; font-weight:900; }
@@ -184,7 +190,7 @@ body::before {
 
 /* Phase controls */
 .phase-controls { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; }
-.btn-modal { padding:9px 16px; border-radius:10px; border:none; font-family:'Cairo',sans-serif; font-size:13px; font-weight:600; cursor:pointer; transition:all .2s; }
+.btn-modal { padding:9px 16px; border-radius:10px; border:none; font-family:'Cairo',sans-serif; font-size:13px; font-weight:600; cursor:pointer; transition:all .2s; flex:1; }
 .btn-start-timer { background:#f59e0b; color:#000; }
 .btn-pass { background:#8b5cf6; color:white; }
 .btn-reveal { background:var(--surface2); border:1px solid var(--border); color:var(--text); }
@@ -194,9 +200,9 @@ body::before {
 /* In-modal power buttons */
 .modal-powers { display:none; gap:8px; margin-bottom:12px; align-items:center; }
 .modal-powers.shown { display:flex; flex-wrap:wrap; }
-.modal-powers-label { font-size:12px; color:var(--text-dim); margin-bottom:6px; }
+.modal-powers-label { font-size:12px; color:var(--text-dim); margin-bottom:6px; width: 100%; }
 .modal-power-btn { padding:7px 14px; border-radius:9px; border:2px solid; cursor:pointer; font-family:'Cairo',sans-serif; font-size:12px; font-weight:700;
-  background:transparent; transition:all .2s; display:flex; align-items:center; gap:5px; }
+  background:transparent; transition:all .2s; display:flex; align-items:center; gap:5px; flex:1; justify-content:center; }
 .modal-power-btn.hole-p { border-color:var(--hole); color:var(--hole); }
 .modal-power-btn.yellow-p { border-color:var(--card-yellow); color:var(--card-yellow); }
 .modal-power-btn.red-p { border-color:var(--card-red); color:var(--card-red); }
@@ -229,20 +235,20 @@ body::before {
 .btn-nobody:hover { border-color:var(--accent2); color:var(--accent2); }
 .btn-confirm-score { width:100%; padding:12px; background:linear-gradient(135deg,var(--accent3),#00a88a); border:none; border-radius:11px;
   color:#000; font-family:'Cairo',sans-serif; font-size:15px; font-weight:700; cursor:pointer; transition:all .2s; }
-.btn-confirm-score:hover { filter:brightness(1.1); transform:translateY(-1px); }
+.btn-confirm-score:hover:not(:disabled) { filter:brightness(1.1); transform:translateY(-1px); }
 .btn-confirm-score:disabled { opacity:.4; cursor:not-allowed; transform:none; }
 
 /* ===== POWER MODALS ===== */
-.power-modal { display:none; position:fixed; inset:0; background:rgba(0,0,0,.7); z-index:1100; justify-content:center; align-items:center; }
+.power-modal { display:none; position:fixed; inset:0; background:rgba(0,0,0,.7); z-index:1100; justify-content:center; align-items:center; padding: 16px; }
 .power-modal.open { display:flex; }
-.power-modal-box { background:var(--surface); border-radius:20px; padding:28px; max-width:380px; width:90%; text-align:center; border:2px solid; animation:modal-in .3s ease; }
+.power-modal-box { background:var(--surface); border-radius:20px; padding:28px; max-width:380px; width:100%; text-align:center; border:2px solid; animation:modal-in .3s ease; }
 .power-modal-box.hole-modal { border-color:var(--hole); }
 .power-modal-box.yellow-modal { border-color:var(--card-yellow); }
 .power-modal-box.red-modal { border-color:var(--card-red); }
 .power-modal-icon { font-size:44px; margin-bottom:10px; }
 .power-modal-title { font-size:20px; font-weight:700; margin-bottom:6px; }
 .power-modal-desc { color:var(--text-dim); font-size:13px; margin-bottom:18px; line-height:1.6; }
-.power-modal-btns { display:flex; gap:10px; }
+.power-modal-btns { display:flex; gap:10px; flex-direction: row; }
 .btn-confirm-power { flex:1; padding:12px; border:none; border-radius:10px; font-family:'Cairo',sans-serif; font-size:14px; font-weight:700; cursor:pointer; }
 .btn-cancel-power { flex:1; padding:12px; background:var(--surface2); border:1px solid var(--border); border-radius:10px; color:var(--text-dim); font-family:'Cairo',sans-serif; font-size:14px; cursor:pointer; }
 
@@ -266,9 +272,78 @@ body::before {
 .player-stat-pts { font-weight:700; }
 
 /* Toast */
-.toast { position:fixed; bottom:24px; left:50%; transform:translateX(-50%) translateY(100px); background:var(--surface); border:1px solid var(--border);
+.toast { position:fixed; bottom:24px; left:50%; width: 90%; max-width: 400px; text-align: center; transform:translateX(-50%) translateY(100px); background:var(--surface); border:1px solid var(--border);
   border-radius:12px; padding:12px 24px; font-size:14px; font-weight:600; z-index:9999; transition:transform .3s cubic-bezier(.34,1.56,.64,1); pointer-events:none; }
 .toast.show { transform:translateX(-50%) translateY(0); }
+
+/* =========================================
+   RESPONSIVE DESIGN (MOBILE OPTIMIZATION)
+   ========================================= */
+@media (max-width: 768px) {
+  /* Controls */
+  .user-header-controls { top: 10px; left: 10px; gap: 6px; }
+  .user-header-controls span { font-size: 12px; }
+  .user-header-controls button { padding: 4px 10px; font-size: 11px; }
+
+  /* Auth & Setup */
+  .logo h1 { font-size: 48px; }
+  .auth-card { padding: 30px 20px; }
+  .teams-setup { grid-template-columns: 1fr; gap: 16px; margin-bottom: 24px; }
+  .team-card { padding: 20px; }
+  .btn-primary { padding: 14px 20px; font-size: 16px; max-width: 100%; }
+
+  /* Categories */
+  .page-header h2 { font-size: 28px; }
+  .categories-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
+  .cat-card { padding: 14px 10px; }
+  
+  /* Game Header */
+  .game-header { padding: 10px 14px; gap: 8px; flex-wrap: wrap; justify-content: space-around; }
+  .team-score-box { min-width: auto; flex: 1; }
+  .score-val { font-size: 24px; }
+  .score-adj-btn { width: 22px; height: 22px; font-size: 14px; }
+  .game-title-small { font-size: 18px; margin-bottom: 4px; }
+  .score-divider { margin: 0 4px; font-size: 18px; }
+  .turn-indicator { font-size: 10px; padding: 4px 8px; }
+
+  /* Game Board */
+  .game-board-row { gap: 6px; margin-bottom: 6px; }
+  .cat-circle { width: 66px; height: 66px; }
+  .cat-circle-inner { padding: 4px; font-size: 9px; }
+  .q-pair { gap: 4px; }
+  .q-btn { padding: 6px 2px; font-size: 12px; border-radius: 6px; }
+  
+  /* Modals */
+  .modal-box { border-radius: 16px; max-height: 95vh; }
+  .modal-top { padding: 16px; }
+  .modal-question-text { font-size: 18px; }
+  .modal-body { padding: 14px; }
+  
+  .timer-row { padding: 10px; gap: 10px; }
+  .timer-ring-wrap { width: 50px; height: 50px; }
+  .timer-num { font-size: 16px; }
+  .timer-team-indicator { font-size: 15px; }
+  
+  .scoring-teams { grid-template-columns: 1fr; gap: 12px; }
+  .phase-controls { flex-direction: column; }
+  .btn-modal { width: 100%; text-align: center; padding: 12px; }
+  .modal-powers { gap: 6px; }
+  .modal-power-btn { padding: 8px; font-size: 11px; }
+  
+  /* Power Confirmation Modals */
+  .power-modal-box { padding: 20px; border-radius: 16px; }
+  .power-modal-icon { font-size: 36px; margin-bottom: 8px; }
+  .power-modal-title { font-size: 18px; }
+  .power-modal-desc { font-size: 12px; margin-bottom: 14px; }
+  .power-modal-btns { flex-direction: column; }
+  
+  /* End Page */
+  .winner-title { font-size: 36px; }
+  .winner-name { font-size: 24px; }
+  .winner-trophy { font-size: 60px; }
+  .stats-grid { grid-template-columns: 1fr; gap: 16px; }
+  .stats-card { padding: 18px; }
+}
 </style>
 </head>
 <body>
@@ -290,9 +365,9 @@ body::before {
 </div>
 
 <div id="setup-page" class="page">
-  <div style="position: absolute; top: 20px; left: 20px; z-index: 10;">
-    <span id="logged-in-user" style="color:var(--text-dim); margin-left:10px; font-weight:bold;"></span>
-    <button onclick="logout()" style="background:transparent; border:1px solid var(--accent2); color:var(--accent2); padding:5px 15px; border-radius:8px; cursor:pointer; font-family:'Cairo'; font-weight:bold;">خروج</button>
+  <div class="user-header-controls">
+    <span id="logged-in-user"></span>
+    <button onclick="logout()">خروج</button>
   </div>
   <div class="logo">
     <h1>Hamdy Quiz</h1>
@@ -452,7 +527,7 @@ body::before {
 
       <div class="timer-row">
         <div class="timer-ring-wrap">
-          <svg width="68" height="68" viewBox="0 0 68 68">
+          <svg viewBox="0 0 68 68">
             <circle class="timer-circle-bg" cx="34" cy="34" r="30"/>
             <circle class="timer-circle-fg" id="timer-ring" cx="34" cy="34" r="30"/>
           </svg>
@@ -606,7 +681,6 @@ window.onload = () => {
 
 function saveGameState() {
   if (state.gameData) {
-    // Prevent saving HTML DOM Elements in localStorage
     const stateToSave = { ...state, currentQ: null }; 
     localStorage.setItem('hq_state', JSON.stringify(stateToSave));
   }
@@ -621,7 +695,6 @@ function loadGameState() {
       buildGameBoard();
       updateGameHeader();
       
-      // Update questions that were already answered
       state.gameData.forEach((cat, ci) => {
         cat.questions.forEach((q, qi) => {
           if (q.isDone) {
@@ -801,7 +874,7 @@ async function startGame() {
     state.powers = {1:{hole:false,yellow:false,red:false,doubleAns:false},2:{hole:false,yellow:false,red:false,doubleAns:false}};
     state.activePower = null;
     
-    saveGameState(); // Save newly started game
+    saveGameState();
     buildGameBoard(); updateGameHeader(); showPage('game');
   } catch(e){alert('خطأ في بدء اللعبة');}
 }
@@ -855,7 +928,7 @@ function adjustScore(team, delta) {
   state.scores[team] += delta;
   document.getElementById(`score-team${team}`).textContent = state.scores[team];
   showToast(`${state.teams[team].name}: ${delta > 0 ? '+' : ''}${delta} نقطة`, team===1?'var(--team1)':'var(--team2)');
-  saveGameState(); // Persist manual adjustment
+  saveGameState();
 }
 
 // ============================================================
@@ -1114,7 +1187,6 @@ function confirmScore() {
     document.getElementById('score-team2').textContent = state.scores[2];
   }
 
-  // Persist that this question was done
   state.gameData[currentQ.catIndex].questions[currentQ.qIndex].isDone = true;
   saveGameState();
 
