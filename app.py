@@ -17,7 +17,7 @@ QUESTIONS_DIR = BASE_DIR / "questions"
 # إعدادات قاعدة البيانات MongoDB
 # ==========================================
 # في Vercel هنحط الرابط ده في الـ Environment Variables
-MONGO_URI ="mongodb+srv://abdohamdy6:Abdohamdy147852369++@cluster0.qzwpsf2.mongodb.net/?appName=Cluster0"
+MONGO_URI ="mongodb+srv://abdohamdy6:abdo123456@cluster0.qzwpsf2.mongodb.net/?appName=Cluster0"
 client = MongoClient(MONGO_URI)
 db = client["hamdy_quiz_db"]
 users_col = db["users"]
