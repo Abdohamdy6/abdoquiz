@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Hamdy Quiz</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0a0a0f; --surface: #12121a; --surface2: #1a1a26; --border: #2a2a3e;
+  --accent: #6c63ff; --accent2: #ff6b9d; --accent3: #00d4aa; --gold: #ffd700;
+  --text: #e8e8f0; --text-dim: #7a7a9a; --team1: #4f8ef7; --team2: #f7614f;
+  --card-yellow: #f59e0b; --card-red: #ef4444; --hole: #8b5cf6;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Cairo',sans-serif; background:var(--bg); color:var(--text); min-height:100vh; overflow-x:hidden; }
+body::before {
+  content:''; position:fixed; inset:0; pointer-events:none; z-index:0;
+  background: radial-gradient(ellipse 80% 50% at 20% 20%,rgba(108,99,255,.08) 0%,transparent 60%),
+              radial-gradient(ellipse 60% 40% at 80% 80%,rgba(255,107,157,.06) 0%,transparent 60%);
+}
+
+.page { display:none !important; position:relative; z-index:1; }
+.page.active { display:block !important; }
+#auth-page.active, #setup-page.active, #end-page.active { display:flex !important; flex-direction:column; align-items:center; }
+
+.user-header-controls { position: absolute; top: 20px; left: 20px; z-index: 10; display: flex; align-items: center; gap: 10px; }
+.user-header-controls span { color: var(--text-dim); font-weight: bold; font-size: 14px; }
+.user-header-controls button { background: transparent; border: 1px solid var(--accent2); color: var(--accent2); padding: 5px 15px; border-radius: 8px; cursor: pointer; font-family: 'Cairo'; font-weight: bold; font-size: 13px; transition: all 0.2s; }
+.user-header-controls button:hover { background: rgba(255, 107, 157, 0.1); }
+
+#auth-page { min-height:100vh; padding:40px 20px; justify-content: center; }
+.auth-card { background:var(--surface); border:1px solid var(--border); border-radius:20px; padding:40px; width:100%; max-width:400px; text-align:center; }
+.auth-switch { margin-top: 15px; color: var(--text-dim); font-size: 14px; cursor: pointer; transition: color .3s; }
+.auth-switch:hover { color: var(--accent); }
+
+#setup-page { min-height:100vh; padding:40px 20px; }
+.logo { text-align:center; margin-bottom:50px; }
+.logo h1 { font-family:'Tajawal',sans-serif; font-size:72px; font-weight:900; letter-spacing:-2px; line-height:1;
+  background:linear-gradient(135deg,var(--accent),var(--accent2),var(--gold)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+.logo p { color:var(--text-dim); font-size:16px; margin-top:8px; letter-spacing:4px; text-transform:uppercase; }
+.teams-setup { display:grid; grid-template-columns:1fr 1fr; gap:24px; width:100%; max-width:900px; margin-bottom:40px; }
+.team-card { background:var(--surface); border:1px solid var(--border); border-radius:20px; padding:28px; }
+.team-card.team1 { border-top:3px solid var(--team1); }
+.team-card.team2 { border-top:3px solid var(--team2); }
+.team-card h3 { font-size:18px; font-weight:700; margin-bottom:16px; display:flex; align-items:center; gap:8px; }
+.team1 h3 { color:var(--team1); } .team2 h3 { color:var(--team2); }
+.team-dot { width:10px; height:10px; border-radius:50%; }
+.team1 .team-dot { background:var(--team1); } .team2 .team-dot { background:var(--team2); }
+.input-field { width:100%; background:var(--surface2); border:1px solid var(--border); border-radius:12px; padding:12px 16px;
+  color:var(--text); font-family:'Cairo',sans-serif; font-size:15px; outline:none; transition:border-color .3s,box-shadow .3s; margin-bottom:12px; }
+.input-field:focus { border-color:var(--accent); box-shadow:0 0 0 3px rgba(108,99,255,.15); }
+.players-section { margin-top:8px; }
+.players-section label { font-size:13px; color:var(--text-dim); display:block; margin-bottom:8px; }
+.player-input-row { display:flex; gap:8px; margin-bottom:8px; align-items:center; }
+.player-input-row .input-field { margin-bottom:0; flex:1; }
+.player-num { width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; flex-shrink:0; }
+.team1 .player-num { background:rgba(79,142,247,.2); color:var(--team1); }
+.team2 .player-num { background:rgba(247,97,79,.2); color:var(--team2); }
+.btn-add-player { width:100%; padding:10px; border:1px dashed var(--border); border-radius:10px; background:transparent; color:var(--text-dim);
+  cursor:pointer; font-family:'Cairo',sans-serif; font-size:14px; transition:all .2s; margin-top:4px; display:flex; align-items:center; justify-content:center; gap:6px; }
+.btn-add-player:hover { border-color:var(--accent); color:var(--accent); background:rgba(108,99,255,.05); }
+.btn-remove-player { width:28px; height:28px; border-radius:50%; background:rgba(255,107,157,.1); border:none; color:var(--accent2);
+  cursor:pointer; font-size:16px; display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:background .2s; }
+.btn-remove-player:hover { background:rgba(255,107,157,.25); }
+
+#categories-page { min-height:100vh; padding:40px 20px; max-width:1100px; margin:0 auto; }
+.page-header { text-align:center; margin-bottom:40px; }
+.page-header h2 { font-size:36px; font-weight:900; background:linear-gradient(135deg,var(--accent),var(--accent2)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+.page-header p { color:var(--text-dim); margin-top:8px; font-size:15px; }
+.selected-count { display:inline-block; background:var(--surface2); border:1px solid var(--border); border-radius:20px; padding:6px 20px; font-size:14px; margin-top:12px; }
+.selected-count span { color:var(--accent); font-weight:700; font-size:18px; }
+.group-section { margin-bottom:32px; }
+.group-title { font-size:14px; font-weight:700; color:var(--text-dim); letter-spacing:3px; text-transform:uppercase; margin-bottom:14px; padding-right:12px; border-right:3px solid var(--accent); }
+.categories-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:12px; }
+.cat-card { background:var(--surface); border:2px solid var(--border); border-radius:16px; padding:18px 14px; cursor:pointer; transition:all .25s; text-align:center; position:relative; }
+.cat-card:hover { border-color:var(--accent); transform:translateY(-2px); box-shadow:0 8px 24px rgba(108,99,255,.2); }
+.cat-card.selected { border-color:var(--accent); background:rgba(108,99,255,.1); box-shadow:0 0 0 1px var(--accent),0 8px 24px rgba(108,99,255,.2); }
+.cat-card.selected::after { content:'✓'; position:absolute; top:8px; left:8px; width:22px; height:22px; background:var(--accent); border-radius:50%; font-size:12px; display:flex; align-items:center; justify-content:center; color:white; font-weight:700; }
+.cat-card.no-games { opacity:.4; cursor:not-allowed; }
+.cat-name { font-size:15px; font-weight:700; margin-bottom:8px; }
+.cat-games-left { font-size:12px; color:var(--text-dim); }
+.cat-games-left.good { color:var(--accent3); } .cat-games-left.warn { color:var(--gold); } .cat-games-left.bad { color:var(--accent2); }
+
+.btn-primary { background:linear-gradient(135deg,var(--accent),#8b83ff); color:white; border:none; border-radius:14px; padding:16px 40px;
+  font-family:'Cairo',sans-serif; font-size:17px; font-weight:700; cursor:pointer; transition:all .3s; box-shadow:0 4px 20px rgba(108,99,255,.4); display:block; margin:0 auto; width: 100%; max-width: 300px; }
+.btn-primary:hover:not(:disabled) { transform:translateY(-2px); box-shadow:0 8px 30px rgba(108,99,255,.5); }
+.btn-primary:disabled { opacity:.4; cursor:not-allowed; transform:none; }
+.btn-back { background:var(--surface2); border:1px solid var(--border); color:var(--text-dim); border-radius:10px; padding:10px 20px;
+  font-family:'Cairo',sans-serif; font-size:14px; cursor:pointer; transition:all .2s; margin-bottom:24px; display:inline-flex; align-items:center; gap:6px; }
+.btn-back:hover { border-color:var(--accent); color:var(--text); }
+
+#game-page { min-height:100vh; padding:12px; }
+.btn-end-game { background:rgba(239,68,68,.1); border:1px solid rgba(239,68,68,.4); color:var(--card-red); padding:8px 16px; border-radius:10px; font-family:'Cairo',sans-serif; font-size:13px; font-weight:bold; cursor:pointer; transition:all .2s; margin-bottom: 12px; display: flex; align-items: center; gap: 6px; margin-right: auto; }
+.btn-end-game:hover { background:rgba(239,68,68,.2); }
+
+.game-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; padding:12px 20px;
+  background:var(--surface); border-radius:16px; border:1px solid var(--border); }
+.score-display { display:flex; align-items:center; gap:16px; }
+.team-score-box { text-align:center; min-width:130px; }
+.team-score-box .team-name { font-size:12px; font-weight:600; margin-bottom:2px; }
+.team-score-box .score-row { display:flex; align-items:center; justify-content:center; gap:6px; }
+.score-val { font-size:30px; font-weight:900; line-height:1; }
+.team1-color { color:var(--team1); } .team2-color { color:var(--team2); }
+.score-adj-btn { width:24px; height:24px; border-radius:6px; border:1px solid; cursor:pointer; font-size:14px; font-weight:700;
+  display:flex; align-items:center; justify-content:center; background:transparent; transition:all .15s; }
+.score-adj-btn.plus { border-color:var(--accent3); color:var(--accent3); }
+.score-adj-btn.plus:hover { background:rgba(0,212,170,.15); }
+.score-adj-btn.minus { border-color:var(--accent2); color:var(--accent2); }
+.score-adj-btn.minus:hover { background:rgba(255,107,157,.15); }
+.score-divider { font-size:24px; color:var(--border); font-weight:300; }
+.game-title-small { font-size:22px; font-weight:900; background:linear-gradient(135deg,var(--accent),var(--accent2));
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+.turn-indicator { font-size:12px; padding:4px 12px; border-radius:20px; font-weight:700; display:inline-block; }
+.turn-indicator.t1 { background:rgba(79,142,247,.15); color:var(--team1); border:1px solid rgba(79,142,247,.3); }
+.turn-indicator.t2 { background:rgba(247,97,79,.15); color:var(--team2); border:1px solid rgba(247,97,79,.3); }
+
+.game-board-wrap { max-width:1100px; margin:0 auto; }
+.game-board-row { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-bottom:14px; }
+.category-node { display:flex; flex-direction:column; align-items:center; gap:8px; }
+.cat-circle { position:relative; width:88px; height:88px; border-radius:50%; flex-shrink:0; }
+.cat-circle::before { content:''; position:absolute; inset:-3px; border-radius:50%;
+  background:conic-gradient(var(--accent),var(--accent2),var(--accent3),var(--accent)); z-index:0; opacity:.6; animation:spin 8s linear infinite; }
+@keyframes spin { to { transform:rotate(360deg); } }
+.cat-circle-inner { position:relative; z-index:1; background:var(--surface); border-radius:50%;
+  width:100%; height:100%; display:flex; align-items:center; justify-content:center; text-align:center; padding:8px; font-size:11px; font-weight:700; line-height:1.3; }
+.q-arms { display:flex; flex-direction:column; gap:5px; width:100%; }
+.q-pair { display:flex; gap:5px; }
+.q-btn { flex:1; padding:9px 4px; border:none; border-radius:9px; font-family:'Cairo',sans-serif; font-size:14px; font-weight:700;
+  cursor:pointer; transition:all .25s; position:relative; }
+.q-btn.pts-200 { background:rgba(79,142,247,.15); border:1px solid rgba(79,142,247,.3); color:#4f8ef7; }
+.q-btn.pts-400 { background:rgba(0,212,170,.15); border:1px solid rgba(0,212,170,.3); color:#00d4aa; }
+.q-btn.pts-600 { background:rgba(255,215,0,.15); border:1px solid rgba(255,215,0,.3); color:var(--gold); }
+.q-btn.double { animation:pulse-gold 2s infinite; }
+@keyframes pulse-gold { 0%,100% { box-shadow:0 0 8px rgba(255,215,0,.4); } 50% { box-shadow:0 0 20px rgba(255,215,0,.8),0 0 40px rgba(255,215,0,.3); } }
+.q-btn:hover:not(.done) { transform:scale(1.06); filter:brightness(1.3); }
+.q-btn.done { background:var(--surface2) !important; border-color:var(--border) !important; color:var(--text-dim) !important; text-decoration:line-through; cursor:not-allowed; transform:none !important; }
+
+.modal-overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,.85); backdrop-filter:blur(8px); z-index:1000; justify-content:center; align-items:center; padding:16px; overflow-y:auto; }
+.modal-overlay.open { display:flex; }
+.modal-box { background:var(--surface); border:1px solid var(--border); border-radius:22px; width:100%; max-width:680px; max-height:92vh; overflow-y:auto;
+  box-shadow:0 24px 80px rgba(0,0,0,.6); animation:modal-in .3s cubic-bezier(.34,1.56,.64,1); }
+@keyframes modal-in { from { transform:scale(.85) translateY(20px); opacity:0; } to { transform:scale(1) translateY(0); opacity:1; } }
+.modal-top { background:linear-gradient(135deg,var(--surface2),var(--bg)); padding:20px 24px 16px; border-bottom:1px solid var(--border); }
+.modal-top-row { display:flex; justify-content:space-between; align-items:flex-start; gap:12px; }
+.modal-cat-label { font-size:11px; color:var(--text-dim); letter-spacing:3px; text-transform:uppercase; margin-bottom:8px; }
+.modal-question-text { font-size:21px; font-weight:700; line-height:1.5; color:var(--text); flex:1; }
+.double-reveal-badge { display:none; padding:6px 14px; background:linear-gradient(135deg,rgba(255,215,0,.2),rgba(255,170,0,.1));
+  border:1px solid rgba(255,215,0,.4); border-radius:12px; color:var(--gold); font-size:13px; font-weight:700; text-align:center; animation:pulse-text 1s infinite; white-space:nowrap; }
+.double-reveal-badge.shown { display:block; }
+@keyframes pulse-text { 0%,100% { opacity:1; } 50% { opacity:.6; } }
+.modal-pts-badge { display:inline-block; padding:4px 14px; border-radius:20px; font-size:13px; font-weight:700; margin-top:10px; }
+
+.active-power-banner { display:none; padding:8px 16px; border-radius:10px; font-size:13px; font-weight:700; margin-bottom:12px; text-align:center; }
+.active-power-banner.shown { display:block; }
+.active-power-banner.hole { background:rgba(139,92,246,.15); border:1px solid rgba(139,92,246,.3); color:var(--hole); }
+.active-power-banner.red { background:rgba(239,68,68,.12); border:1px solid rgba(239,68,68,.3); color:var(--card-red); }
+.active-power-banner.yellow { background:rgba(245,158,11,.12); border:1px solid rgba(245,158,11,.3); color:var(--card-yellow); }
+
+.modal-body { padding:16px 24px 20px; }
+
+.timer-row { display:flex; align-items:center; gap:16px; margin-bottom:14px; background:var(--surface2); border-radius:14px; padding:12px 16px; }
+.timer-ring-wrap { position:relative; width:68px; height:68px; flex-shrink:0; }
+.timer-ring-wrap svg { transform:rotate(-90deg); width:100%; height:100%; }
+.timer-circle-bg { fill:none; stroke:var(--border); stroke-width:5; }
+.timer-circle-fg { fill:none; stroke-width:5; stroke-linecap:round; transition:stroke-dashoffset 1s linear,stroke .5s; stroke-dasharray:188; stroke-dashoffset:0; }
+.timer-num { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:20px; font-weight:900; }
+.timer-info { flex:1; }
+.timer-label { font-size:12px; color:var(--text-dim); margin-bottom:2px; }
+.timer-team-indicator { font-size:17px; font-weight:700; }
+
+.phase-controls { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; }
+.btn-modal { padding:9px 16px; border-radius:10px; border:none; font-family:'Cairo',sans-serif; font-size:13px; font-weight:600; cursor:pointer; transition:all .2s; flex:1; }
+.btn-start-timer { background:#f59e0b; color:#000; }
+.btn-pass { background:#8b5cf6; color:white; }
+.btn-reveal { background:var(--surface2); border:1px solid var(--border); color:var(--text); }
+.btn-modal:hover:not(:disabled) { filter:brightness(1.15); transform:translateY(-1px); }
+.btn-modal:disabled { opacity:.4; cursor:not-allowed; transform:none; }
+
+.modal-powers { display:none; gap:8px; margin-bottom:12px; align-items:center; }
+.modal-powers.shown { display:flex; flex-wrap:wrap; }
+.modal-powers-label { font-size:12px; color:var(--text-dim); margin-bottom:6px; width: 100%; }
+.modal-power-btn { padding:7px 14px; border-radius:9px; border:2px solid; cursor:pointer; font-family:'Cairo',sans-serif; font-size:12px; font-weight:700;
+  background:transparent; transition:all .2s; display:flex; align-items:center; gap:5px; flex:1; justify-content:center; }
+.modal-power-btn.hole-p { border-color:var(--hole); color:var(--hole); }
+.modal-power-btn.yellow-p { border-color:var(--card-yellow); color:var(--card-yellow); }
+.modal-power-btn.red-p { border-color:var(--card-red); color:var(--card-red); }
+.modal-power-btn.double-ans-p { border-color:var(--accent3); color:var(--accent3); }
+.modal-power-btn:hover:not(:disabled) { transform:scale(1.05); filter:brightness(1.2); }
+.modal-power-btn:disabled, .modal-power-btn.used { opacity:.25; cursor:not-allowed; transform:none; }
+.modal-power-btn.active-p { box-shadow:0 0 12px currentColor; filter:brightness(1.2); }
+
+.answer-section { display:none; background:rgba(0,212,170,.08); border:1px solid rgba(0,212,170,.2); border-radius:12px; padding:14px 18px; margin-bottom:12px; }
+.answer-section.visible { display:block; }
+.answer-label { font-size:11px; color:var(--accent3); letter-spacing:2px; margin-bottom:5px; }
+.answer-text { font-size:19px; font-weight:700; color:var(--accent3); }
+
+.scoring-section { display:none; }
+.scoring-section.visible { display:block; }
+.scoring-teams { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:10px; }
+.scoring-team-col { background:var(--surface2); border-radius:12px; padding:12px; }
+.scoring-team-col.t1 { border-top:2px solid var(--team1); }
+.scoring-team-col.t2 { border-top:2px solid var(--team2); }
+.scoring-team-name { font-size:12px; font-weight:700; margin-bottom:8px; }
+.t1 .scoring-team-name { color:var(--team1); } .t2 .scoring-team-name { color:var(--team2); }
+.player-score-btn { width:100%; padding:7px 10px; margin-bottom:5px; background:var(--surface); border:1px solid var(--border); border-radius:8px;
+  color:var(--text); font-family:'Cairo',sans-serif; font-size:12px; cursor:pointer; transition:all .2s; text-align:right; }
+.player-score-btn:hover { border-color:var(--accent); background:rgba(108,99,255,.1); }
+.player-score-btn.selected-winner { background:rgba(0,212,170,.15); border-color:var(--accent3); color:var(--accent3); font-weight:700; }
+.btn-nobody { width:100%; padding:9px; background:var(--surface2); border:1px solid var(--border); border-radius:9px; color:var(--text-dim);
+  font-family:'Cairo',sans-serif; font-size:13px; cursor:pointer; transition:all .2s; margin-bottom:8px; }
+.btn-nobody:hover { border-color:var(--accent2); color:var(--accent2); }
+.btn-confirm-score { width:100%; padding:12px; background:linear-gradient(135deg,var(--accent3),#00a88a); border:none; border-radius:11px;
+  color:#000; font-family:'Cairo',sans-serif; font-size:15px; font-weight:700; cursor:pointer; transition:all .2s; }
+.btn-confirm-score:hover:not(:disabled) { filter:brightness(1.1); transform:translateY(-1px); }
+.btn-confirm-score:disabled { opacity:.4; cursor:not-allowed; transform:none; }
+
+.power-modal { display:none; position:fixed; inset:0; background:rgba(0,0,0,.7); z-index:1100; justify-content:center; align-items:center; padding: 16px; }
+.power-modal.open { display:flex; }
+.power-modal-box { background:var(--surface); border-radius:20px; padding:28px; max-width:380px; width:100%; text-align:center; border:2px solid; animation:modal-in .3s ease; }
+.power-modal-box.hole-modal { border-color:var(--hole); }
+.power-modal-box.yellow-modal { border-color:var(--card-yellow); }
+.power-modal-box.red-modal { border-color:var(--card-red); }
+.power-modal-icon { font-size:44px; margin-bottom:10px; }
+.power-modal-title { font-size:20px; font-weight:700; margin-bottom:6px; }
+.power-modal-desc { color:var(--text-dim); font-size:13px; margin-bottom:18px; line-height:1.6; }
+.power-modal-btns { display:flex; gap:10px; flex-direction: row; }
+.btn-confirm-power { flex:1; padding:12px; border:none; border-radius:10px; font-family:'Cairo',sans-serif; font-size:14px; font-weight:700; cursor:pointer; }
+.btn-cancel-power { flex:1; padding:12px; background:var(--surface2); border:1px solid var(--border); border-radius:10px; color:var(--text-dim); font-family:'Cairo',sans-serif; font-size:14px; cursor:pointer; }
+
+#end-page { min-height:100vh; padding:40px 20px; max-width:900px; margin:0 auto; }
+.winner-banner { text-align:center; margin-bottom:40px; }
+.winner-trophy { font-size:80px; margin-bottom:16px; }
+.winner-title { font-size:48px; font-weight:900; background:linear-gradient(135deg,var(--gold),#ffaa00); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
+.winner-name { font-size:28px; font-weight:700; margin-top:8px; }
+.stats-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; width:100%; margin-bottom:32px; }
+.stats-card { background:var(--surface); border:1px solid var(--border); border-radius:20px; padding:24px; }
+.stats-card h3 { font-size:14px; color:var(--text-dim); letter-spacing:2px; text-transform:uppercase; margin-bottom:16px; }
+.mvp-card { text-align:center; padding:28px; background:linear-gradient(135deg,rgba(255,215,0,.1),rgba(255,170,0,.05)); border-color:rgba(255,215,0,.3); }
+.mvp-icon { font-size:36px; margin-bottom:8px; }
+.mvp-name { font-size:24px; font-weight:900; color:var(--gold); }
+.mvp-team { font-size:14px; color:var(--text-dim); margin-top:4px; }
+.mvp-stat { font-size:13px; color:var(--text-dim); margin-top:8px; }
+.player-stat-row { display:flex; justify-content:space-between; align-items:center; padding:8px 0; border-bottom:1px solid var(--border); }
+.player-stat-row:last-child { border-bottom:none; }
+.player-stat-name { font-weight:600; }
+.player-stat-pts { font-weight:700; }
+
+.toast { position:fixed; bottom:24px; left:50%; width: 90%; max-width: 400px; text-align: center; transform:translateX(-50%) translateY(100px); background:var(--surface); border:1px solid var(--border);
+  border-radius:12px; padding:12px 24px; font-size:14px; font-weight:600; z-index:9999; transition:transform .3s cubic-bezier(.34,1.56,.64,1); pointer-events:none; }
+.toast.show { transform:translateX(-50%) translateY(0); }
+
+@media (max-width: 768px) {
+  .user-header-controls { top: 10px; left: 10px; gap: 6px; }
+  .user-header-controls span { font-size: 12px; }
+  .user-header-controls button { padding: 4px 10px; font-size: 11px; }
+  .logo h1 { font-size: 48px; }
+  .auth-card { padding: 30px 20px; }
+  .teams-setup { grid-template-columns: 1fr; gap: 16px; margin-bottom: 24px; }
+  .team-card { padding: 20px; }
+  .btn-primary { padding: 14px 20px; font-size: 16px; max-width: 100%; }
+  .page-header h2 { font-size: 28px; }
+  .categories-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
+  .cat-card { padding: 14px 10px; }
+  .game-header { padding: 10px 14px; gap: 8px; flex-wrap: wrap; justify-content: space-around; }
+  .team-score-box { min-width: auto; flex: 1; }
+  .score-val { font-size: 24px; }
+  .score-adj-btn { width: 22px; height: 22px; font-size: 14px; }
+  .game-title-small { font-size: 18px; margin-bottom: 4px; }
+  .score-divider { margin: 0 4px; font-size: 18px; }
+  .turn-indicator { font-size: 10px; padding: 4px 8px; }
+  .game-board-row { gap: 6px; margin-bottom: 6px; }
+  .cat-circle { width: 66px; height: 66px; }
+  .cat-circle-inner { padding: 4px; font-size: 9px; }
+  .q-pair { gap: 4px; }
+  .q-btn { padding: 6px 2px; font-size: 12px; border-radius: 6px; }
+  .modal-box { border-radius: 16px; max-height: 95vh; }
+  .modal-top { padding: 16px; }
+  .modal-question-text { font-size: 18px; }
+  .modal-body { padding: 14px; }
+  .timer-row { padding: 10px; gap: 10px; }
+  .timer-ring-wrap { width: 50px; height: 50px; }
+  .timer-num { font-size: 16px; }
+  .timer-team-indicator { font-size: 15px; }
+  .scoring-teams { grid-template-columns: 1fr; gap: 12px; }
+  .phase-controls { flex-direction: column; }
+  .btn-modal { width: 100%; text-align: center; padding: 12px; }
+  .modal-powers { gap: 6px; }
+  .modal-power-btn { padding: 8px; font-size: 11px; }
+  .power-modal-box { padding: 20px; border-radius: 16px; }
+  .power-modal-icon { font-size: 36px; margin-bottom: 8px; }
+  .power-modal-title { font-size: 18px; }
+  .power-modal-desc { font-size: 12px; margin-bottom: 14px; }
+  .power-modal-btns { flex-direction: column; }
+  .winner-title { font-size: 36px; }
+  .winner-name { font-size: 24px; }
+  .winner-trophy { font-size: 60px; }
+  .stats-grid { grid-template-columns: 1fr; gap: 16px; }
+  .stats-card { padding: 18px; }
+}
+</style>
+</head>
+<body>
+
+<div class="toast" id="toast"></div>
+
+<div id="auth-page" class="page active">
+  <div class="logo">
+    <h1>Hamdy Quiz</h1>
+    <p>لعبة المعلومات العامة</p>
+  </div>
+  <div class="auth-card">
+    <h3 id="auth-title" style="margin-bottom: 20px;">تسجيل الدخول</h3>
+    <input type="text" id="auth-username" class="input-field" placeholder="اسم المستخدم">
+    <input type="password" id="auth-password" class="input-field" placeholder="كلمة المرور">
+    <button class="btn-primary" id="btn-auth" style="margin: 0;" onclick="handleAuth()">دخول</button>
+    <div class="auth-switch" id="auth-switch" onclick="toggleAuthMode()">ليس لديك حساب؟ سجل الآن</div>
+  </div>
+</div>
+
+<div id="setup-page" class="page">
+  <div class="user-header-controls">
+    <span id="logged-in-user"></span>
+    <button onclick="logout()">خروج</button>
+  </div>
+  <div class="logo">
+    <h1>Hamdy Quiz</h1>
+    <p>لعبة المعلومات العامة</p>
+  </div>
+  <div class="teams-setup">
+    <div class="team-card team1">
+      <h3><span class="team-dot"></span> الفريق الأول</h3>
+      <input type="text" class="input-field" id="team1-name" placeholder="اسم الفريق الأول" value="الفريق الأول">
+      <div class="players-section">
+        <label>أسماء اللاعبين</label>
+        <div id="players1">
+          <div class="player-input-row">
+            <span class="player-num">١</span>
+            <input type="text" class="input-field player-input" placeholder="اسم اللاعب">
+            <button class="btn-remove-player" onclick="removePlayer(this)">×</button>
+          </div>
+          <div class="player-input-row">
+            <span class="player-num">٢</span>
+            <input type="text" class="input-field player-input" placeholder="اسم اللاعب">
+            <button class="btn-remove-player" onclick="removePlayer(this)">×</button>
+          </div>
+        </div>
+        <button class="btn-add-player" onclick="addPlayer(1)"><span>+</span> إضافة لاعب</button>
+      </div>
+    </div>
+    <div class="team-card team2">
+      <h3><span class="team-dot"></span> الفريق الثاني</h3>
+      <input type="text" class="input-field" id="team2-name" placeholder="اسم الفريق الثاني" value="الفريق الثاني">
+      <div class="players-section">
+        <label>أسماء اللاعبين</label>
+        <div id="players2">
+          <div class="player-input-row">
+            <span class="player-num">١</span>
+            <input type="text" class="input-field player-input" placeholder="اسم اللاعب">
+            <button class="btn-remove-player" onclick="removePlayer(this)">×</button>
+          </div>
+          <div class="player-input-row">
+            <span class="player-num">٢</span>
+            <input type="text" class="input-field player-input" placeholder="اسم اللاعب">
+            <button class="btn-remove-player" onclick="removePlayer(this)">×</button>
+          </div>
+        </div>
+        <button class="btn-add-player" onclick="addPlayer(2)"><span>+</span> إضافة لاعب</button>
+      </div>
+    </div>
+  </div>
+  <button class="btn-primary" onclick="goToCategories()">التالي →</button>
+</div>
+
+<div id="categories-page" class="page">
+  <div style="max-width:1100px;margin:0 auto;padding:40px 20px;">
+    <button class="btn-back" onclick="goBack('setup')">← رجوع</button>
+    <div class="page-header">
+      <h2>اختر الكاتيجوريز</h2>
+      <p>اختر ٦ كاتيجوريز للعبة</p>
+      <div class="selected-count">تم اختيار <span id="sel-count">0</span> / 6</div>
+    </div>
+    <div id="categories-container"><p style="text-align:center;color:var(--text-dim)">جاري تحميل الكاتيجوريز...</p></div>
+    <div style="margin-top:32px;text-align:center;">
+      <button class="btn-primary" id="btn-start-game" onclick="startGame()" disabled>ابدأ اللعبة 🎮</button>
+    </div>
+  </div>
+</div>
+
+<div id="game-page" class="page">
+  <div style="max-width:1100px; margin:0 auto; display: flex; justify-content: flex-end;">
+    <button onclick="forceEndGame()" class="btn-end-game">إنهاء اللعبة مبكراً 🛑</button>
+  </div>
+  
+  <div class="game-header">
+    <div class="team-score-box">
+      <div class="team-name team1-color" id="header-team1-name">الفريق الأول</div>
+      <div class="score-row">
+        <button class="score-adj-btn minus" onclick="adjustScore(1,-100)">−</button>
+        <div class="score-val team1-color" id="score-team1">0</div>
+        <button class="score-adj-btn plus" onclick="adjustScore(1,100)">+</button>
+      </div>
+    </div>
+
+    <div class="score-divider">|</div>
+
+    <div style="text-align:center;">
+      <div class="game-title-small">Hamdy Quiz</div>
+      <div style="margin-top:6px;" id="turn-wrap">
+        <span class="turn-indicator t1" id="turn-indicator">دور الفريق الأول</span>
+      </div>
+    </div>
+
+    <div class="score-divider">|</div>
+
+    <div class="team-score-box">
+      <div class="team-name team2-color" id="header-team2-name">الفريق الثاني</div>
+      <div class="score-row">
+        <button class="score-adj-btn minus" onclick="adjustScore(2,-100)">−</button>
+        <div class="score-val team2-color" id="score-team2">0</div>
+        <button class="score-adj-btn plus" onclick="adjustScore(2,100)">+</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-board-wrap">
+    <div class="game-board-row" id="game-board-row1"></div>
+    <div class="game-board-row" id="game-board-row2"></div>
+  </div>
+</div>
+
+<div id="end-page" class="page">
+  <div class="winner-banner">
+    <div class="winner-trophy">🏆</div>
+    <div class="winner-title" id="end-winner-title">الفائز</div>
+    <div class="winner-name" id="end-winner-name"></div>
+  </div>
+  <div class="stats-grid">
+    <div class="stats-card mvp-card">
+      <h3>⭐ أفضل لاعب</h3>
+      <div class="mvp-icon">🥇</div>
+      <div class="mvp-name" id="mvp-name">-</div>
+      <div class="mvp-team" id="mvp-team">-</div>
+      <div class="mvp-stat" id="mvp-stat">-</div>
+    </div>
+    <div class="stats-card">
+      <h3>📊 نتيجة المباراة</h3>
+      <div style="display:flex;justify-content:space-around;align-items:center;padding:16px 0;">
+        <div style="text-align:center;">
+          <div class="team1-color" id="end-t1-name" style="font-weight:700;font-size:16px;">-</div>
+          <div class="team1-color" id="end-t1-score" style="font-size:42px;font-weight:900;">0</div>
+        </div>
+        <div style="font-size:24px;color:var(--text-dim);">VS</div>
+        <div style="text-align:center;">
+          <div class="team2-color" id="end-t2-name" style="font-weight:700;font-size:16px;">-</div>
+          <div class="team2-color" id="end-t2-score" style="font-size:42px;font-weight:900;">0</div>
+        </div>
+      </div>
+    </div>
+    <div class="stats-card">
+      <h3>👥 <span class="team1-color" id="end-t1-name2">الفريق ١</span></h3>
+      <div id="stats-team1-players"></div>
+    </div>
+    <div class="stats-card">
+      <h3>👥 <span class="team2-color" id="end-t2-name2">الفريق ٢</span></h3>
+      <div id="stats-team2-players"></div>
+    </div>
+  </div>
+  <button class="btn-primary" onclick="newGame()">لعبة جديدة 🎮</button>
+</div>
+
+<div class="modal-overlay" id="q-modal">
+  <div class="modal-box">
+    <div class="modal-top">
+      <div class="modal-cat-label" id="modal-cat-label">كاتيجوري</div>
+      <div class="modal-top-row">
+        <div class="modal-question-text" id="modal-q-text">السؤال</div>
+        <div class="double-reveal-badge" id="double-badge">⚡ Double Points ⚡</div>
+      </div>
+      <div class="modal-pts-badge" id="modal-pts-badge">200 نقطة</div>
+    </div>
+
+    <div class="modal-body">
+      <div class="active-power-banner" id="active-power-banner"></div>
+
+      <div class="timer-row">
+        <div class="timer-ring-wrap">
+          <svg viewBox="0 0 68 68">
+            <circle class="timer-circle-bg" cx="34" cy="34" r="30"/>
+            <circle class="timer-circle-fg" id="timer-ring" cx="34" cy="34" r="30"/>
+          </svg>
+          <div class="timer-num" id="timer-num">-</div>
+        </div>
+        <div class="timer-info">
+          <div class="timer-label" id="timer-label">اضغط "بدأ الوقت" للبدء</div>
+          <div class="timer-team-indicator" id="timer-team-indicator"></div>
+        </div>
+      </div>
+
+      <div id="phase-pre">
+        <div class="modal-powers shown" id="powers-pre">
+          <span class="modal-powers-label" id="pre-powers-label">⚡ خواص فريقك:</span>
+          <button class="modal-power-btn hole-p" id="mpre-hole" onclick="useModalPower('current','hole')">🕳️ حفرة</button>
+          <button class="modal-power-btn double-ans-p" id="mpre-double-ans" onclick="useModalPower('current','doubleAns')">💬 إجابة مرتين</button>
+        </div>
+        <div class="modal-powers shown" id="powers-red-pre" style="margin-bottom: 12px;">
+          <span class="modal-powers-label" id="red-powers-label">🟥 كارت أحمر (الفريق الآخر):</span>
+          <button class="modal-power-btn red-p" id="mred-other" onclick="useModalPower('other','red')">🟥 كارت أحمر</button>
+        </div>
+
+        <div class="phase-controls">
+          <button class="btn-modal btn-start-timer" onclick="startMainTimer()">⏱ بدأ الوقت</button>
+          <button class="btn-modal btn-reveal" onclick="skipToReveal()">إظهار الإجابة</button>
+        </div>
+      </div>
+
+      <div id="phase-main" style="display:none;">
+        <div class="phase-controls">
+          <button class="btn-modal btn-pass" id="btn-pass" onclick="passToTeam2()">🔄 فرصة الفريق الثاني (١٠ ث)</button>
+          <button class="btn-modal btn-reveal" onclick="skipToReveal()">إظهار الإجابة</button>
+        </div>
+      </div>
+
+      <div id="phase-pass" style="display:none;">
+        <div class="phase-controls">
+          <button class="btn-modal btn-reveal" onclick="skipToReveal()">إظهار الإجابة</button>
+        </div>
+      </div>
+
+      <div class="answer-section" id="answer-section">
+        <div class="answer-label">الإجابة الصحيحة</div>
+        <div class="answer-text" id="answer-text">-</div>
+      </div>
+
+      <div class="scoring-section" id="scoring-section">
+        <div class="modal-powers shown" id="powers-yellow" style="margin-bottom:10px;">
+          <span class="modal-powers-label" id="yellow-powers-label">🟨 كارت أصفر (الفريق الآخر):</span>
+          <button class="modal-power-btn yellow-p" id="myellow-other" onclick="useModalPower('other','yellow')">🟨 كارت أصفر</button>
+        </div>
+
+        <div class="scoring-teams">
+          <div class="scoring-team-col t1">
+            <div class="scoring-team-name" id="score-t1-name">الفريق الأول</div>
+            <div id="score-players-t1"></div>
+          </div>
+          <div class="scoring-team-col t2">
+            <div class="scoring-team-name" id="score-t2-name">الفريق الثاني</div>
+            <div id="score-players-t2"></div>
+          </div>
+        </div>
+        <button class="btn-nobody" onclick="awardNobody()">لا أحد 🚫</button>
+        <button class="btn-confirm-score" id="btn-confirm" onclick="confirmScore()" disabled>تأكيد وإضافة النقاط ✓</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="power-modal" id="hole-modal">
+  <div class="power-modal-box hole-modal">
+    <div class="power-modal-icon">🕳️</div>
+    <div class="power-modal-title" style="color:var(--hole)">الحفرة</div>
+    <div class="power-modal-desc" id="hole-modal-desc">لو أجاب صح ✅ — يأخذ النقاط وتُخصم من الفريق الآخر<br>لو أجاب غلط ❌ — لا شيء يحدث</div>
+    <div class="power-modal-btns">
+      <button class="btn-confirm-power" style="background:var(--hole);color:white;" onclick="confirmModalPower('hole')">تفعيل</button>
+      <button class="btn-cancel-power" onclick="cancelModalPower()">إلغاء</button>
+    </div>
+  </div>
+</div>
+<div class="power-modal" id="yellow-modal">
+  <div class="power-modal-box yellow-modal">
+    <div class="power-modal-icon">🟨</div>
+    <div class="power-modal-title" style="color:var(--card-yellow)">الكارت الأصفر</div>
+    <div class="power-modal-desc" id="yellow-modal-desc">يُستخدم من الفريق الآخر بعد ما يجاوب صح ✅<br>يلغي نقاط السؤال — الفريق ما ياخدش حاجة</div>
+    <div class="power-modal-btns">
+      <button class="btn-confirm-power" style="background:var(--card-yellow);color:#000;" onclick="confirmModalPower('yellow')">تفعيل</button>
+      <button class="btn-cancel-power" onclick="cancelModalPower()">إلغاء</button>
+    </div>
+  </div>
+</div>
+<div class="power-modal" id="red-modal">
+  <div class="power-modal-box red-modal">
+    <div class="power-modal-icon">🟥</div>
+    <div class="power-modal-title" style="color:var(--card-red)">الكارت الأحمر</div>
+    <div class="power-modal-desc" id="red-modal-desc">يُستخدم من الفريق الآخر قبل الإجابة<br>لو أجاب صح ✅ — نص النقاط بس<br>لو أجاب غلط ❌ — ينقص نص نقاط السؤال</div>
+    <div class="power-modal-btns">
+      <button class="btn-confirm-power" style="background:var(--card-red);color:white;" onclick="confirmModalPower('red')">تفعيل</button>
+      <button class="btn-cancel-power" onclick="cancelModalPower()">إلغاء</button>
+    </div>
+  </div>
+</div>
+<div class="power-modal" id="doubleAns-modal">
+  <div class="power-modal-box" style="border-color:#00d4aa;">
+    <div class="power-modal-icon">💬</div>
+    <div class="power-modal-title" style="color:#00d4aa;">الإجابة مرتين</div>
+    <div class="power-modal-desc">لصاحب السؤال — يحق له إجابة ثانية لو الأولى غلط<br>لو الثانية صح ✅ — ياخد النقاط عادي<br>لو الثانية غلط ❌ — لا شيء</div>
+    <div class="power-modal-btns">
+      <button class="btn-confirm-power" style="background:#00d4aa;color:#000;" onclick="confirmModalPower('doubleAns')">تفعيل</button>
+      <button class="btn-cancel-power" onclick="cancelModalPower()">إلغاء</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ============================================================
+// STATE & AUTH VARIABLES
+// ============================================================
+let authData = { token: null, username: null };
+let isRegisterMode = false;
+
+let state = {
+  teams: { 1:{name:'الفريق الأول',players:[]}, 2:{name:'الفريق الثاني',players:[]} },
+  scores: { 1:0, 2:0 },
+  playerScores: {}, playerAnswers: {},
+  selectedCategories: [],
+  gameData: null,
+  doubleInfo: null,
+  powers: { 1:{hole:false,yellow:false,red:false,doubleAns:false}, 2:{hole:false,yellow:false,red:false,doubleAns:false} },
+  activePower: null,
+  pendingModalPower: null,
+  currentQ: null,
+  timerInterval: null,
+  timerPhase: null,
+  selectedWinner: null,
+  currentTurn: 1,
+};
+
+// ============================================================
+// SYSTEM INIT & PERSISTENCE
+// ============================================================
+window.onload = () => {
+  const savedAuth = localStorage.getItem('hq_auth');
+  if (savedAuth) {
+    authData = JSON.parse(savedAuth);
+    document.getElementById('logged-in-user').textContent = authData.username;
+    if (!loadGameState()) {
+      showPage('setup');
+    }
+  }
+};
+
+function saveGameState() {
+  if (state.gameData) {
+    const stateToSave = { ...state, currentQ: null }; 
+    localStorage.setItem('hq_state', JSON.stringify(stateToSave));
+  }
+}
+
+function loadGameState() {
+  const saved = localStorage.getItem('hq_state');
+  if (saved) {
+    const parsedState = JSON.parse(saved);
+    if (parsedState.gameData) {
+      state = parsedState;
+      buildGameBoard();
+      updateGameHeader();
+      
+      state.gameData.forEach((cat, ci) => {
+        cat.questions.forEach((q, qi) => {
+          if (q.isDone) {
+            const btn = document.getElementById(`qbtn-${ci}-${qi}`);
+            if (btn) {
+              btn.classList.add('done');
+              btn.textContent = '✓';
+            }
+          }
+        });
+      });
+      showPage('game');
+      return true;
+    }
+  }
+  return false;
+}
+
+function clearGameState() {
+  localStorage.removeItem('hq_state');
+}
+
+function showToast(msg, color) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.style.borderColor = color || 'var(--border)';
+  t.style.color = color || 'var(--text)';
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2500);
+}
+
+// ============================================================
+// AUTHENTICATION
+// ============================================================
+function toggleAuthMode() {
+  isRegisterMode = !isRegisterMode;
+  document.getElementById('auth-title').textContent = isRegisterMode ? 'إنشاء حساب جديد' : 'تسجيل الدخول';
+  document.getElementById('btn-auth').textContent = isRegisterMode ? 'سجل' : 'دخول';
+  document.getElementById('auth-switch').textContent = isRegisterMode ? 'لديك حساب بالفعل؟ سجل دخول' : 'ليس لديك حساب؟ سجل الآن';
+}
+
+async function handleAuth() {
+  const username = document.getElementById('auth-username').value.trim();
+  const password = document.getElementById('auth-password').value;
+  if(!username || !password) return showToast('ادخل البيانات كاملة','var(--accent2)');
+
+  const endpoint = isRegisterMode ? '/api/register' : '/api/login';
+  try {
+    const res = await fetch(endpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ username, password })
+    });
+    const data = await res.json();
+    if (data.error) throw new Error(data.error);
+    
+    authData = { token: data.token, username: data.username };
+    localStorage.setItem('hq_auth', JSON.stringify(authData));
+    document.getElementById('logged-in-user').textContent = authData.username;
+    showPage('setup');
+    showToast('تم بنجاح!','var(--accent3)');
+  } catch(e) {
+    showToast(e.message, 'var(--accent2)');
+  }
+}
+
+function logout() {
+  localStorage.removeItem('hq_auth');
+  clearGameState();
+  authData = { token: null, username: null };
+  document.getElementById('auth-username').value = '';
+  document.getElementById('auth-password').value = '';
+  showPage('auth');
+}
+
+// ============================================================
+// SETUP
+// ============================================================
+function addPlayer(team) {
+  const container = document.getElementById(`players${team}`);
+  const count = container.querySelectorAll('.player-input-row').length + 1;
+  const arabicNums = ['١','٢','٣','٤','٥','٦','٧','٨','٩','١٠'];
+  const row = document.createElement('div');
+  row.className = 'player-input-row';
+  row.innerHTML = `<span class="player-num">${arabicNums[count-1]||count}</span>
+    <input type="text" class="input-field player-input" placeholder="اسم اللاعب">
+    <button class="btn-remove-player" onclick="removePlayer(this)">×</button>`;
+  container.appendChild(row);
+}
+function removePlayer(btn) {
+  const row = btn.closest('.player-input-row');
+  const container = row.parentElement;
+  if (container.querySelectorAll('.player-input-row').length > 1) { row.remove(); renumberPlayers(container); }
+}
+function renumberPlayers(container) {
+  const arabicNums = ['١','٢','٣','٤','٥','٦','٧','٨','٩','١٠'];
+  container.querySelectorAll('.player-input-row').forEach((row,i) => { row.querySelector('.player-num').textContent = arabicNums[i]||(i+1); });
+}
+function getTeamPlayers(team) {
+  return Array.from(document.querySelectorAll(`#players${team} .player-input`)).map(i=>i.value.trim()).filter(v=>v);
+}
+function goToCategories() {
+  const t1name = document.getElementById('team1-name').value.trim()||'الفريق الأول';
+  const t2name = document.getElementById('team2-name').value.trim()||'الفريق الثاني';
+  const p1 = getTeamPlayers(1), p2 = getTeamPlayers(2);
+  if (!p1.length||!p2.length) { alert('أضف لاعباً واحداً على الأقل لكل فريق'); return; }
+  state.teams[1]={name:t1name,players:p1}; state.teams[2]={name:t2name,players:p2};
+  state.selectedCategories = [];
+  loadCategories(); showPage('categories');
+}
+
+// ============================================================
+// CATEGORIES
+// ============================================================
+async function loadCategories() {
+  try {
+    const res = await fetch('/api/categories', {
+        headers: { 'Authorization': authData.token }
+    });
+    if(res.status === 401) return logout();
+    renderCategories(await res.json());
+  } catch(e) { document.getElementById('categories-container').innerHTML='<p style="color:var(--accent2);text-align:center;">خطأ في تحميل الكاتيجوريز</p>'; }
+}
+function renderCategories(data) {
+  const container = document.getElementById('categories-container');
+  container.innerHTML = '';
+  for (const [group, cats] of Object.entries(data)) {
+    const sec = document.createElement('div');
+    sec.className = 'group-section';
+    sec.innerHTML = `<div class="group-title">${group}</div><div class="categories-grid" id="grp-${group}"></div>`;
+    container.appendChild(sec);
+    const grid = sec.querySelector('.categories-grid');
+    cats.forEach(cat => {
+      const card = document.createElement('div');
+      card.className = 'cat-card'+(cat.possible_games===0?' no-games':'');
+      card.dataset.file = cat.file; card.dataset.name = cat.name;
+      let gl='',gc='good';
+      if (cat.possible_games===0){gl='انتهت الأسئلة';gc='bad';}
+      else if (cat.possible_games===1){gl='لعبة واحدة متبقية';gc='warn';}
+      else gl=`${cat.possible_games} لعبة متبقية`;
+      card.innerHTML = `<div class="cat-name">${cat.name}</div><div class="cat-games-left ${gc}">${gl}</div>`;
+      if (cat.possible_games > 0) card.onclick = () => toggleCategory(card);
+      grid.appendChild(card);
+    });
+  }
+}
+function toggleCategory(card) {
+  const file=card.dataset.file, name=card.dataset.name;
+  const idx = state.selectedCategories.findIndex(c=>c.file===file);
+  if (idx>=0) { state.selectedCategories.splice(idx,1); card.classList.remove('selected'); }
+  else {
+    if (state.selectedCategories.length>=6) { alert('لا يمكن اختيار أكثر من ٦ كاتيجوريز'); return; }
+    state.selectedCategories.push({file,name}); card.classList.add('selected');
+  }
+  const count = state.selectedCategories.length;
+  document.getElementById('sel-count').textContent = count;
+  document.getElementById('btn-start-game').disabled = count!==6;
+}
+
+async function startGame() {
+  const files = state.selectedCategories.map(c=>c.file);
+  try {
+    const res = await fetch('/api/start-game',{
+      method:'POST',
+      headers:{'Content-Type':'application/json', 'Authorization': authData.token},
+      body:JSON.stringify({selected_files:files})
+    });
+    const data = await res.json();
+    if (data.error){alert(data.error);return;}
+    
+    state.gameData = data.categories;
+    state.doubleInfo = data.double_points;
+    state.scores = {1:0,2:0};
+    state.currentTurn = 1;
+    state.playerScores={}; state.playerAnswers={};
+    [...state.teams[1].players,...state.teams[2].players].forEach(p=>{state.playerScores[p]=0;state.playerAnswers[p]=0;});
+    state.powers = {1:{hole:false,yellow:false,red:false,doubleAns:false},2:{hole:false,yellow:false,red:false,doubleAns:false}};
+    state.activePower = null;
+    
+    saveGameState();
+    buildGameBoard(); updateGameHeader(); showPage('game');
+  } catch(e){alert('خطأ في بدء اللعبة');}
+}
+
+// ============================================================
+// GAME BOARD
+// ============================================================
+function buildGameBoard() {
+  document.getElementById('game-board-row1').innerHTML = '';
+  document.getElementById('game-board-row2').innerHTML = '';
+
+  state.gameData.forEach((cat, ci) => {
+    const node = document.createElement('div');
+    node.className = 'category-node';
+    const q200 = cat.questions.filter(q=>q.points===200);
+    const q400 = cat.questions.filter(q=>q.points===400);
+    const q600 = cat.questions.filter(q=>q.points===600);
+    const pairs = [[q200[0],q200[1]],[q400[0],q400[1]],[q600[0],q600[1]]];
+    let armsHTML = '<div class="q-arms">';
+    pairs.forEach(([qa,qb]) => {
+      if(!qa || !qb) return;
+      const pts = qa.points;
+      const idxA = cat.questions.findIndex(x=>x.index===qa.index);
+      const idxB = cat.questions.findIndex(x=>x.index===qb.index);
+      armsHTML += `<div class="q-pair">
+        <button class="q-btn pts-${pts}" id="qbtn-${ci}-${idxA}" onclick="openQuestion(${ci},${idxA})">${pts}</button>
+        <button class="q-btn pts-${pts}" id="qbtn-${ci}-${idxB}" onclick="openQuestion(${ci},${idxB})">${pts}</button>
+      </div>`;
+    });
+    armsHTML += '</div>';
+    node.innerHTML = `<div class="cat-circle"><div class="cat-circle-inner">${cat.category}</div></div>${armsHTML}`;
+    document.getElementById(ci < 3 ? 'game-board-row1' : 'game-board-row2').appendChild(node);
+  });
+}
+
+function updateGameHeader() {
+  document.getElementById('header-team1-name').textContent = state.teams[1].name;
+  document.getElementById('header-team2-name').textContent = state.teams[2].name;
+  document.getElementById('score-team1').textContent = state.scores[1];
+  document.getElementById('score-team2').textContent = state.scores[2];
+  updateTurnIndicator();
+}
+
+function updateTurnIndicator() {
+  const el = document.getElementById('turn-indicator');
+  el.textContent = `دور ${state.teams[state.currentTurn].name}`;
+  el.className = `turn-indicator t${state.currentTurn}`;
+}
+
+function adjustScore(team, delta) {
+  state.scores[team] += delta;
+  document.getElementById(`score-team${team}`).textContent = state.scores[team];
+  showToast(`${state.teams[team].name}: ${delta > 0 ? '+' : ''}${delta} نقطة`, team===1?'var(--team1)':'var(--team2)');
+  saveGameState();
+}
+
+// ============================================================
+// QUESTION MODAL
+// ============================================================
+function openQuestion(catIndex, qIndex) {
+  const btn = document.getElementById(`qbtn-${catIndex}-${qIndex}`);
+  if (btn.classList.contains('done')) return;
+  const cat = state.gameData[catIndex];
+  const q = cat.questions[qIndex];
+  const isDouble = state.doubleInfo && state.doubleInfo.cat_index===catIndex && state.doubleInfo.q_index===qIndex;
+  state.currentQ = {catIndex,qIndex,q,cat,isDouble,btnEl:btn};
+  state.selectedWinner = null;
+  state.activePower = null;
+
+  document.getElementById('modal-q-text').textContent = q.q;
+  document.getElementById('modal-cat-label').textContent = cat.category;
+
+  const doubleBadge = document.getElementById('double-badge');
+  if (isDouble) { doubleBadge.classList.add('shown'); }
+  else { doubleBadge.classList.remove('shown'); }
+
+  const pts = isDouble ? q.points*2 : q.points;
+  const badge = document.getElementById('modal-pts-badge');
+  badge.textContent = `${pts} نقطة${isDouble?' ⚡':''}`;
+  badge.style.background = q.points===200?'rgba(79,142,247,.2)':q.points===400?'rgba(0,212,170,.2)':'rgba(255,215,0,.2)';
+  badge.style.color = q.points===200?'#4f8ef7':q.points===400?'#00d4aa':'#ffd700';
+
+  document.getElementById('answer-section').classList.remove('visible');
+  document.getElementById('answer-text').textContent = q.a;
+  document.getElementById('scoring-section').classList.remove('visible');
+  document.getElementById('active-power-banner').classList.remove('shown','hole','red','yellow');
+
+  document.getElementById('phase-pre').style.display = 'block';
+  document.getElementById('phase-main').style.display = 'none';
+  document.getElementById('phase-pass').style.display = 'none';
+
+  document.getElementById('timer-num').textContent = '-';
+  document.getElementById('timer-label').textContent = `سؤال ${state.teams[state.currentTurn].name}`;
+  document.getElementById('timer-team-indicator').textContent = '';
+  setTimerRing(60,60,'main');
+
+  document.getElementById('btn-confirm').disabled = true;
+
+  refreshModalPowers();
+  buildScoringPlayers();
+
+  document.getElementById('q-modal').classList.add('open');
+}
+
+function refreshModalPowers() {
+  const cur = state.currentTurn;
+  const other = cur === 1 ? 2 : 1;
+
+  document.getElementById('pre-powers-label').textContent = `⚡ خواص ${state.teams[cur].name}:`;
+  document.getElementById('red-powers-label').textContent = `🟥 كارت أحمر (${state.teams[other].name}):`;
+  document.getElementById('yellow-powers-label').textContent = `🟨 كارت أصفر (${state.teams[other].name}):`;
+
+  const holeBtn = document.getElementById('mpre-hole');
+  holeBtn.disabled = state.powers[cur].hole;
+  holeBtn.classList.toggle('used', state.powers[cur].hole);
+  holeBtn.classList.remove('active-p');
+
+  const daBtn = document.getElementById('mpre-double-ans');
+  daBtn.disabled = state.powers[cur].doubleAns;
+  daBtn.classList.toggle('used', state.powers[cur].doubleAns);
+  daBtn.classList.remove('active-p');
+
+  const redBtn = document.getElementById('mred-other');
+  redBtn.disabled = state.powers[other].red;
+  redBtn.classList.toggle('used', state.powers[other].red);
+  redBtn.classList.remove('active-p');
+
+  const yellowBtn = document.getElementById('myellow-other');
+  yellowBtn.disabled = state.powers[other].yellow;
+  yellowBtn.classList.toggle('used', state.powers[other].yellow);
+  yellowBtn.classList.remove('active-p');
+}
+
+function useModalPower(teamRole, type) {
+  const cur = state.currentTurn;
+  const other = cur === 1 ? 2 : 1;
+  const resolvedTeam = teamRole === 'current' ? cur : other;
+
+  if (state.powers[resolvedTeam][type]) { showToast('هذه الخاصية استُخدمت من قبل!','var(--accent2)'); return; }
+  if (state.activePower) { showToast('هناك خاصية مفعّلة بالفعل!','var(--card-yellow)'); return; }
+  state.pendingModalPower = { resolvedTeam, type };
+  document.getElementById(`${type}-modal`).classList.add('open');
+}
+
+function confirmModalPower(type) {
+  document.getElementById(`${type}-modal`).classList.remove('open');
+  const { resolvedTeam } = state.pendingModalPower;
+  state.powers[resolvedTeam][type] = true;
+  state.activePower = { team: resolvedTeam, type };
+  state.pendingModalPower = null;
+
+  const btnMap = { hole:'mpre-hole', doubleAns:'mpre-double-ans', red:'mred-other', yellow:'myellow-other' };
+  const btn = document.getElementById(btnMap[type]);
+  if (btn) { btn.disabled=true; btn.classList.add('used'); btn.classList.remove('active-p'); }
+
+  const names = { hole:'🕳️ الحفرة مفعّلة', red:'🟥 الكارت الأحمر مفعّل', yellow:'🟨 الكارت الأصفر مفعّل', doubleAns:'💬 إجابة مرتين مفعّلة' };
+  const teamName = state.teams[resolvedTeam].name;
+  const banner = document.getElementById('active-power-banner');
+  banner.textContent = `${names[type]} — ${teamName}`;
+  const colorMap = { hole:'var(--hole)', red:'var(--card-red)', yellow:'var(--card-yellow)', doubleAns:'var(--accent3)' };
+  banner.className = `active-power-banner shown`;
+  banner.style.background = `${colorMap[type]}22`;
+  banner.style.borderColor = colorMap[type];
+  banner.style.color = colorMap[type];
+
+  showToast(`${names[type]} — ${teamName}`, colorMap[type]);
+}
+
+function cancelModalPower() {
+  ['hole-modal','yellow-modal','red-modal','doubleAns-modal'].forEach(id=>document.getElementById(id).classList.remove('open'));
+  state.pendingModalPower = null;
+}
+
+// ============================================================
+// TIMER
+// ============================================================
+function setTimerRing(timeLeft, total, phase) {
+  const ring = document.getElementById('timer-ring');
+  const circumference = 188;
+  ring.style.strokeDashoffset = circumference - (timeLeft/total)*circumference;
+  ring.style.stroke = phase==='pass'?'#f59e0b':timeLeft<=10?'#ef4444':'#6c63ff';
+}
+
+function startMainTimer() {
+  clearInterval(state.timerInterval);
+  state.timerPhase = 'main';
+  let timeLeft = 60;
+  const teamName = state.teams[state.currentTurn].name;
+  const teamColor = state.currentTurn===1?'var(--team1)':'var(--team2)';
+
+  document.getElementById('timer-label').textContent = `دور ${teamName}`;
+  document.getElementById('timer-team-indicator').textContent = teamName;
+  document.getElementById('timer-team-indicator').style.color = teamColor;
+  document.getElementById('timer-num').textContent = timeLeft;
+  setTimerRing(timeLeft,60,'main');
+
+  document.getElementById('phase-pre').style.display = 'none';
+  document.getElementById('phase-main').style.display = 'block';
+
+  state.timerInterval = setInterval(() => {
+    timeLeft--;
+    document.getElementById('timer-num').textContent = timeLeft;
+    setTimerRing(timeLeft,60,'main');
+    if (timeLeft<=0) { clearInterval(state.timerInterval); document.getElementById('timer-label').textContent='انتهى الوقت!'; }
+  }, 1000);
+}
+
+function passToTeam2() {
+  clearInterval(state.timerInterval);
+  state.timerPhase = 'pass';
+  let timeLeft = 10;
+  const otherTeam = state.currentTurn===1?2:1;
+  const teamName = state.teams[otherTeam].name;
+
+  document.getElementById('timer-label').textContent = `فرصة ${teamName}`;
+  document.getElementById('timer-team-indicator').textContent = teamName;
+  document.getElementById('timer-team-indicator').style.color = otherTeam===1?'var(--team1)':'var(--team2)';
+  document.getElementById('timer-num').textContent = timeLeft;
+  setTimerRing(timeLeft,10,'pass');
+
+  document.getElementById('phase-main').style.display = 'none';
+  document.getElementById('phase-pass').style.display = 'block';
+
+  state.timerInterval = setInterval(() => {
+    timeLeft--;
+    document.getElementById('timer-num').textContent = timeLeft;
+    setTimerRing(timeLeft,10,'pass');
+    if (timeLeft<=0) { clearInterval(state.timerInterval); document.getElementById('timer-label').textContent='انتهى الوقت!'; skipToReveal(); }
+  }, 1000);
+}
+
+function skipToReveal() {
+  clearInterval(state.timerInterval);
+  document.getElementById('phase-pre').style.display = 'none';
+  document.getElementById('phase-main').style.display = 'none';
+  document.getElementById('phase-pass').style.display = 'none';
+  document.getElementById('answer-section').classList.add('visible');
+  document.getElementById('scoring-section').classList.add('visible');
+}
+
+// ============================================================
+// SCORING & GAME OVER
+// ============================================================
+function buildScoringPlayers() {
+  [1,2].forEach(t => {
+    const container = document.getElementById(`score-players-t${t}`);
+    container.innerHTML = '';
+    document.getElementById(`score-t${t}-name`).textContent = state.teams[t].name;
+    state.teams[t].players.forEach(p => {
+      const btn = document.createElement('button');
+      btn.className = 'player-score-btn';
+      btn.textContent = p;
+      btn.onclick = () => selectWinner(btn,p,t);
+      container.appendChild(btn);
+    });
+  });
+}
+
+function selectWinner(btn, playerName, team) {
+  document.querySelectorAll('.player-score-btn').forEach(b=>b.classList.remove('selected-winner'));
+  btn.classList.add('selected-winner');
+  state.selectedWinner = {playerName,team};
+  document.getElementById('btn-confirm').disabled = false;
+}
+
+function awardNobody() {
+  document.querySelectorAll('.player-score-btn').forEach(b=>b.classList.remove('selected-winner'));
+  state.selectedWinner = {playerName:null,team:0};
+  document.getElementById('btn-confirm').disabled = false;
+}
+
+function confirmScore() {
+  const {currentQ} = state;
+  if (!currentQ) return;
+  const winner = state.selectedWinner;
+  const ap = state.activePower;
+
+  let basePts = currentQ.isDouble ? currentQ.q.points*2 : currentQ.q.points;
+
+  if (ap && ap.type==='yellow') {
+    basePts = 0;
+    showToast('🟨 الكارت الأصفر — تم إلغاء النقاط!','var(--card-yellow)');
+  }
+
+  if (ap && ap.type==='red') {
+    basePts = Math.floor(basePts/2);
+  }
+
+  if (ap && ap.type==='doubleAns') {
+    showToast('💬 إجابة مرتين — النقاط عادية','var(--accent3)');
+  }
+
+  if (winner && winner.team>0 && winner.playerName) {
+    state.scores[winner.team] += basePts;
+
+    if (ap && ap.type==='hole') {
+      const otherTeam = winner.team===1?2:1;
+      const deduct = currentQ.isDouble ? currentQ.q.points*2 : currentQ.q.points;
+      state.scores[otherTeam] -= deduct;
+      showToast(`🕳️ الحفرة — خُصم ${deduct} من ${state.teams[otherTeam].name}`,'var(--hole)');
+    }
+
+    if (ap && ap.type==='red') {
+      showToast(`🟥 كارت أحمر — ${basePts} نقطة فقط`,'var(--card-red)');
+    }
+
+    state.playerScores[winner.playerName] = (state.playerScores[winner.playerName]||0) + basePts;
+    state.playerAnswers[winner.playerName] = (state.playerAnswers[winner.playerName]||0) + 1;
+    document.getElementById('score-team1').textContent = state.scores[1];
+    document.getElementById('score-team2').textContent = state.scores[2];
+  }
+
+  state.gameData[currentQ.catIndex].questions[currentQ.qIndex].isDone = true;
+  saveGameState();
+
+  state.currentTurn = state.currentTurn===1?2:1;
+  updateTurnIndicator();
+
+  currentQ.btnEl.classList.add('done');
+  currentQ.btnEl.textContent = '✓';
+  state.activePower = null;
+  document.getElementById('q-modal').classList.remove('open');
+  clearInterval(state.timerInterval);
+  checkGameOver();
+}
+
+function checkGameOver() {
+  const allDone = Array.from(document.querySelectorAll('.q-btn')).every(b=>b.classList.contains('done'));
+  if (allDone) {
+    clearGameState();
+    setTimeout(showEndGame,800);
+  }
+}
+
+// دالة إرجاع الأسئلة في حالة إنهاء اللعبة مبكراً
+async function refundUnusedQuestions() {
+  if (!state.gameData || !authData.token) return;
+  const unused = [];
+  state.gameData.forEach(cat => {
+    cat.questions.forEach(q => {
+      if (!q.isDone) {
+        unused.push({ file: cat.file, index: q.index });
+      }
+    });
+  });
+  
+  if (unused.length > 0) {
+    try {
+      await fetch('/api/refund-questions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Authorization': authData.token },
+        body: JSON.stringify({ refund_data: unused })
+      });
+    } catch(e) { console.error("Error refunding questions:", e); }
+  }
+}
+
+async function forceEndGame() {
+  if (confirm("هل أنت متأكد أنك تريد إنهاء اللعبة الآن وإعلان النتيجة؟ سيتم حفظ الأسئلة التي لم تُفتح للمرات القادمة.")) {
+    await refundUnusedQuestions(); // استرجاع الأسئلة المتبقية
+    clearGameState();
+    showEndGame();
+  }
+}
+
+// ============================================================
+// END GAME
+// ============================================================
+function showEndGame() {
+  const winner = state.scores[1]>state.scores[2]?1:state.scores[2]>state.scores[1]?2:0;
+  document.getElementById('end-t1-name').textContent = state.teams[1].name;
+  document.getElementById('end-t1-name2').textContent = state.teams[1].name;
+  document.getElementById('end-t2-name').textContent = state.teams[2].name;
+  document.getElementById('end-t2-name2').textContent = state.teams[2].name;
+  document.getElementById('end-t1-score').textContent = state.scores[1];
+  document.getElementById('end-t2-score').textContent = state.scores[2];
+  if (winner===0) { document.getElementById('end-winner-title').textContent='تعادل! 🤝'; document.getElementById('end-winner-name').textContent=''; }
+  else { document.getElementById('end-winner-title').textContent='🏆 الفائز'; document.getElementById('end-winner-name').textContent=state.teams[winner].name; document.getElementById('end-winner-name').style.color=winner===1?'var(--team1)':'var(--team2)'; }
+  let mvp=null,maxPts=-1;
+  for (const [p,pts] of Object.entries(state.playerScores)) { if (pts>maxPts){maxPts=pts;mvp=p;} }
+  if (mvp) {
+    document.getElementById('mvp-name').textContent=mvp;
+    const mvpTeam=state.teams[1].players.includes(mvp)?state.teams[1].name:state.teams[2].name;
+    document.getElementById('mvp-team').textContent=mvpTeam;
+    document.getElementById('mvp-stat').textContent=`${maxPts} نقطة • ${state.playerAnswers[mvp]} إجابة صحيحة`;
+  }
+  [1,2].forEach(t=>{
+    const container=document.getElementById(`stats-team${t}-players`);
+    container.innerHTML='';
+    state.teams[t].players.forEach(p=>{
+      const row=document.createElement('div'); row.className='player-stat-row';
+      row.innerHTML=`<span class="player-stat-name">${p}</span><span class="player-stat-pts" style="color:${t===1?'var(--team1)':'var(--team2)'}">${state.playerScores[p]||0} نقطة</span>`;
+      container.appendChild(row);
+    });
+  });
+  showPage('end');
+}
+
+function newGame() {
+  state.scores={1:0,2:0}; state.playerScores={}; state.playerAnswers={};
+  state.selectedCategories=[]; state.activePower=null; state.currentTurn=1;
+  state.powers={1:{hole:false,yellow:false,red:false,doubleAns:false},2:{hole:false,yellow:false,red:false,doubleAns:false}};
+  showPage('setup');
+}
+
+// ============================================================
+// NAVIGATION
+// ============================================================
+function showPage(name) {
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById(`${name}-page`).classList.add('active');
+}
+function goBack(to){showPage(to);}
+</script>
+</body>
+</html>
