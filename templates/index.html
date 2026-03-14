@@ -503,9 +503,9 @@ body::before {
           <button class="modal-power-btn hole-p" id="mpre-hole" onclick="useModalPower('current','hole')">🕳️ حفرة</button>
           <button class="modal-power-btn double-ans-p" id="mpre-double-ans" onclick="useModalPower('current','doubleAns')">💬 إجابة مرتين</button>
         </div>
-        <div class="modal-powers shown" id="powers-red-pre" style="margin-bottom: 12px;">
-          <span class="modal-powers-label" id="red-powers-label">🟥 كارت أحمر (الفريق الآخر):</span>
-          <button class="modal-power-btn red-p" id="mred-other" onclick="useModalPower('other','red')">🟥 كارت أحمر</button>
+        <div class="modal-powers shown" id="powers-yellow-pre" style="margin-bottom: 12px;">
+          <span class="modal-powers-label" id="yellow-powers-label">🟨 كارت أصفر (الفريق الآخر):</span>
+          <button class="modal-power-btn yellow-p" id="myellow-other" onclick="useModalPower('other','yellow')">🟨 كارت أصفر</button>
         </div>
 
         <div class="phase-controls">
@@ -533,9 +533,9 @@ body::before {
       </div>
 
       <div class="scoring-section" id="scoring-section">
-        <div class="modal-powers shown" id="powers-yellow" style="margin-bottom:10px;">
-          <span class="modal-powers-label" id="yellow-powers-label">🟨 كارت أصفر (الفريق الآخر):</span>
-          <button class="modal-power-btn yellow-p" id="myellow-other" onclick="useModalPower('other','yellow')">🟨 كارت أصفر</button>
+        <div class="modal-powers shown" id="powers-red" style="margin-bottom:10px;">
+          <span class="modal-powers-label" id="red-powers-label">🟥 كارت أحمر (الفريق الآخر):</span>
+          <button class="modal-power-btn red-p" id="mred-other" onclick="useModalPower('other','red')">🟥 كارت أحمر</button>
         </div>
 
         <div class="scoring-teams">
@@ -570,7 +570,7 @@ body::before {
   <div class="power-modal-box yellow-modal">
     <div class="power-modal-icon">🟨</div>
     <div class="power-modal-title" style="color:var(--card-yellow)">الكارت الأصفر</div>
-    <div class="power-modal-desc" id="yellow-modal-desc">يُستخدم من الفريق الآخر بعد ما يجاوب صح ✅<br>يلغي نقاط السؤال — الفريق ما ياخدش حاجة</div>
+    <div class="power-modal-desc" id="yellow-modal-desc">يُستخدم من الفريق الآخر قبل الإجابة<br>لو أجاب صح ✅ — نص النقاط بس<br>لو أجاب غلط ❌ — ينقص نص نقاط السؤال</div>
     <div class="power-modal-btns">
       <button class="btn-confirm-power" style="background:var(--card-yellow);color:#000;" onclick="confirmModalPower('yellow')">تفعيل</button>
       <button class="btn-cancel-power" onclick="cancelModalPower()">إلغاء</button>
@@ -581,7 +581,7 @@ body::before {
   <div class="power-modal-box red-modal">
     <div class="power-modal-icon">🟥</div>
     <div class="power-modal-title" style="color:var(--card-red)">الكارت الأحمر</div>
-    <div class="power-modal-desc" id="red-modal-desc">يُستخدم من الفريق الآخر قبل الإجابة<br>لو أجاب صح ✅ — نص النقاط بس<br>لو أجاب غلط ❌ — ينقص نص نقاط السؤال</div>
+    <div class="power-modal-desc" id="red-modal-desc">يُستخدم من الفريق الآخر بعد ما يجاوب صح ✅<br>يلغي نقاط السؤال — الفريق ما ياخدش حاجة</div>
     <div class="power-modal-btns">
       <button class="btn-confirm-power" style="background:var(--card-red);color:white;" onclick="confirmModalPower('red')">تفعيل</button>
       <button class="btn-cancel-power" onclick="cancelModalPower()">إلغاء</button>
@@ -943,8 +943,9 @@ function refreshModalPowers() {
   const other = cur === 1 ? 2 : 1;
 
   document.getElementById('pre-powers-label').textContent = `⚡ خواص ${state.teams[cur].name}:`;
-  document.getElementById('red-powers-label').textContent = `🟥 كارت أحمر (${state.teams[other].name}):`;
+  // التعديل هنا: تحديث الأسماء لتعكس التبديل
   document.getElementById('yellow-powers-label').textContent = `🟨 كارت أصفر (${state.teams[other].name}):`;
+  document.getElementById('red-powers-label').textContent = `🟥 كارت أحمر (${state.teams[other].name}):`;
 
   const holeBtn = document.getElementById('mpre-hole');
   holeBtn.disabled = state.powers[cur].hole;
@@ -956,15 +957,17 @@ function refreshModalPowers() {
   daBtn.classList.toggle('used', state.powers[cur].doubleAns);
   daBtn.classList.remove('active-p');
 
-  const redBtn = document.getElementById('mred-other');
-  redBtn.disabled = state.powers[other].red;
-  redBtn.classList.toggle('used', state.powers[other].red);
-  redBtn.classList.remove('active-p');
-
+  // الكارت الأصفر أصبح في الـ Pre-phase
   const yellowBtn = document.getElementById('myellow-other');
   yellowBtn.disabled = state.powers[other].yellow;
   yellowBtn.classList.toggle('used', state.powers[other].yellow);
   yellowBtn.classList.remove('active-p');
+
+  // الكارت الأحمر أصبح في الـ Post-phase (scoring)
+  const redBtn = document.getElementById('mred-other');
+  redBtn.disabled = state.powers[other].red;
+  redBtn.classList.toggle('used', state.powers[other].red);
+  redBtn.classList.remove('active-p');
 }
 
 function useModalPower(teamRole, type) {
@@ -985,15 +988,17 @@ function confirmModalPower(type) {
   state.activePower = { team: resolvedTeam, type };
   state.pendingModalPower = null;
 
-  const btnMap = { hole:'mpre-hole', doubleAns:'mpre-double-ans', red:'mred-other', yellow:'myellow-other' };
+  // التعديل هنا لتبديل المعرفات والرسائل
+  const btnMap = { hole:'mpre-hole', doubleAns:'mpre-double-ans', yellow:'myellow-other', red:'mred-other' };
   const btn = document.getElementById(btnMap[type]);
   if (btn) { btn.disabled=true; btn.classList.add('used'); btn.classList.remove('active-p'); }
 
-  const names = { hole:'🕳️ الحفرة مفعّلة', red:'🟥 الكارت الأحمر مفعّل', yellow:'🟨 الكارت الأصفر مفعّل', doubleAns:'💬 إجابة مرتين مفعّلة' };
+  const names = { hole:'🕳️ الحفرة مفعّلة', yellow:'🟨 الكارت الأصفر مفعّل', red:'🟥 الكارت الأحمر مفعّل', doubleAns:'💬 إجابة مرتين مفعّلة' };
   const teamName = state.teams[resolvedTeam].name;
   const banner = document.getElementById('active-power-banner');
   banner.textContent = `${names[type]} — ${teamName}`;
-  const colorMap = { hole:'var(--hole)', red:'var(--card-red)', yellow:'var(--card-yellow)', doubleAns:'var(--accent3)' };
+  
+  const colorMap = { hole:'var(--hole)', yellow:'var(--card-yellow)', red:'var(--card-red)', doubleAns:'var(--accent3)' };
   banner.className = `active-power-banner shown`;
   banner.style.background = `${colorMap[type]}22`;
   banner.style.borderColor = colorMap[type];
@@ -1113,12 +1118,14 @@ function confirmScore() {
 
   let basePts = currentQ.isDouble ? currentQ.q.points*2 : currentQ.q.points;
 
-  if (ap && ap.type==='yellow') {
+  // التعديل هنا: الأحمر هو من يلغي النقاط
+  if (ap && ap.type==='red') {
     basePts = 0;
-    showToast('🟨 الكارت الأصفر — تم إلغاء النقاط!','var(--card-yellow)');
+    showToast('🟥 الكارت الأحمر — تم إلغاء النقاط!','var(--card-red)');
   }
 
-  if (ap && ap.type==='red') {
+  // التعديل هنا: الأصفر هو من يخصم نصف النقاط
+  if (ap && ap.type==='yellow') {
     basePts = Math.floor(basePts/2);
   }
 
@@ -1136,8 +1143,8 @@ function confirmScore() {
       showToast(`🕳️ الحفرة — خُصم ${deduct} من ${state.teams[otherTeam].name}`,'var(--hole)');
     }
 
-    if (ap && ap.type==='red') {
-      showToast(`🟥 كارت أحمر — ${basePts} نقطة فقط`,'var(--card-red)');
+    if (ap && ap.type==='yellow') {
+      showToast(`🟨 كارت أصفر — ${basePts} نقطة فقط`,'var(--card-yellow)');
     }
 
     state.playerScores[winner.playerName] = (state.playerScores[winner.playerName]||0) + basePts;
@@ -1168,7 +1175,6 @@ function checkGameOver() {
   }
 }
 
-// دالة إرجاع الأسئلة في حالة إنهاء اللعبة مبكراً
 async function refundUnusedQuestions() {
   if (!state.gameData || !authData.token) return;
   const unused = [];
@@ -1193,7 +1199,7 @@ async function refundUnusedQuestions() {
 
 async function forceEndGame() {
   if (confirm("هل أنت متأكد أنك تريد إنهاء اللعبة الآن وإعلان النتيجة؟ سيتم حفظ الأسئلة التي لم تُفتح للمرات القادمة.")) {
-    await refundUnusedQuestions(); // استرجاع الأسئلة المتبقية
+    await refundUnusedQuestions();
     clearGameState();
     showEndGame();
   }
