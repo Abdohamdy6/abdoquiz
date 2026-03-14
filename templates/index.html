@@ -423,6 +423,19 @@ body::before {
     </div>
   </div>
 
+  <div id="board-powers-section" style="max-width:1100px; margin:0 auto 16px; background:var(--surface); border:1px solid var(--border); border-radius:16px; padding:16px;">
+    <div class="modal-powers shown" style="justify-content: center;">
+      <span class="modal-powers-label" id="board-cur-powers-label" style="text-align:center;">⚡ خواص فريقك:</span>
+      <button class="modal-power-btn hole-p" id="b-hole" onclick="useModalPower('current','hole')" style="max-width:180px;">🕳️ حفرة</button>
+      <button class="modal-power-btn double-ans-p" id="b-doubleAns" onclick="useModalPower('current','doubleAns')" style="max-width:180px;">💬 إجابة مرتين</button>
+    </div>
+    <div class="modal-powers shown" style="justify-content: center; margin-top:10px;">
+      <span class="modal-powers-label" id="board-other-powers-label" style="text-align:center;">🟨 كارت أصفر (الفريق الآخر):</span>
+      <button class="modal-power-btn yellow-p" id="b-yellow" onclick="useModalPower('other','yellow')" style="max-width:180px;">🟨 كارت أصفر</button>
+    </div>
+    <div class="active-power-banner" id="board-active-banner" style="margin-top:12px; width:100%; max-width:400px; margin-left:auto; margin-right:auto;"></div>
+  </div>
+
   <div class="game-board-wrap">
     <div class="game-board-row" id="game-board-row1"></div>
     <div class="game-board-row" id="game-board-row2"></div>
@@ -498,16 +511,6 @@ body::before {
       </div>
 
       <div id="phase-pre">
-        <div class="modal-powers shown" id="powers-pre">
-          <span class="modal-powers-label" id="pre-powers-label">⚡ خواص فريقك:</span>
-          <button class="modal-power-btn hole-p" id="mpre-hole" onclick="useModalPower('current','hole')">🕳️ حفرة</button>
-          <button class="modal-power-btn double-ans-p" id="mpre-double-ans" onclick="useModalPower('current','doubleAns')">💬 إجابة مرتين</button>
-        </div>
-        <div class="modal-powers shown" id="powers-yellow-pre" style="margin-bottom: 12px;">
-          <span class="modal-powers-label" id="yellow-powers-label">🟨 كارت أصفر (الفريق الآخر):</span>
-          <button class="modal-power-btn yellow-p" id="myellow-other" onclick="useModalPower('other','yellow')">🟨 كارت أصفر</button>
-        </div>
-
         <div class="phase-controls">
           <button class="btn-modal btn-start-timer" onclick="startMainTimer()">⏱ بدأ الوقت</button>
           <button class="btn-modal btn-reveal" onclick="skipToReveal()">إظهار الإجابة</button>
@@ -566,6 +569,7 @@ body::before {
     </div>
   </div>
 </div>
+
 <div class="power-modal" id="yellow-modal">
   <div class="power-modal-box yellow-modal">
     <div class="power-modal-icon">🟨</div>
@@ -577,6 +581,7 @@ body::before {
     </div>
   </div>
 </div>
+
 <div class="power-modal" id="red-modal">
   <div class="power-modal-box red-modal">
     <div class="power-modal-icon">🟥</div>
@@ -653,6 +658,8 @@ function loadGameState() {
       state = parsedState;
       buildGameBoard();
       updateGameHeader();
+      updatePowerBanners();
+      refreshBoardPowers();
       
       state.gameData.forEach((cat, ci) => {
         cat.questions.forEach((q, qi) => {
@@ -834,12 +841,16 @@ async function startGame() {
     state.activePower = null;
     
     saveGameState();
-    buildGameBoard(); updateGameHeader(); showPage('game');
+    buildGameBoard(); 
+    updateGameHeader(); 
+    updatePowerBanners();
+    refreshBoardPowers();
+    showPage('game');
   } catch(e){alert('خطأ في بدء اللعبة');}
 }
 
 // ============================================================
-// GAME BOARD
+// GAME BOARD & POWERS
 // ============================================================
 function buildGameBoard() {
   document.getElementById('game-board-row1').innerHTML = '';
@@ -881,6 +892,7 @@ function updateTurnIndicator() {
   const el = document.getElementById('turn-indicator');
   el.textContent = `دور ${state.teams[state.currentTurn].name}`;
   el.className = `turn-indicator t${state.currentTurn}`;
+  refreshBoardPowers();
 }
 
 function adjustScore(team, delta) {
@@ -889,6 +901,84 @@ function adjustScore(team, delta) {
   showToast(`${state.teams[team].name}: ${delta > 0 ? '+' : ''}${delta} نقطة`, team===1?'var(--team1)':'var(--team2)');
   saveGameState();
 }
+
+function refreshBoardPowers() {
+  const cur = state.currentTurn;
+  const other = cur === 1 ? 2 : 1;
+  
+  document.getElementById('board-cur-powers-label').textContent = `⚡ خواص ${state.teams[cur].name}:`;
+  document.getElementById('board-other-powers-label').textContent = `🟨 كارت أصفر من (${state.teams[other].name}):`;
+  
+  const btnHole = document.getElementById('b-hole');
+  btnHole.disabled = state.powers[cur].hole || state.activePower;
+  btnHole.classList.toggle('used', state.powers[cur].hole);
+
+  const btnDouble = document.getElementById('b-doubleAns');
+  btnDouble.disabled = state.powers[cur].doubleAns || state.activePower;
+  btnDouble.classList.toggle('used', state.powers[cur].doubleAns);
+
+  const btnYellow = document.getElementById('b-yellow');
+  btnYellow.disabled = state.powers[other].yellow || state.activePower;
+  btnYellow.classList.toggle('used', state.powers[other].yellow);
+}
+
+function updatePowerBanners() {
+  const boardBanner = document.getElementById('board-active-banner');
+  const modalBanner = document.getElementById('active-power-banner');
+  
+  if (state.activePower) {
+    const { team, type } = state.activePower;
+    const names = { hole:'🕳️ الحفرة مفعّلة', yellow:'🟨 الكارت الأصفر مفعّل', red:'🟥 الكارت الأحمر مفعّل', doubleAns:'💬 إجابة مرتين مفعّلة' };
+    const colorMap = { hole:'var(--hole)', yellow:'var(--card-yellow)', red:'var(--card-red)', doubleAns:'var(--accent3)' };
+    const text = `${names[type]} — ${state.teams[team].name}`;
+    
+    [boardBanner, modalBanner].forEach(b => {
+      if(!b) return;
+      b.textContent = text;
+      b.className = 'active-power-banner shown';
+      b.style.background = `${colorMap[type]}22`;
+      b.style.borderColor = colorMap[type];
+      b.style.color = colorMap[type];
+    });
+  } else {
+    if(boardBanner) boardBanner.className = 'active-power-banner';
+    if(modalBanner) modalBanner.className = 'active-power-banner';
+  }
+}
+
+function useModalPower(teamRole, type) {
+  const cur = state.currentTurn;
+  const other = cur === 1 ? 2 : 1;
+  const resolvedTeam = teamRole === 'current' ? cur : other;
+
+  if (state.powers[resolvedTeam][type]) { showToast('هذه الخاصية استُخدمت من قبل!','var(--accent2)'); return; }
+  if (state.activePower) { showToast('هناك خاصية مفعّلة بالفعل!','var(--card-yellow)'); return; }
+  state.pendingModalPower = { resolvedTeam, type };
+  document.getElementById(`${type}-modal`).classList.add('open');
+}
+
+function confirmModalPower(type) {
+  document.getElementById(`${type}-modal`).classList.remove('open');
+  const { resolvedTeam } = state.pendingModalPower;
+  state.powers[resolvedTeam][type] = true;
+  state.activePower = { team: resolvedTeam, type };
+  state.pendingModalPower = null;
+
+  updatePowerBanners();
+  refreshBoardPowers(); 
+  if (type === 'red') { refreshModalPowers(); } // Just for UI update if it was red card inside modal
+
+  const names = { hole:'🕳️ الحفرة مفعّلة', yellow:'🟨 الكارت الأصفر مفعّل', red:'🟥 الكارت الأحمر مفعّل', doubleAns:'💬 إجابة مرتين مفعّلة' };
+  const colorMap = { hole:'var(--hole)', yellow:'var(--card-yellow)', red:'var(--card-red)', doubleAns:'var(--accent3)' };
+  
+  showToast(`${names[type]} — ${state.teams[resolvedTeam].name}`, colorMap[type]);
+}
+
+function cancelModalPower() {
+  ['hole-modal','yellow-modal','red-modal','doubleAns-modal'].forEach(id=>document.getElementById(id).classList.remove('open'));
+  state.pendingModalPower = null;
+}
+
 
 // ============================================================
 // QUESTION MODAL
@@ -899,9 +989,10 @@ function openQuestion(catIndex, qIndex) {
   const cat = state.gameData[catIndex];
   const q = cat.questions[qIndex];
   const isDouble = state.doubleInfo && state.doubleInfo.cat_index===catIndex && state.doubleInfo.q_index===qIndex;
+  
+  // شلت تصفير state.activePower عشان الخاصية تفضل شغالة لو اتفعلت من برة
   state.currentQ = {catIndex,qIndex,q,cat,isDouble,btnEl:btn};
   state.selectedWinner = null;
-  state.activePower = null;
 
   document.getElementById('modal-q-text').textContent = q.q;
   document.getElementById('modal-cat-label').textContent = cat.category;
@@ -919,7 +1010,8 @@ function openQuestion(catIndex, qIndex) {
   document.getElementById('answer-section').classList.remove('visible');
   document.getElementById('answer-text').textContent = q.a;
   document.getElementById('scoring-section').classList.remove('visible');
-  document.getElementById('active-power-banner').classList.remove('shown','hole','red','yellow');
+  
+  updatePowerBanners();
 
   document.getElementById('phase-pre').style.display = 'block';
   document.getElementById('phase-main').style.display = 'none';
@@ -941,75 +1033,18 @@ function openQuestion(catIndex, qIndex) {
 function refreshModalPowers() {
   const cur = state.currentTurn;
   const other = cur === 1 ? 2 : 1;
-
-  document.getElementById('pre-powers-label').textContent = `⚡ خواص ${state.teams[cur].name}:`;
-  // التعديل هنا: تحديث الأسماء لتعكس التبديل
-  document.getElementById('yellow-powers-label').textContent = `🟨 كارت أصفر (${state.teams[other].name}):`;
   document.getElementById('red-powers-label').textContent = `🟥 كارت أحمر (${state.teams[other].name}):`;
 
-  const holeBtn = document.getElementById('mpre-hole');
-  holeBtn.disabled = state.powers[cur].hole;
-  holeBtn.classList.toggle('used', state.powers[cur].hole);
-  holeBtn.classList.remove('active-p');
-
-  const daBtn = document.getElementById('mpre-double-ans');
-  daBtn.disabled = state.powers[cur].doubleAns;
-  daBtn.classList.toggle('used', state.powers[cur].doubleAns);
-  daBtn.classList.remove('active-p');
-
-  // الكارت الأصفر أصبح في الـ Pre-phase
-  const yellowBtn = document.getElementById('myellow-other');
-  yellowBtn.disabled = state.powers[other].yellow;
-  yellowBtn.classList.toggle('used', state.powers[other].yellow);
-  yellowBtn.classList.remove('active-p');
-
-  // الكارت الأحمر أصبح في الـ Post-phase (scoring)
   const redBtn = document.getElementById('mred-other');
-  redBtn.disabled = state.powers[other].red;
-  redBtn.classList.toggle('used', state.powers[other].red);
-  redBtn.classList.remove('active-p');
-}
-
-function useModalPower(teamRole, type) {
-  const cur = state.currentTurn;
-  const other = cur === 1 ? 2 : 1;
-  const resolvedTeam = teamRole === 'current' ? cur : other;
-
-  if (state.powers[resolvedTeam][type]) { showToast('هذه الخاصية استُخدمت من قبل!','var(--accent2)'); return; }
-  if (state.activePower) { showToast('هناك خاصية مفعّلة بالفعل!','var(--card-yellow)'); return; }
-  state.pendingModalPower = { resolvedTeam, type };
-  document.getElementById(`${type}-modal`).classList.add('open');
-}
-
-function confirmModalPower(type) {
-  document.getElementById(`${type}-modal`).classList.remove('open');
-  const { resolvedTeam } = state.pendingModalPower;
-  state.powers[resolvedTeam][type] = true;
-  state.activePower = { team: resolvedTeam, type };
-  state.pendingModalPower = null;
-
-  // التعديل هنا لتبديل المعرفات والرسائل
-  const btnMap = { hole:'mpre-hole', doubleAns:'mpre-double-ans', yellow:'myellow-other', red:'mred-other' };
-  const btn = document.getElementById(btnMap[type]);
-  if (btn) { btn.disabled=true; btn.classList.add('used'); btn.classList.remove('active-p'); }
-
-  const names = { hole:'🕳️ الحفرة مفعّلة', yellow:'🟨 الكارت الأصفر مفعّل', red:'🟥 الكارت الأحمر مفعّل', doubleAns:'💬 إجابة مرتين مفعّلة' };
-  const teamName = state.teams[resolvedTeam].name;
-  const banner = document.getElementById('active-power-banner');
-  banner.textContent = `${names[type]} — ${teamName}`;
   
-  const colorMap = { hole:'var(--hole)', yellow:'var(--card-yellow)', red:'var(--card-red)', doubleAns:'var(--accent3)' };
-  banner.className = `active-power-banner shown`;
-  banner.style.background = `${colorMap[type]}22`;
-  banner.style.borderColor = colorMap[type];
-  banner.style.color = colorMap[type];
-
-  showToast(`${names[type]} — ${teamName}`, colorMap[type]);
-}
-
-function cancelModalPower() {
-  ['hole-modal','yellow-modal','red-modal','doubleAns-modal'].forEach(id=>document.getElementById(id).classList.remove('open'));
-  state.pendingModalPower = null;
+  // نقفل الكارت الأحمر لو الفريق استخدمه قبل كدا أو لو في خاصية تانية متفعلة (مفيش خاصيتين مع بعض لنفس السؤال)
+  if (state.powers[other].red || (state.activePower && state.activePower.type !== 'red')) {
+    redBtn.disabled = true;
+  } else {
+    redBtn.disabled = false;
+  }
+  
+  redBtn.classList.toggle('used', state.powers[other].red);
 }
 
 // ============================================================
@@ -1118,13 +1153,11 @@ function confirmScore() {
 
   let basePts = currentQ.isDouble ? currentQ.q.points*2 : currentQ.q.points;
 
-  // التعديل هنا: الأحمر هو من يلغي النقاط
   if (ap && ap.type==='red') {
     basePts = 0;
     showToast('🟥 الكارت الأحمر — تم إلغاء النقاط!','var(--card-red)');
   }
 
-  // التعديل هنا: الأصفر هو من يخصم نصف النقاط
   if (ap && ap.type==='yellow') {
     basePts = Math.floor(basePts/2);
   }
@@ -1154,14 +1187,17 @@ function confirmScore() {
   }
 
   state.gameData[currentQ.catIndex].questions[currentQ.qIndex].isDone = true;
-  saveGameState();
-
+  
   state.currentTurn = state.currentTurn===1?2:1;
-  updateTurnIndicator();
-
   currentQ.btnEl.classList.add('done');
   currentQ.btnEl.textContent = '✓';
+  
+  // تصفير الخواص قبل حفظ الحالة وتحديث البورد
   state.activePower = null;
+  saveGameState();
+  updateTurnIndicator(); // ده هينادي updateBoardPowers من جواه 
+  updatePowerBanners();
+  
   document.getElementById('q-modal').classList.remove('open');
   clearInterval(state.timerInterval);
   checkGameOver();
