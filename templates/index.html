@@ -100,7 +100,7 @@ body::before {
 .team-score-box { text-align:center; min-width:130px; }
 .team-score-box .team-name { font-size:12px; font-weight:600; margin-bottom:2px; }
 .team-score-box .score-row { display:flex; align-items:center; justify-content:center; gap:6px; }
-.score-val { font-size:30px; font-weight:900; line-height:1; }
+.score-val { font-size:30px; font-weight:900; line-height:1; display:inline-block; }
 .team1-color { color:var(--team1); } .team2-color { color:var(--team2); }
 .score-adj-btn { width:24px; height:24px; border-radius:6px; border:1px solid; cursor:pointer; font-size:14px; font-weight:700;
   display:flex; align-items:center; justify-content:center; background:transparent; transition:all .15s; }
@@ -151,20 +151,30 @@ body::before {
 @keyframes pulse-text { 0%,100% { opacity:1; } 50% { opacity:.6; } }
 .modal-pts-badge { display:inline-block; padding:4px 14px; border-radius:20px; font-size:13px; font-weight:700; margin-top:10px; }
 
-.active-power-banner { display:none; padding:8px 16px; border-radius:10px; font-size:13px; font-weight:700; margin-bottom:12px; text-align:center; }
-.active-power-banner.shown { display:block; }
-.active-power-banner.hole { background:rgba(139,92,246,.15); border:1px solid rgba(139,92,246,.3); color:var(--hole); }
-.active-power-banner.red { background:rgba(239,68,68,.12); border:1px solid rgba(239,68,68,.3); color:var(--card-red); }
-.active-power-banner.yellow { background:rgba(245,158,11,.12); border:1px solid rgba(245,158,11,.3); color:var(--card-yellow); }
+.active-power-banner { display:none; padding:10px 16px; border-radius:12px; font-size:13px; font-weight:700; margin-bottom:12px; text-align:center; border: 1px solid transparent; }
+.active-power-banner.shown { display:block; animation: banner-pulse 2s ease-in-out infinite; }
+@keyframes banner-pulse {
+  0%,100% { filter: brightness(1); transform: scale(1); }
+  50% { filter: brightness(1.25); transform: scale(1.01); }
+}
 
 .modal-body { padding:16px 24px 20px; }
 
-.timer-row { display:flex; align-items:center; gap:16px; margin-bottom:14px; background:var(--surface2); border-radius:14px; padding:12px 16px; }
+.timer-row { display:flex; align-items:center; gap:16px; margin-bottom:14px; background:var(--surface2); border-radius:14px; padding:12px 16px; transition: all .3s; }
+.timer-row.timer-warning-anim { animation: timer-shake .35s ease; }
+@keyframes timer-shake {
+  0%,100% { transform: translateX(0); }
+  15% { transform: translateX(-5px); }
+  30% { transform: translateX(5px); }
+  45% { transform: translateX(-4px); }
+  60% { transform: translateX(4px); }
+  75% { transform: translateX(-2px); }
+}
 .timer-ring-wrap { position:relative; width:68px; height:68px; flex-shrink:0; }
 .timer-ring-wrap svg { transform:rotate(-90deg); width:100%; height:100%; }
 .timer-circle-bg { fill:none; stroke:var(--border); stroke-width:5; }
 .timer-circle-fg { fill:none; stroke-width:5; stroke-linecap:round; transition:stroke-dashoffset 1s linear,stroke .5s; stroke-dasharray:188; stroke-dashoffset:0; }
-.timer-num { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:20px; font-weight:900; }
+.timer-num { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; font-size:20px; font-weight:900; transition: color .3s; }
 .timer-info { flex:1; }
 .timer-label { font-size:12px; color:var(--text-dim); margin-bottom:2px; }
 .timer-team-indicator { font-size:17px; font-weight:700; }
@@ -177,26 +187,141 @@ body::before {
 .btn-modal:hover:not(:disabled) { filter:brightness(1.15); transform:translateY(-1px); }
 .btn-modal:disabled { opacity:.4; cursor:not-allowed; transform:none; }
 
+/* ========== POWER SECTION (BOARD) REDESIGN ========== */
+#board-powers-section {
+  max-width: 1100px;
+  margin: 0 auto 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 18px 20px;
+}
+.powers-container {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.power-group-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.power-group-title {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-dim);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.power-cards-row { display: flex; gap: 10px; }
+.power-divider {
+  width: 1px;
+  height: 70px;
+  background: linear-gradient(to bottom, transparent, var(--border), transparent);
+  flex-shrink: 0;
+}
+
+/* Power card base */
+.power-card {
+  position: relative;
+  width: 100px;
+  height: 68px;
+  border-radius: 14px;
+  border: 2px solid;
+  background: transparent;
+  cursor: pointer;
+  font-family: 'Cairo', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  transition: all .35s cubic-bezier(.34,1.56,.64,1);
+  overflow: hidden;
+}
+.power-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  border-radius: inherit;
+  transition: opacity .3s;
+}
+.power-card:hover:not(:disabled):not(.used)::before { opacity: 1; }
+.power-card:hover:not(:disabled):not(.used) {
+  transform: translateY(-5px) scale(1.06);
+}
+.power-card:disabled, .power-card.used {
+  opacity: .2;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+  filter: grayscale(0.5);
+}
+.power-card .pc-icon { font-size: 20px; line-height: 1; display: block; transition: transform .35s cubic-bezier(.34,1.56,.64,1); pointer-events: none; }
+.power-card:hover:not(:disabled):not(.used) .pc-icon { transform: scale(1.25) rotate(-8deg); }
+.power-card .pc-name { font-size: 10px; font-weight: 700; display: block; pointer-events: none; }
+
+/* Power card colors */
+.power-card.hole-p { border-color: var(--hole); color: var(--hole); }
+.power-card.hole-p::before { background: rgba(139,92,246,.18); }
+.power-card.hole-p:hover:not(:disabled):not(.used) { box-shadow: 0 10px 35px rgba(139,92,246,.55), 0 0 15px rgba(139,92,246,.3); border-color: #a78bfa; }
+
+.power-card.double-ans-p { border-color: var(--accent3); color: var(--accent3); }
+.power-card.double-ans-p::before { background: rgba(0,212,170,.18); }
+.power-card.double-ans-p:hover:not(:disabled):not(.used) { box-shadow: 0 10px 35px rgba(0,212,170,.55); }
+
+.power-card.yellow-p { border-color: var(--card-yellow); color: var(--card-yellow); }
+.power-card.yellow-p::before { background: rgba(245,158,11,.18); }
+.power-card.yellow-p:hover:not(:disabled):not(.used) { box-shadow: 0 10px 35px rgba(245,158,11,.55); }
+
+/* Active power card pulse */
+@keyframes card-active-pulse {
+  0%,100% { box-shadow: 0 0 10px currentColor; filter: brightness(1.1); }
+  50% { box-shadow: 0 0 30px currentColor, 0 0 60px currentColor; filter: brightness(1.4); }
+}
+.power-card.active-glow { animation: card-active-pulse 1.5s ease-in-out infinite; }
+
+/* ========== MODAL POWER BUTTONS ========== */
 .modal-powers { display:none; gap:8px; margin-bottom:12px; align-items:center; }
 .modal-powers.shown { display:flex; flex-wrap:wrap; }
 .modal-powers-label { font-size:12px; color:var(--text-dim); margin-bottom:6px; width: 100%; }
-.modal-power-btn { padding:7px 14px; border-radius:9px; border:2px solid; cursor:pointer; font-family:'Cairo',sans-serif; font-size:12px; font-weight:700;
-  background:transparent; transition:all .2s; display:flex; align-items:center; gap:5px; flex:1; justify-content:center; }
+.modal-power-btn {
+  padding:10px 16px; border-radius:12px; border:2px solid; cursor:pointer;
+  font-family:'Cairo',sans-serif; font-size:12px; font-weight:700;
+  background:transparent; transition:all .3s cubic-bezier(.34,1.56,.64,1);
+  display:flex; align-items:center; gap:6px; flex:1; justify-content:center;
+  position: relative; overflow: hidden;
+}
+.modal-power-btn::before {
+  content: ''; position: absolute; inset: 0; opacity: 0;
+  border-radius: inherit; transition: opacity .3s;
+}
+.modal-power-btn:hover:not(:disabled)::before { opacity: 1; }
 .modal-power-btn.hole-p { border-color:var(--hole); color:var(--hole); }
+.modal-power-btn.hole-p::before { background: rgba(139,92,246,.15); }
 .modal-power-btn.yellow-p { border-color:var(--card-yellow); color:var(--card-yellow); }
+.modal-power-btn.yellow-p::before { background: rgba(245,158,11,.15); }
 .modal-power-btn.red-p { border-color:var(--card-red); color:var(--card-red); }
+.modal-power-btn.red-p::before { background: rgba(239,68,68,.15); }
 .modal-power-btn.double-ans-p { border-color:var(--accent3); color:var(--accent3); }
-.modal-power-btn:hover:not(:disabled) { transform:scale(1.05); filter:brightness(1.2); }
+.modal-power-btn.double-ans-p::before { background: rgba(0,212,170,.15); }
+.modal-power-btn:hover:not(:disabled) { transform:scale(1.04) translateY(-2px); box-shadow: 0 6px 20px currentColor; }
 .modal-power-btn:disabled, .modal-power-btn.used { opacity:.25; cursor:not-allowed; transform:none; }
-.modal-power-btn.active-p { box-shadow:0 0 12px currentColor; filter:brightness(1.2); }
+.modal-power-btn.active-p { animation: card-active-pulse 1.5s ease-in-out infinite; }
 
 .answer-section { display:none; background:rgba(0,212,170,.08); border:1px solid rgba(0,212,170,.2); border-radius:12px; padding:14px 18px; margin-bottom:12px; }
-.answer-section.visible { display:block; }
+.answer-section.visible { display:block; animation: fade-up .3s ease; }
+@keyframes fade-up { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
 .answer-label { font-size:11px; color:var(--accent3); letter-spacing:2px; margin-bottom:5px; }
 .answer-text { font-size:19px; font-weight:700; color:var(--accent3); }
 
 .scoring-section { display:none; }
-.scoring-section.visible { display:block; }
+.scoring-section.visible { display:block; animation: fade-up .3s ease .1s both; }
 .scoring-teams { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:10px; }
 .scoring-team-col { background:var(--surface2); border-radius:12px; padding:12px; }
 .scoring-team-col.t1 { border-top:2px solid var(--team1); }
@@ -215,22 +340,44 @@ body::before {
 .btn-confirm-score:hover:not(:disabled) { filter:brightness(1.1); transform:translateY(-1px); }
 .btn-confirm-score:disabled { opacity:.4; cursor:not-allowed; transform:none; }
 
+/* ========== POWER ACTIVATION MODAL ========== */
 .power-modal { display:none; position:fixed; inset:0; background:rgba(0,0,0,.7); z-index:1100; justify-content:center; align-items:center; padding: 16px; }
 .power-modal.open { display:flex; }
-.power-modal-box { background:var(--surface); border-radius:20px; padding:28px; max-width:380px; width:100%; text-align:center; border:2px solid; animation:modal-in .3s ease; }
-.power-modal-box.hole-modal { border-color:var(--hole); }
-.power-modal-box.yellow-modal { border-color:var(--card-yellow); }
-.power-modal-box.red-modal { border-color:var(--card-red); }
-.power-modal-icon { font-size:44px; margin-bottom:10px; }
-.power-modal-title { font-size:20px; font-weight:700; margin-bottom:6px; }
+.power-modal-box { background:var(--surface); border-radius:20px; padding:28px; max-width:380px; width:100%; text-align:center; border:2px solid; animation:power-modal-in .4s cubic-bezier(.34,1.56,.64,1); }
+@keyframes power-modal-in {
+  from { transform: scale(.6) rotate(-5deg); opacity:0; }
+  to { transform: scale(1) rotate(0deg); opacity:1; }
+}
+.power-modal-box.hole-modal { border-color:var(--hole); box-shadow: 0 0 40px rgba(139,92,246,.3); }
+.power-modal-box.yellow-modal { border-color:var(--card-yellow); box-shadow: 0 0 40px rgba(245,158,11,.3); }
+.power-modal-box.red-modal { border-color:var(--card-red); box-shadow: 0 0 40px rgba(239,68,68,.3); }
+.power-modal-icon { font-size:52px; margin-bottom:10px; animation: icon-bounce .6s cubic-bezier(.34,1.56,.64,1); display:block; }
+@keyframes icon-bounce {
+  from { transform: scale(0) rotate(-20deg); }
+  to { transform: scale(1) rotate(0deg); }
+}
+.power-modal-title { font-size:22px; font-weight:700; margin-bottom:6px; }
 .power-modal-desc { color:var(--text-dim); font-size:13px; margin-bottom:18px; line-height:1.6; }
 .power-modal-btns { display:flex; gap:10px; flex-direction: row; }
-.btn-confirm-power { flex:1; padding:12px; border:none; border-radius:10px; font-family:'Cairo',sans-serif; font-size:14px; font-weight:700; cursor:pointer; }
-.btn-cancel-power { flex:1; padding:12px; background:var(--surface2); border:1px solid var(--border); border-radius:10px; color:var(--text-dim); font-family:'Cairo',sans-serif; font-size:14px; cursor:pointer; }
+.btn-confirm-power { flex:1; padding:12px; border:none; border-radius:10px; font-family:'Cairo',sans-serif; font-size:14px; font-weight:700; cursor:pointer; transition: all .2s; }
+.btn-confirm-power:hover { filter: brightness(1.15); transform: translateY(-1px); }
+.btn-cancel-power { flex:1; padding:12px; background:var(--surface2); border:1px solid var(--border); border-radius:10px; color:var(--text-dim); font-family:'Cairo',sans-serif; font-size:14px; cursor:pointer; transition: all .2s; }
+.btn-cancel-power:hover { border-color: var(--accent2); color: var(--text); }
 
+/* ========== SCORE ANIMATION ========== */
+@keyframes score-bump {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.55); filter: brightness(1.5); }
+  55% { transform: scale(0.92); }
+  75% { transform: scale(1.12); }
+  100% { transform: scale(1); filter: brightness(1); }
+}
+.score-bump-anim { animation: score-bump .55s cubic-bezier(.34,1.56,.64,1) !important; }
+
+/* ========== END PAGE ========== */
 #end-page { min-height:100vh; padding:40px 20px; max-width:900px; margin:0 auto; }
 .winner-banner { text-align:center; margin-bottom:40px; }
-.winner-trophy { font-size:80px; margin-bottom:16px; }
+.winner-trophy { font-size:80px; margin-bottom:16px; display:block; }
 .winner-title { font-size:48px; font-weight:900; background:linear-gradient(135deg,var(--gold),#ffaa00); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; }
 .winner-name { font-size:28px; font-weight:700; margin-top:8px; }
 .stats-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; width:100%; margin-bottom:32px; }
@@ -249,6 +396,17 @@ body::before {
 .toast { position:fixed; bottom:24px; left:50%; width: 90%; max-width: 400px; text-align: center; transform:translateX(-50%) translateY(100px); background:var(--surface); border:1px solid var(--border);
   border-radius:12px; padding:12px 24px; font-size:14px; font-weight:600; z-index:9999; transition:transform .3s cubic-bezier(.34,1.56,.64,1); pointer-events:none; }
 .toast.show { transform:translateX(-50%) translateY(0); }
+
+/* ========== MUTE BUTTON ========== */
+#mute-btn {
+  position: fixed; bottom: 20px; right: 20px; z-index: 9990;
+  width: 40px; height: 40px; border-radius: 50%;
+  background: var(--surface); border: 1px solid var(--border);
+  color: var(--text-dim); font-size: 18px; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: all .2s; box-shadow: 0 4px 12px rgba(0,0,0,.3);
+}
+#mute-btn:hover { border-color: var(--accent); color: var(--text); transform: scale(1.1); }
 
 @media (max-width: 768px) {
   .user-header-controls { top: 10px; left: 10px; gap: 6px; }
@@ -288,7 +446,7 @@ body::before {
   .modal-powers { gap: 6px; }
   .modal-power-btn { padding: 8px; font-size: 11px; }
   .power-modal-box { padding: 20px; border-radius: 16px; }
-  .power-modal-icon { font-size: 36px; margin-bottom: 8px; }
+  .power-modal-icon { font-size: 40px; margin-bottom: 8px; }
   .power-modal-title { font-size: 18px; }
   .power-modal-desc { font-size: 12px; margin-bottom: 14px; }
   .power-modal-btns { flex-direction: column; }
@@ -297,12 +455,17 @@ body::before {
   .winner-trophy { font-size: 60px; }
   .stats-grid { grid-template-columns: 1fr; gap: 16px; }
   .stats-card { padding: 18px; }
+  .power-card { width: 80px; height: 58px; }
+  .power-card .pc-icon { font-size: 16px; }
+  .power-card .pc-name { font-size: 9px; }
+  .power-divider { height: 55px; }
 }
 </style>
 </head>
 <body>
 
 <div class="toast" id="toast"></div>
+<button id="mute-btn" onclick="SFX.toggle()" title="صوت">🔊</button>
 
 <div id="auth-page" class="page active">
   <div class="logo">
@@ -423,17 +586,34 @@ body::before {
     </div>
   </div>
 
-  <div id="board-powers-section" style="max-width:1100px; margin:0 auto 16px; background:var(--surface); border:1px solid var(--border); border-radius:16px; padding:16px;">
-    <div class="modal-powers shown" style="justify-content: center;">
-      <span class="modal-powers-label" id="board-cur-powers-label" style="text-align:center;">⚡ خواص فريقك:</span>
-      <button class="modal-power-btn hole-p" id="b-hole" onclick="useModalPower('current','hole')" style="max-width:180px;">🕳️ حفرة</button>
-      <button class="modal-power-btn double-ans-p" id="b-doubleAns" onclick="useModalPower('current','doubleAns')" style="max-width:180px;">💬 إجابة مرتين</button>
+  <!-- REDESIGNED POWERS SECTION -->
+  <div id="board-powers-section">
+    <div class="powers-container">
+      <div class="power-group-wrap">
+        <div class="power-group-title" id="board-cur-powers-label">⚡ خواص فريقك</div>
+        <div class="power-cards-row">
+          <button class="power-card hole-p" id="b-hole" onclick="useModalPower('current','hole')">
+            <span class="pc-icon">🕳️</span>
+            <span class="pc-name">الحفرة</span>
+          </button>
+          <button class="power-card double-ans-p" id="b-doubleAns" onclick="useModalPower('current','doubleAns')">
+            <span class="pc-icon">💬</span>
+            <span class="pc-name">إجابة ×٢</span>
+          </button>
+        </div>
+      </div>
+      <div class="power-divider"></div>
+      <div class="power-group-wrap">
+        <div class="power-group-title" id="board-other-powers-label">🟨 ضد الخصم</div>
+        <div class="power-cards-row">
+          <button class="power-card yellow-p" id="b-yellow" onclick="useModalPower('other','yellow')">
+            <span class="pc-icon">🟨</span>
+            <span class="pc-name">كارت أصفر</span>
+          </button>
+        </div>
+      </div>
     </div>
-    <div class="modal-powers shown" style="justify-content: center; margin-top:10px;">
-      <span class="modal-powers-label" id="board-other-powers-label" style="text-align:center;">🟨 كارت أصفر (الفريق الآخر):</span>
-      <button class="modal-power-btn yellow-p" id="b-yellow" onclick="useModalPower('other','yellow')" style="max-width:180px;">🟨 كارت أصفر</button>
-    </div>
-    <div class="active-power-banner" id="board-active-banner" style="margin-top:12px; width:100%; max-width:400px; margin-left:auto; margin-right:auto;"></div>
+    <div class="active-power-banner" id="board-active-banner" style="margin-top:14px; width:100%; max-width:420px; margin-left:auto; margin-right:auto;"></div>
   </div>
 
   <div class="game-board-wrap">
@@ -496,7 +676,7 @@ body::before {
     <div class="modal-body">
       <div class="active-power-banner" id="active-power-banner"></div>
 
-      <div class="timer-row">
+      <div class="timer-row" id="timer-row">
         <div class="timer-ring-wrap">
           <svg viewBox="0 0 68 68">
             <circle class="timer-circle-bg" cx="34" cy="34" r="30"/>
@@ -562,7 +742,7 @@ body::before {
   <div class="power-modal-box hole-modal">
     <div class="power-modal-icon">🕳️</div>
     <div class="power-modal-title" style="color:var(--hole)">الحفرة</div>
-    <div class="power-modal-desc" id="hole-modal-desc">لو أجاب صح ✅ — يأخذ النقاط وتُخصم من الفريق الآخر<br>لو أجاب غلط ❌ — لا شيء يحدث</div>
+    <div class="power-modal-desc" id="hole-modal-desc">لو أجاب صح ✅ — يأخذ النقاط وتُخصم من الفريق الآخر<br>لو أجاب غلط ❌ — لا شيء يحدث<br><small style="color:var(--accent2)">⚠️ تشتغل فقط لو الفريق اللي فعّلها هو اللي أجاب</small></div>
     <div class="power-modal-btns">
       <button class="btn-confirm-power" style="background:var(--hole);color:white;" onclick="confirmModalPower('hole')">تفعيل</button>
       <button class="btn-cancel-power" onclick="cancelModalPower()">إلغاء</button>
@@ -593,8 +773,9 @@ body::before {
     </div>
   </div>
 </div>
+
 <div class="power-modal" id="doubleAns-modal">
-  <div class="power-modal-box" style="border-color:#00d4aa;">
+  <div class="power-modal-box" style="border-color:#00d4aa; box-shadow: 0 0 40px rgba(0,212,170,.25);">
     <div class="power-modal-icon">💬</div>
     <div class="power-modal-title" style="color:#00d4aa;">الإجابة مرتين</div>
     <div class="power-modal-desc">لصاحب السؤال — يحق له إجابة ثانية لو الأولى غلط<br>لو الثانية صح ✅ — ياخد النقاط عادي<br>لو الثانية غلط ❌ — لا شيء</div>
@@ -606,6 +787,127 @@ body::before {
 </div>
 
 <script>
+// ============================================================
+// SOUND ENGINE (Web Audio API)
+// ============================================================
+const SFX = {
+  ctx: null,
+  muted: false,
+
+  _ctx() {
+    if (!this.ctx) this.ctx = new (window.AudioContext || window.webkitAudioContext)();
+    if (this.ctx.state === 'suspended') this.ctx.resume();
+    return this.ctx;
+  },
+
+  toggle() {
+    this.muted = !this.muted;
+    document.getElementById('mute-btn').textContent = this.muted ? '🔇' : '🔊';
+  },
+
+  _tone(freq, type, start, end, vol = 0.25, freqEnd = null) {
+    try {
+      const ctx = this._ctx();
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.type = type;
+      osc.frequency.setValueAtTime(freq, start);
+      if (freqEnd !== null) osc.frequency.linearRampToValueAtTime(freqEnd, end);
+      gain.gain.setValueAtTime(vol, start);
+      gain.gain.exponentialRampToValueAtTime(0.001, end);
+      osc.start(start);
+      osc.stop(end + 0.01);
+    } catch(e) {}
+  },
+
+  play(type) {
+    if (this.muted) return;
+    try {
+      const ctx = this._ctx();
+      const t = ctx.currentTime;
+      ({
+        open:     () => { this._tone(180,'sine',t,t+0.08,0.18,380); this._tone(380,'sine',t+0.06,t+0.22,0.14,560); },
+        start:    () => { this._tone(440,'sine',t,t+0.12,0.22); this._tone(660,'sine',t+0.1,t+0.28,0.18); },
+        tick:     () => this._tone(1000,'square',t,t+0.055,0.07),
+        timeout:  () => { [0,.18,.36].forEach(d => this._tone(280,'sawtooth',t+d,t+d+0.14,0.2)); },
+        pass:     () => { this._tone(320,'sine',t,t+0.1,0.2,520); this._tone(520,'sine',t+0.09,t+0.28,0.15,380); },
+        hole:     () => { this._tone(70,'sawtooth',t,t+0.45,0.3,45); this._tone(140,'sawtooth',t+0.08,t+0.55,0.18,90); this._tone(280,'sine',t,t+0.12,0.12,120); },
+        yellow:   () => { this._tone(900,'sine',t,t+0.07,0.2,1100); this._tone(700,'sine',t+0.08,t+0.22,0.14); },
+        red:      () => { this._tone(180,'sawtooth',t,t+0.18,0.3); this._tone(130,'sawtooth',t+0.12,t+0.4,0.22,80); },
+        double:   () => [523,659,784,1047].forEach((f,i) => this._tone(f,'sine',t+i*0.09,t+i*0.09+0.22,0.18)),
+        score:    () => { this._tone(523,'sine',t,t+0.12,0.22); this._tone(659,'sine',t+0.09,t+0.2,0.2); this._tone(784,'sine',t+0.18,t+0.32,0.22); },
+        nobody:   () => { this._tone(380,'sine',t,t+0.22,0.2,290); this._tone(290,'sine',t+0.2,t+0.5,0.15,220); },
+        fanfare:  () => [523,523,784,784,880,880,1047,784,1047].forEach((f,i) => this._tone(f,'sine',t+i*0.1,t+i*0.1+0.16,0.22)),
+      })[type]?.();
+    } catch(e) {}
+  }
+};
+
+// ============================================================
+// VISUAL FX
+// ============================================================
+function spawnParticles(x, y, color, count = 22) {
+  for (let i = 0; i < count; i++) {
+    const p = document.createElement('div');
+    const size = 5 + Math.random() * 9;
+    const isSquare = Math.random() > 0.6;
+    p.style.cssText = `
+      position:fixed;left:${x}px;top:${y}px;
+      width:${size}px;height:${size}px;
+      background:${color};
+      border-radius:${isSquare ? '2px' : '50%'};
+      pointer-events:none;z-index:9998;
+      transform:translate(-50%,-50%);
+      box-shadow:0 0 ${size}px ${color};
+    `;
+    document.body.appendChild(p);
+    const angle = (i / count) * Math.PI * 2 + (Math.random() - 0.5) * 0.5;
+    const dist = 50 + Math.random() * 130;
+    const tx = Math.cos(angle) * dist;
+    const ty = Math.sin(angle) * dist;
+    const rot = (Math.random() - 0.5) * 900;
+    const anim = p.animate([
+      { transform: `translate(-50%,-50%) scale(1) rotate(0deg)`, opacity: 1 },
+      { transform: `translate(calc(-50% + ${tx}px), calc(-50% + ${ty}px)) scale(0) rotate(${rot}deg)`, opacity: 0 }
+    ], { duration: 550 + Math.random() * 500, easing: 'cubic-bezier(0,.2,.8,1)', fill: 'forwards' });
+    anim.onfinish = () => p.remove();
+  }
+}
+
+function flashScreen(color) {
+  const flash = document.createElement('div');
+  flash.style.cssText = `
+    position:fixed;inset:0;pointer-events:none;z-index:9997;
+    background:radial-gradient(ellipse at center,${color}55 0%,transparent 70%);
+  `;
+  document.body.appendChild(flash);
+  flash.animate([{ opacity: 1 },{ opacity: 0 }], { duration: 550, fill: 'forwards' })
+    .onfinish = () => flash.remove();
+}
+
+function animateScoreEl(teamNum) {
+  const el = document.getElementById(`score-team${teamNum}`);
+  if (!el) return;
+  el.classList.remove('score-bump-anim');
+  void el.offsetWidth;
+  el.classList.add('score-bump-anim');
+  el.addEventListener('animationend', () => el.classList.remove('score-bump-anim'), { once: true });
+}
+
+function spawnEndFireworks() {
+  const colors = ['var(--gold)','var(--accent)','var(--accent2)','var(--accent3)','#ff9500'];
+  let shots = 0;
+  const iv = setInterval(() => {
+    const x = 100 + Math.random() * (window.innerWidth - 200);
+    const y = 80 + Math.random() * (window.innerHeight * 0.5);
+    spawnParticles(x, y, colors[Math.floor(Math.random() * colors.length)], 28);
+    shots++;
+    if (shots >= 6) clearInterval(iv);
+  }, 300);
+}
+
 // ============================================================
 // STATE & AUTH VARIABLES
 // ============================================================
@@ -898,6 +1200,7 @@ function updateTurnIndicator() {
 function adjustScore(team, delta) {
   state.scores[team] += delta;
   document.getElementById(`score-team${team}`).textContent = state.scores[team];
+  animateScoreEl(team);
   showToast(`${state.teams[team].name}: ${delta > 0 ? '+' : ''}${delta} نقطة`, team===1?'var(--team1)':'var(--team2)');
   saveGameState();
 }
@@ -906,20 +1209,28 @@ function refreshBoardPowers() {
   const cur = state.currentTurn;
   const other = cur === 1 ? 2 : 1;
   
-  document.getElementById('board-cur-powers-label').textContent = `⚡ خواص ${state.teams[cur].name}:`;
-  document.getElementById('board-other-powers-label').textContent = `🟨 كارت أصفر من (${state.teams[other].name}):`;
+  document.getElementById('board-cur-powers-label').textContent = `⚡ خواص ${state.teams[cur].name}`;
+  document.getElementById('board-other-powers-label').textContent = `🟨 كارت أصفر (${state.teams[other].name})`;
   
   const btnHole = document.getElementById('b-hole');
-  btnHole.disabled = state.powers[cur].hole || state.activePower;
+  btnHole.disabled = state.powers[cur].hole || !!state.activePower;
   btnHole.classList.toggle('used', state.powers[cur].hole);
 
   const btnDouble = document.getElementById('b-doubleAns');
-  btnDouble.disabled = state.powers[cur].doubleAns || state.activePower;
+  btnDouble.disabled = state.powers[cur].doubleAns || !!state.activePower;
   btnDouble.classList.toggle('used', state.powers[cur].doubleAns);
 
   const btnYellow = document.getElementById('b-yellow');
-  btnYellow.disabled = state.powers[other].yellow || state.activePower;
+  btnYellow.disabled = state.powers[other].yellow || !!state.activePower;
   btnYellow.classList.toggle('used', state.powers[other].yellow);
+
+  // active glow on active power's button
+  ['b-hole','b-doubleAns','b-yellow'].forEach(id => document.getElementById(id).classList.remove('active-glow'));
+  if (state.activePower) {
+    const typeToBtn = { hole:'b-hole', doubleAns:'b-doubleAns', yellow:'b-yellow' };
+    const btnId = typeToBtn[state.activePower.type];
+    if (btnId) document.getElementById(btnId)?.classList.add('active-glow');
+  }
 }
 
 function updatePowerBanners() {
@@ -966,10 +1277,18 @@ function confirmModalPower(type) {
 
   updatePowerBanners();
   refreshBoardPowers(); 
-  if (type === 'red') { refreshModalPowers(); } // Just for UI update if it was red card inside modal
+  if (type === 'red') { refreshModalPowers(); }
 
-  const names = { hole:'🕳️ الحفرة مفعّلة', yellow:'🟨 الكارت الأصفر مفعّل', red:'🟥 الكارت الأحمر مفعّل', doubleAns:'💬 إجابة مرتين مفعّلة' };
   const colorMap = { hole:'var(--hole)', yellow:'var(--card-yellow)', red:'var(--card-red)', doubleAns:'var(--accent3)' };
+  const names = { hole:'🕳️ الحفرة مفعّلة', yellow:'🟨 الكارت الأصفر مفعّل', red:'🟥 الكارت الأحمر مفعّل', doubleAns:'💬 إجابة مرتين مفعّلة' };
+  
+  // Sound + visual FX
+  SFX.play(type);
+  flashScreen(colorMap[type]);
+  // Spawn particles from center of screen
+  setTimeout(() => {
+    spawnParticles(window.innerWidth / 2, window.innerHeight / 2, colorMap[type], 30);
+  }, 80);
   
   showToast(`${names[type]} — ${state.teams[resolvedTeam].name}`, colorMap[type]);
 }
@@ -990,7 +1309,6 @@ function openQuestion(catIndex, qIndex) {
   const q = cat.questions[qIndex];
   const isDouble = state.doubleInfo && state.doubleInfo.cat_index===catIndex && state.doubleInfo.q_index===qIndex;
   
-  // شلت تصفير state.activePower عشان الخاصية تفضل شغالة لو اتفعلت من برة
   state.currentQ = {catIndex,qIndex,q,cat,isDouble,btnEl:btn};
   state.selectedWinner = null;
 
@@ -1018,6 +1336,7 @@ function openQuestion(catIndex, qIndex) {
   document.getElementById('phase-pass').style.display = 'none';
 
   document.getElementById('timer-num').textContent = '-';
+  document.getElementById('timer-num').style.color = '';
   document.getElementById('timer-label').textContent = `سؤال ${state.teams[state.currentTurn].name}`;
   document.getElementById('timer-team-indicator').textContent = '';
   setTimerRing(60,60,'main');
@@ -1027,6 +1346,7 @@ function openQuestion(catIndex, qIndex) {
   refreshModalPowers();
   buildScoringPlayers();
 
+  SFX.play('open');
   document.getElementById('q-modal').classList.add('open');
 }
 
@@ -1037,7 +1357,6 @@ function refreshModalPowers() {
 
   const redBtn = document.getElementById('mred-other');
   
-  // نقفل الكارت الأحمر لو الفريق استخدمه قبل كدا أو لو في خاصية تانية متفعلة (مفيش خاصيتين مع بعض لنفس السؤال)
   if (state.powers[other].red || (state.activePower && state.activePower.type !== 'red')) {
     redBtn.disabled = true;
   } else {
@@ -1054,7 +1373,7 @@ function setTimerRing(timeLeft, total, phase) {
   const ring = document.getElementById('timer-ring');
   const circumference = 188;
   ring.style.strokeDashoffset = circumference - (timeLeft/total)*circumference;
-  ring.style.stroke = phase==='pass'?'#f59e0b':timeLeft<=10?'#ef4444':'#6c63ff';
+  ring.style.stroke = phase==='pass'?'#f59e0b':timeLeft<=10?'#ef4444':timeLeft<=20?'#f59e0b':'#6c63ff';
 }
 
 function startMainTimer() {
@@ -1068,16 +1387,33 @@ function startMainTimer() {
   document.getElementById('timer-team-indicator').textContent = teamName;
   document.getElementById('timer-team-indicator').style.color = teamColor;
   document.getElementById('timer-num').textContent = timeLeft;
+  document.getElementById('timer-num').style.color = '';
   setTimerRing(timeLeft,60,'main');
 
   document.getElementById('phase-pre').style.display = 'none';
   document.getElementById('phase-main').style.display = 'block';
 
+  SFX.play('start');
+
   state.timerInterval = setInterval(() => {
     timeLeft--;
     document.getElementById('timer-num').textContent = timeLeft;
     setTimerRing(timeLeft,60,'main');
-    if (timeLeft<=0) { clearInterval(state.timerInterval); document.getElementById('timer-label').textContent='انتهى الوقت!'; }
+
+    if (timeLeft <= 10 && timeLeft > 0) {
+      SFX.play('tick');
+      document.getElementById('timer-num').style.color = '#ef4444';
+      const timerRow = document.getElementById('timer-row');
+      timerRow.classList.remove('timer-warning-anim');
+      void timerRow.offsetWidth;
+      timerRow.classList.add('timer-warning-anim');
+    }
+
+    if (timeLeft <= 0) {
+      clearInterval(state.timerInterval);
+      document.getElementById('timer-label').textContent='انتهى الوقت!';
+      SFX.play('timeout');
+    }
   }, 1000);
 }
 
@@ -1092,16 +1428,20 @@ function passToTeam2() {
   document.getElementById('timer-team-indicator').textContent = teamName;
   document.getElementById('timer-team-indicator').style.color = otherTeam===1?'var(--team1)':'var(--team2)';
   document.getElementById('timer-num').textContent = timeLeft;
+  document.getElementById('timer-num').style.color = '';
   setTimerRing(timeLeft,10,'pass');
 
   document.getElementById('phase-main').style.display = 'none';
   document.getElementById('phase-pass').style.display = 'block';
 
+  SFX.play('pass');
+
   state.timerInterval = setInterval(() => {
     timeLeft--;
     document.getElementById('timer-num').textContent = timeLeft;
     setTimerRing(timeLeft,10,'pass');
-    if (timeLeft<=0) { clearInterval(state.timerInterval); document.getElementById('timer-label').textContent='انتهى الوقت!'; skipToReveal(); }
+    if (timeLeft <= 5 && timeLeft > 0) SFX.play('tick');
+    if (timeLeft<=0) { clearInterval(state.timerInterval); document.getElementById('timer-label').textContent='انتهى الوقت!'; SFX.play('timeout'); skipToReveal(); }
   }, 1000);
 }
 
@@ -1143,6 +1483,7 @@ function awardNobody() {
   document.querySelectorAll('.player-score-btn').forEach(b=>b.classList.remove('selected-winner'));
   state.selectedWinner = {playerName:null,team:0};
   document.getElementById('btn-confirm').disabled = false;
+  SFX.play('nobody');
 }
 
 function confirmScore() {
@@ -1156,6 +1497,7 @@ function confirmScore() {
   if (ap && ap.type==='red') {
     basePts = 0;
     showToast('🟥 الكارت الأحمر — تم إلغاء النقاط!','var(--card-red)');
+    flashScreen('var(--card-red)');
   }
 
   if (ap && ap.type==='yellow') {
@@ -1169,11 +1511,15 @@ function confirmScore() {
   if (winner && winner.team>0 && winner.playerName) {
     state.scores[winner.team] += basePts;
 
-    if (ap && ap.type==='hole') {
+    // *** FIX: الحفرة تشتغل بس لو الفريق اللي فعّلها هو اللي أجاب صح ***
+    if (ap && ap.type==='hole' && winner.team === ap.team) {
       const otherTeam = winner.team===1?2:1;
       const deduct = currentQ.isDouble ? currentQ.q.points*2 : currentQ.q.points;
       state.scores[otherTeam] -= deduct;
+      flashScreen('var(--hole)');
+      spawnParticles(window.innerWidth/2, window.innerHeight/2, 'var(--hole)', 25);
       showToast(`🕳️ الحفرة — خُصم ${deduct} من ${state.teams[otherTeam].name}`,'var(--hole)');
+      animateScoreEl(otherTeam);
     }
 
     if (ap && ap.type==='yellow') {
@@ -1184,6 +1530,12 @@ function confirmScore() {
     state.playerAnswers[winner.playerName] = (state.playerAnswers[winner.playerName]||0) + 1;
     document.getElementById('score-team1').textContent = state.scores[1];
     document.getElementById('score-team2').textContent = state.scores[2];
+    
+    // Score animation + sound
+    animateScoreEl(winner.team);
+    SFX.play('score');
+    const winColor = winner.team===1?'var(--team1)':'var(--team2)';
+    flashScreen(winColor);
   }
 
   state.gameData[currentQ.catIndex].questions[currentQ.qIndex].isDone = true;
@@ -1192,10 +1544,9 @@ function confirmScore() {
   currentQ.btnEl.classList.add('done');
   currentQ.btnEl.textContent = '✓';
   
-  // تصفير الخواص قبل حفظ الحالة وتحديث البورد
   state.activePower = null;
   saveGameState();
-  updateTurnIndicator(); // ده هينادي updateBoardPowers من جواه 
+  updateTurnIndicator();
   updatePowerBanners();
   
   document.getElementById('q-modal').classList.remove('open');
@@ -1272,6 +1623,10 @@ function showEndGame() {
     });
   });
   showPage('end');
+  
+  // Fanfare + fireworks
+  SFX.play('fanfare');
+  setTimeout(spawnEndFireworks, 300);
 }
 
 function newGame() {
