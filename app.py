@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify, request
+from flask import Flask, render_template, jsonify, request, send_from_directory
 import json
 import re
 import os
@@ -198,6 +198,10 @@ def pick_questions_for_category(file_rel_path, user_id):
         "questions": questions
     }
 
+
+@app.route("/static/images/<filename>")
+def serve_image(filename):
+    return send_from_directory(BASE_DIR / "static" / "images", filename)
 
 @app.route("/")
 def index():
