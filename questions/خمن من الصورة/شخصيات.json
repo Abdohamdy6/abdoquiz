@@ -455,237 +455,117 @@
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Tiger_Woods_in_May_2019.jpg/960px-Tiger_Woods_in_May_2019.jpg",
       "q": "من هو؟",
       "a": "تايجر وودز"
-    },
-    {
-      "points": 600,
-      "desc": "نيكولا تسلا",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Tesla_circa_1890.jpeg/500px-Tesla_circa_1890.jpeg",
-      "q": "من هو؟",
-      "a": "تسلا"
-    },
-    {
-      "points": 600,
-      "desc": "ألان تورنغ",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Alan_Turing_%281951%29_%28crop%29.jpg/500px-Alan_Turing_%281951%29_%28crop%29.jpg",
-      "q": "من هو؟",
-      "a": "ألان تورنغ"
-    },
-    {
-      "points": 600,
-      "desc": "ستيفن هوكينج",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Stephen_Hawking.StarChild.jpg",
-      "q": "من هو؟",
-      "a": "ستيفن هوكينج"
-    },
-    {
-      "points": 600,
-      "desc": "تشارلز داروين",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Charles_Darwin_portrait.jpg/500px-Charles_Darwin_portrait.jpg",
-      "q": "من هو؟",
-      "a": "داروين"
-    },
-    {
-      "points": 600,
-      "desc": "سيغموند فرويد",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Sigmund_Freud%2C_by_Max_Halberstadt_%28cropped%29.jpg/960px-Sigmund_Freud%2C_by_Max_Halberstadt_%28cropped%29.jpg",
-      "q": "من هو؟",
-      "a": "فرويد"
-    },
-    {
-      "points": 600,
-      "desc": "نيتشه",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Nietzsche187a.jpg/960px-Nietzsche187a.jpg",
-      "q": "من هو؟",
-      "a": "نيتشه"
-    },
-    {
-      "points": 600,
-      "desc": "دوستويفسكي",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Vasily_Perov_-_%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_-_Google_Art_Project.jpg/960px-Vasily_Perov_-_%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_-_Google_Art_Project.jpg",
-      "q": "من هو؟",
-      "a": "دوستويفسكي"
-    },
-    {
-      "points": 600,
-      "desc": "جورج أورويل",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/George_Orwell%2C_c._1940_%2841928180381%29.jpg/960px-George_Orwell%2C_c._1940_%2841928180381%29.jpg",
-      "q": "من هو؟",
-      "a": "جورج أورويل"
-    },
-    {
-      "points": 600,
-      "desc": "كافكا",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Franz_Kafka%2C_1923.jpg/960px-Franz_Kafka%2C_1923.jpg",
-      "q": "من هو؟",
-      "a": "فرانز كافكا"
-    },
-    {
-      "points": 600,
-      "desc": "إرنست همنغواي",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/ErnestHemingway.jpg/960px-ErnestHemingway.jpg",
-      "q": "من هو؟",
-      "a": "همنغواي"
-    },
-    {
-      "points": 600,
-      "desc": "بابلو نيرودا",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Pablo_Neruda_1963.jpg/500px-Pablo_Neruda_1963.jpg",
-      "q": "من هو؟",
-      "a": "بابلو نيرودا"
-    },
-    {
-      "points": 600,
-      "desc": "ماركو بولو",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Marco_Polo_portrait.jpg/250px-Marco_Polo_portrait.jpg",
-      "q": "من هو؟",
-      "a": "ماركو بولو"
-    },
-    {
-      "points": 600,
-      "desc": "ابن بطوطة",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Bust_of_Ibn_Battuta_at_Ibn_Battuta_museum.jpg/960px-Bust_of_Ibn_Battuta_at_Ibn_Battuta_museum.jpg",
-      "q": "من هو؟",
-      "a": "ابن بطوطة"
-    },
-    {
-      "points": 600,
-      "desc": "فاسكو دا غاما",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ignoto_portoghese%2C_ritratto_di_un_cavaliere_dell%27ordine_di_cristo%2C_1525-50_ca._02.jpg/960px-Ignoto_portoghese%2C_ritratto_di_un_cavaliere_dell%27ordine_di_cristo%2C_1525-50_ca._02.jpg",
-      "q": "من هو؟",
-      "a": "فاسكو دا غاما"
-    },
-    {
-      "points": 600,
-      "desc": "ماجلان",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Retrato_de_Hernando_de_Magallanes.jpg/960px-Retrato_de_Hernando_de_Magallanes.jpg",
-      "q": "من هو؟",
-      "a": "ماجلان"
-    },
-    {
-      "points": 600,
-      "desc": "أكيرا كوروساوا",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Akira_Kurosawa_and_Mikio_Naruse_during_the_shooting_of_Nadare%2C_1937.jpg",
-      "q": "من هو؟",
-      "a": "كوروساوا"
-    },
-    {
-      "points": 600,
-      "desc": "أغاتا كريستي",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Traditional_pizza_from_Napoli.jpg/960px-Traditional_pizza_from_Napoli.jpg",
-      "q": "من هي؟",
-      "a": "أغاتا كريستي"
-    },
-    {
-      "points": 600,
-      "desc": "ألفريد هيتشكوك",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Hitchcock%2C_Alfred_02.jpg/500px-Hitchcock%2C_Alfred_02.jpg",
-      "q": "من هو؟",
-      "a": "هيتشكوك"
-    },
-    {
-      "points": 600,
-      "desc": "تشيخوف",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Anton_Chekhov_1889.jpg/960px-Anton_Chekhov_1889.jpg",
-      "q": "من هو؟",
-      "a": "أنطون تشيخوف"
-    },
-    {
-      "points": 600,
-      "desc": "عمر الخيام",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Omar_Khayyam2.JPG/960px-Omar_Khayyam2.JPG",
-      "q": "من هو؟",
-      "a": "عمر الخيام"
-    },
-    {
-      "points": 600,
-      "desc": "طه حسين",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Taha_Hussein.jpg/330px-Taha_Hussein.jpg",
-      "q": "من هو؟",
-      "a": "طه حسين"
-    },
-    {
-      "points": 600,
-      "desc": "نجيب محفوظ",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Nagib_Mahfouz.jpg/250px-Nagib_Mahfouz.jpg",
-      "q": "من هو؟",
-      "a": "نجيب محفوظ"
-    },
-    {
-      "points": 600,
-      "desc": "جمال حمدان",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Prof_Gamal_Hamdan.jpg/500px-Prof_Gamal_Hamdan.jpg",
-      "q": "من هو؟",
-      "a": "جمال حمدان"
-    },
-    {
-      "points": 600,
-      "desc": "ابن خلدون",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Ibn_Khald%C5%ABn%2C_Sayr_mulhimah_min_al-Sharq_wa-al-Gharb.png/500px-Ibn_Khald%C5%ABn%2C_Sayr_mulhimah_min_al-Sharq_wa-al-Gharb.png",
-      "q": "من هو؟",
-      "a": "ابن خلدون"
-    },
-    {
-      "points": 600,
-      "desc": "ابن رشد",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Statue_of_Averroes_in_C%C3%B3rdoba%2C_Spain.jpg/960px-Statue_of_Averroes_in_C%C3%B3rdoba%2C_Spain.jpg",
-      "q": "من هو؟",
-      "a": "ابن رشد"
-    },
-    {
-      "points": 600,
-      "desc": "صلاح الدين الأيوبي",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Saladin%27s_imaginary_portrait.jpg/250px-Saladin%27s_imaginary_portrait.jpg",
-      "q": "من هو؟",
-      "a": "صلاح الدين الأيوبي"
-    },
-    {
-      "points": 600,
-      "desc": "جنكيز خان",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/YuanEmperorAlbumGenghisPortrait.jpg/960px-YuanEmperorAlbumGenghisPortrait.jpg",
-      "q": "من هو؟",
-      "a": "جنكيز خان"
-    },
-    {
-      "points": 600,
-      "desc": "أتاتورك",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Ataturk1930s.jpg/500px-Ataturk1930s.jpg",
-      "q": "من هو؟",
-      "a": "مصطفى كمال أتاتورك"
-    },
-    {
-      "points": 600,
-      "desc": "تشرشل",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Sir_Winston_Churchill_-_19086236948.jpg/960px-Sir_Winston_Churchill_-_19086236948.jpg",
-      "q": "من هو؟",
-      "a": "تشرشل"
-    },
-    {
-      "points": 600,
-      "desc": "المهدي بن بركة",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Mehdi_Ben_Barka_Anefo.jpg/500px-Mehdi_Ben_Barka_Anefo.jpg",
-      "q": "من هو؟",
-      "a": "بن بركة"
-    },
-    {
-      "points": 600,
-      "desc": "تشومسكي",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Noam_Chomsky_portrait_2017.jpg/960px-Noam_Chomsky_portrait_2017.jpg",
-      "q": "من هو؟",
-      "a": "نعوم تشومسكي"
-    },
-    {
-      "points": 600,
-      "desc": "رونالدو البرازيلي",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Cristiano_Ronaldo_2275_%28cropped%29.jpg/960px-Cristiano_Ronaldo_2275_%28cropped%29.jpg",
-      "q": "من هو؟",
-      "a": "رونالدو نازاريو"
-    },
-    {
-      "points": 600,
-      "desc": "زين الدين زيدان",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Zinedine_Zidane_by_Tasnim_03.jpg/330px-Zinedine_Zidane_by_Tasnim_03.jpg",
-      "q": "من هو؟",
-      "a": "زيدان"
-    }
+    },{
+  "points": 600,
+  "desc": "نيكولا تسلا",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Tesla_circa_1890.jpeg/500px-Tesla_circa_1890.jpeg",
+  "q": "من هو؟ (هينت: مخترع ارتبط اسمه بالتيار المتردد)",
+  "a": "تسلا"
+},
+{
+  "points": 600,
+  "desc": "ألان تورنغ",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Alan_Turing_%281951%29_%28crop%29.jpg/500px-Alan_Turing_%281951%29_%28crop%29.jpg",
+  "q": "من هو؟ (هينت: عالم فك الشيفرات في الحرب العالمية الثانية)",
+  "a": "ألان تورنغ"
+},
+{
+  "points": 600,
+  "desc": "ستيفن هوكينج",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Stephen_Hawking.StarChild.jpg",
+  "q": "من هو؟ (هينت: عالم فيزياء اشتهر بدراساته عن الثقوب السوداء)",
+  "a": "ستيفن هوكينج"
+},
+{
+  "points": 600,
+  "desc": "تشارلز داروين",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Charles_Darwin_portrait.jpg/500px-Charles_Darwin_portrait.jpg",
+  "q": "من هو؟ (هينت: صاحب نظرية التطور)",
+  "a": "داروين"
+},
+{
+  "points": 600,
+  "desc": "سيغموند فرويد",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Sigmund_Freud%2C_by_Max_Halberstadt_%28cropped%29.jpg/960px-Sigmund_Freud%2C_by_Max_Halberstadt_%28cropped%29.jpg",
+  "q": "من هو؟ (هينت: مؤسس التحليل النفسي)",
+  "a": "فرويد"
+},
+{
+  "points": 600,
+  "desc": "نيتشه",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Nietzsche187a.jpg/960px-Nietzsche187a.jpg",
+  "q": "من هو؟ (هينت: فيلسوف قال: مات الإله)",
+  "a": "نيتشه"
+},
+{
+  "points": 600,
+  "desc": "دوستويفسكي",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Vasily_Perov_-_%D0%9F%D0%BE%D1%80%D1%82%D8%B1%D9%8A%D8%AA_%D0%A5%D0%9F%D8%A7%D8%B3%D9%84%D9%81%D9%8A.jpg",
+  "q": "من هو؟ (هينت: كاتب رواية الجريمة والعقاب)",
+  "a": "دوستويفسكي"
+},
+{
+  "points": 600,
+  "desc": "جورج أورويل",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/George_Orwell%2C_c._1940_%2841928180381%29.jpg/960px-George_Orwell%2C_c._1940_%2841928180381%29.jpg",
+  "q": "من هو؟ (هينت: مؤلف رواية 1984)",
+  "a": "جورج أورويل"
+},
+{
+  "points": 600,
+  "desc": "فرانز كافكا",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Franz_Kafka%2C_1923.jpg/960px-Franz_Kafka%2C_1923.jpg",
+  "q": "من هو؟ (هينت: كاتب رواية المسخ)",
+  "a": "فرانز كافكا"
+},
+{
+  "points": 600,
+  "desc": "إرنست همنغواي",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/ErnestHemingway.jpg/960px-ErnestHemingway.jpg",
+  "q": "من هو؟ (هينت: مؤلف العجوز والبحر)",
+  "a": "همنغواي"
+},
+{
+  "points": 600,
+  "desc": "بابلو نيرودا",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Pablo_Neruda_1963.jpg/500px-Pablo_Neruda_1963.jpg",
+  "q": "من هو؟ (هينت: شاعر تشيلي حائز على نوبل)",
+  "a": "بابلو نيرودا"
+},
+{
+  "points": 600,
+  "desc": "ابن بطوطة",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Bust_of_Ibn_Battuta_at_Ibn_Battuta_museum.jpg/960px-Bust_of_Ibn_Battuta_at_Ibn_Battuta_museum.jpg",
+  "q": "من هو؟ (هينت: أشهر رحالة في التاريخ الإسلامي)",
+  "a": "ابن بطوطة"
+},
+{
+  "points": 600,
+  "desc": "أغاتا كريستي",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Agatha_Christie.png/500px-Agatha_Christie.png",
+  "q": "من هي؟ (هينت: ملكة الروايات البوليسية)",
+  "a": "أغاتا كريستي"
+},
+{
+  "points": 600,
+  "desc": "نجيب محفوظ",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Nagib_Mahfouz.jpg/250px-Nagib_Mahfouz.jpg",
+  "q": "من هو؟ (هينت: أول عربي فاز بنوبل في الأدب)",
+  "a": "نجيب محفوظ"
+},
+{
+  "points": 600,
+  "desc": "ابن خلدون",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Ibn_Khald%C5%ABn%2C_Sayr_mulhimah_min_al-Sharq_wa-al-Gharb.png/500px-Ibn_Khald%C5%ABn%2C_Sayr_mulhimah_min_al-Sharq_wa-al-Gharb.png",
+  "q": "من هو؟ (هينت: مؤسس علم الاجتماع)",
+  "a": "ابن خلدون"
+},
+{
+  "points": 600,
+  "desc": "صلاح الدين الأيوبي",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Saladin%27s_imaginary_portrait.jpg/250px-Saladin%27s_imaginary_portrait.jpg",
+  "q": "من هو؟ (هينت: القائد الذي استعاد القدس من الصليبيين)",
+  "a": "صلاح الدين الأيوبي"
+}
   ]
 }
