@@ -18,7 +18,7 @@
     {
       "points": 200,
       "desc": "Goitre",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Thyroid%2C_Diffuse_Hyperplasia.jpg/1280px-Thyroid%2C_Diffuse_Hyperplasia.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Struma_10.jpg/640px-Struma_10.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Goitre (تضخم الغدة الدرقية)"
     },
@@ -39,21 +39,21 @@
     {
       "points": 200,
       "desc": "Jaundice in eye",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/RougeoleDP.jpg/500px-RougeoleDP.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Jaundice08.jpg/440px-Jaundice08.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Jaundice (الصفراء)"
     },
     {
       "points": 200,
       "desc": "Acromegaly face",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Adenome_hypophyse.JPG/1280px-Adenome_hypophyse.JPG",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Acromegaly_mn.jpg/250px-Acromegaly_mn.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Acromegaly (ضخامة الأطراف)"
     },
     {
       "points": 200,
       "desc": "Pitting edema",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/RougeoleDP.jpg/500px-RougeoleDP.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Combinpedal.JPG/1280px-Combinpedal.JPG",
       "q": "ما هو الوصف الطبي لهذه العلامة؟",
       "a": "Pitting edema (وذمة انطباعية)"
     },
@@ -67,7 +67,7 @@
     {
       "points": 200,
       "desc": "Ascites clinical",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Cirrhosis_high_mag.jpg/1280px-Cirrhosis_high_mag.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Abdominal_Ascites.jpg/1280px-Abdominal_Ascites.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Ascites (الاستسقاء)"
     },
@@ -81,14 +81,14 @@
     {
       "points": 200,
       "desc": "Eczema on hand",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/RougeoleDP.jpg/500px-RougeoleDP.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Eczema.jpg/1280px-Eczema.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Eczema (الأكزيما)"
     },
     {
       "points": 200,
       "desc": "Vitiligo on face",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/A_Russian_poster_urging_open_your_eyes_-_against_women_being_abused_%28Transparent%29.png/500px-A_Russian_poster_urging_open_your_eyes_-_against_women_being_abused_%28Transparent%29.png",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Vitiligo2.jpg/220px-Vitiligo2.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Vitiligo (البهاق)"
     },
@@ -109,7 +109,7 @@
     {
       "points": 200,
       "desc": "Urticaria rash",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/RougeoleDP.jpg/500px-RougeoleDP.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Urticaria_%28hives%29_6561.jpg/1280px-Urticaria_%28hives%29_6561.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Urticaria (الأرتيكاريا)"
     },
@@ -130,14 +130,14 @@
     {
       "points": 200,
       "desc": "Hemangioma on skin",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/RougeoleDP.jpg/500px-RougeoleDP.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Strawberry_haemangioma_on_back.jpg/500px-Strawberry_haemangioma_on_back.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Hemangioma (ورم وعائي)"
     },
     {
       "points": 200,
       "desc": "Psoriasis of nails",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/RougeoleDP.jpg/500px-RougeoleDP.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Psoriasis_fingernails.jpg/1280px-Psoriasis_fingernails.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Nail Psoriasis (صدفية الأظافر)"
     },
@@ -151,7 +151,7 @@
     {
       "points": 200,
       "desc": "Inguinal hernia clinical",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Hernia_de_Morgani.JPG/500px-Hernia_de_Morgani.JPG",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Inguinalhernia.gif/1280px-Inguinalhernia.gif",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Inguinal hernia (فتق إربي)"
     },
@@ -165,28 +165,28 @@
     {
       "points": 200,
       "desc": "Scabies rash",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/RougeoleDP.jpg/500px-RougeoleDP.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/ScabiesD.jpg/500px-ScabiesD.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Scabies (الجرب)"
     },
     {
       "points": 400,
       "desc": "Erythema migrans Lyme",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Adult_deer_tick.jpg/1280px-Adult_deer_tick.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Erythema-migrans-edit2.jpg/1280px-Erythema-migrans-edit2.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Lyme disease (داء لايم)"
     },
     {
       "points": 400,
       "desc": "Terry's nails liver",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Dedos_con_acropaquia.jpg/1280px-Dedos_con_acropaquia.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Terry%27s_nails.jpg/1280px-Terry%27s_nails.jpg",
       "q": "هذه العلامة تشير لفشل أي عضو؟",
       "a": "Liver failure (تليف الكبد)"
     },
     {
       "points": 400,
       "desc": "Target cell blood film",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Flag_of_Australia.svg/1280px-Flag_of_Australia.svg.png",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Target_cells_in_hemoglobin_SC_disease.jpg/1280px-Target_cells_in_hemoglobin_SC_disease.jpg",
       "q": "هذه الخلايا تميز أي مرض؟",
       "a": "Thalassemia (الثلاسيميا)"
     },
@@ -200,7 +200,7 @@
     {
       "points": 400,
       "desc": "Pneumothorax X-ray",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/ChineseMedicine-HK.JPG/1280px-ChineseMedicine-HK.JPG",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Spontaneous_pneumothorax.jpg/1280px-Spontaneous_pneumothorax.jpg",
       "q": "ما هو التشخيص الموضح بالأشعة؟",
       "a": "Pneumothorax (استرواح الصدر)"
     },
@@ -221,7 +221,7 @@
     {
       "points": 400,
       "desc": "Negri bodies Rabies",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Rabies_Virus_EM_PHIL_1876.JPG/1280px-Rabies_Virus_EM_PHIL_1876.JPG",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Negri_bodies.jpg/1280px-Negri_bodies.jpg",
       "q": "هذه الأجسام في الدماغ تشخص أي مرض؟",
       "a": "Rabies (السعار)"
     },
@@ -235,7 +235,7 @@
     {
       "points": 400,
       "desc": "Cerebellar atrophy MRI",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Miss_K._R-_aged_14%2C_before_treatment_for_anorexia_Wellcome_L0073694_%28cropped%29.jpg/1280px-Miss_K._R-_aged_14%2C_before_treatment_for_anorexia_Wellcome_L0073694_%28cropped%29.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Cerebellum_atrophy.jpg/1280px-Cerebellum_atrophy.jpg",
       "q": "ما هو العضو المتأثر الموضح بالأشعة؟",
       "a": "Cerebellum (المخيخ)"
     },
@@ -249,7 +249,7 @@
     {
       "points": 400,
       "desc": "Gallstones ultrasound",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Choledochoduodenostomy.png/960px-Choledochoduodenostomy.png",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Gallbladder_Stones.png/1280px-Gallbladder_Stones.png",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Gallstones (حصوات المرارة)"
     },
@@ -312,91 +312,91 @@
     {
       "points": 600,
       "desc": "Acanthocytes Abetalipoproteinemia",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Sphingolipids_general_structures.png/1280px-Sphingolipids_general_structures.png",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Acanthocytes.jpg/1280px-Acanthocytes.jpg",
       "q": "هذه الخلايا تميز أي مرض؟",
       "a": "Abetalipoproteinemia"
     },
     {
       "points": 400,
       "desc": "Atrial fibrillation ECG",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/MCA_Territory_Infarct.svg/1280px-MCA_Territory_Infarct.svg.png",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Atrial_fibrillation.png/1280px-Atrial_fibrillation.png",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Atrial fibrillation (رجفان أذيني)"
     },
     {
       "points": 400,
       "desc": "Ventricular tachycardia ECG",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Arrhythmogenic_right_ventricular_cardiomyopathy_-_histology.jpg/330px-Arrhythmogenic_right_ventricular_cardiomyopathy_-_histology.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Ventricular_tachycardia.png/1280px-Ventricular_tachycardia.png",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Ventricular tachycardia (VT)"
     },
     {
       "points": 400,
       "desc": "Abdominal aortic aneurysm CT",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Gray531.png/500px-Gray531.png",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Aortic_aneurysm.jpg/1280px-Aortic_aneurysm.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Abdominal aortic aneurysm (AAA)"
     },
     {
       "points": 400,
       "desc": "Renal stone X-ray",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Mup1_PDB_1i04.png/500px-Mup1_PDB_1i04.png",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Kidney_stone.jpg/1280px-Kidney_stone.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Nephrolithiasis (حصوات كلى)"
     },
     {
       "points": 400,
       "desc": "Optic disc edema",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Z%C3%A9oltheNASAph_9804672.jpg/500px-Z%C3%A9oltheNASAph_9804672.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Papilledema.jpg/1280px-Papilledema.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Papilledema (وذمة حليمة العصب البصري)"
     },
     {
       "points": 400,
       "desc": "Deep vein thrombosis ultrasound",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Pulmonary-embolism.png/1280px-Pulmonary-embolism.png",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Deep_vein_thrombosis.jpg/1280px-Deep_vein_thrombosis.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "DVT"
     },
     {
       "points": 400,
       "desc": "Intracranial hemorrhage CT",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Pulmonary-embolism.png/1280px-Pulmonary-embolism.png",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Spontaneous_intracranial_haemorrhage.jpg/1280px-Spontaneous_intracranial_haemorrhage.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Intracerebral hemorrhage"
     },
     {
       "points": 400,
       "desc": "Gallbladder stones ultrasound",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Gallbladder_cholesterolosis_micro.jpg/1280px-Gallbladder_cholesterolosis_micro.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Gallbladder_Stones.png/1280px-Gallbladder_Stones.png",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Cholelithiasis (حصوات مرارة)"
     },
     {
       "points": 400,
       "desc": "Rheumatoid nodules hands",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/RougeoleDP.jpg/500px-RougeoleDP.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Rheumatoid_Arthritis.jpg/1280px-Rheumatoid_Arthritis.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Rheumatoid arthritis"
     },
     {
       "points": 400,
       "desc": "Psoriasis plaques skin",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/RougeoleDP.jpg/500px-RougeoleDP.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Psoriasis_vulgaris_2.jpg/1280px-Psoriasis_vulgaris_2.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Psoriasis (صدفية)"
     },
     {
       "points": 400,
       "desc": "Lichen planus purple papules",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/RougeoleDP.jpg/500px-RougeoleDP.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Lichen_planus_wikicommons.jpg/1280px-Lichen_planus_wikicommons.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Lichen planus"
     },
     {
       "points": 400,
       "desc": "Vitiligo hands",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/RougeoleDP.jpg/500px-RougeoleDP.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Vitiligo_26.JPG/1280px-Vitiligo_26.JPG",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Vitiligo (بهاق)"
     },
@@ -445,7 +445,7 @@
     {
       "points": 400,
       "desc": "Osteosarcoma X-ray",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Amphetamine.svg/1280px-Amphetamine.svg.png",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Osteosarcoma_-_X-ray.jpg/1280px-Osteosarcoma_-_X-ray.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Osteosarcoma"
     },
@@ -459,7 +459,7 @@
     {
       "points": 600,
       "desc": "Waterhouse Friderichsen adrenal",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Meninges-ar.svg/1280px-Meninges-ar.svg.png",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Meningococcemia.jpg/1280px-Meningococcemia.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Adrenal hemorrhage (Meningococcemia)"
     },
@@ -480,7 +480,7 @@
     {
       "points": 600,
       "desc": "Blue sclera eye",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/A_close_up_of_a_blue-green_human_iris_%28with_visible_freckle%29..jpg/500px-A_close_up_of_a_blue-green_human_iris_%28with_visible_freckle%29..jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Blue_sclerae.jpg/1280px-Blue_sclerae.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Osteogenesis imperfecta"
     },
@@ -494,14 +494,14 @@
     {
       "points": 600,
       "desc": "Terry's nails fingers",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Beau%27s_line_on_left%2C_middle_fingernail.jpg/960px-Beau%27s_line_on_left%2C_middle_fingernail.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Terry%27s_nails.jpg/1280px-Terry%27s_nails.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Liver cirrhosis"
     },
     {
       "points": 600,
       "desc": "Gottron papules hands",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/RougeoleDP.jpg/500px-RougeoleDP.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Gottron_sign.jpg/1280px-Gottron_sign.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Dermatomyositis"
     },
@@ -515,7 +515,7 @@
     {
       "points": 200,
       "desc": "Tinea versicolor skin",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/RougeoleDP.jpg/500px-RougeoleDP.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Pityriasis_versicolor_before_and_after_treatment.jpg/1280px-Pityriasis_versicolor_before_and_after_treatment.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Tinea versicolor"
     },
@@ -529,21 +529,21 @@
     {
       "points": 200,
       "desc": "Rheumatoid arthritis hands",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/RougeoleDP.jpg/500px-RougeoleDP.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Rheumatoid_Arthritis.JPG/1280px-Rheumatoid_Arthritis.JPG",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Rheumatoid arthritis"
     },
     {
       "points": 200,
       "desc": "Raynaud's phenomenon fingers",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/RougeoleDP.jpg/500px-RougeoleDP.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Raynaud%27s_Phenomenon.jpg/1280px-Raynaud%27s_Phenomenon.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Raynaud's phenomenon"
     },
     {
       "points": 200,
       "desc": "Impetigo skin",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/RougeoleDP.jpg/500px-RougeoleDP.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Impetigo.jpg/1280px-Impetigo.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Impetigo (القوباء)"
     },
@@ -557,7 +557,7 @@
     {
       "points": 200,
       "desc": "Ecthyma gangrenosum",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/RougeoleDP.jpg/500px-RougeoleDP.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Ecthyma_gangrenosum.jpg/1280px-Ecthyma_gangrenosum.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Ecthyma gangrenosum"
     },
@@ -592,7 +592,7 @@
     {
       "points": 200,
       "desc": "Scleroderma hands",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/RougeoleDP.jpg/500px-RougeoleDP.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Systemic_sclerosis_hands.jpg/1280px-Systemic_sclerosis_hands.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Systemic Sclerosis"
     },
@@ -641,7 +641,7 @@
     {
       "points": 200,
       "desc": "Lichen planus skin",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/RougeoleDP.jpg/500px-RougeoleDP.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Lichen_planus_wikicommons.jpg/1280px-Lichen_planus_wikicommons.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Lichen planus"
     },
@@ -662,7 +662,7 @@
     {
       "points": 200,
       "desc": "Common wart verruca",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/RougeoleDP.jpg/500px-RougeoleDP.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Verruca_vulgaris.jpg/1280px-Verruca_vulgaris.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Verruca vulgaris"
     },
@@ -690,49 +690,49 @@
     {
       "points": 400,
       "desc": "Marfan syndrome arachnodactyly",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Lujan.jpg/330px-Lujan.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Arachnodactyly.jpg/1280px-Arachnodactyly.jpg",
       "q": "ما هو التشخيص المرجح؟",
       "a": "Marfan syndrome"
     },
     {
       "points": 400,
       "desc": "Neurofibromatosis type 1 cafe au lait spots",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/RougeoleDP.jpg/500px-RougeoleDP.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Neurofibromatosis_symptom.jpg/1280px-Neurofibromatosis_symptom.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Neurofibromatosis"
     },
     {
       "points": 400,
       "desc": "Sturge Weber syndrome port wine stain",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Sturge-Weber_CT.jpg/250px-Sturge-Weber_CT.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Port-wine-stain.jpg/1280px-Port-wine-stain.jpg",
       "q": "ما هو التشخيص الموضح؟",
       "a": "Sturge Weber syndrome"
     },
     {
       "points": 400,
       "desc": "Wilson disease brain MRI",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Alzheimer%27s_disease_brain_comparison-ar.jpg/1280px-Alzheimer%27s_disease_brain_comparison-ar.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Wilson_disease_basal_ganglia.jpg/1280px-Wilson_disease_basal_ganglia.jpg",
       "q": "ما هو التشخيص الموضح بالأشعة؟",
       "a": "Wilson disease"
     },
     {
       "points": 400,
       "desc": "Multiple sclerosis MRI plaques",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Neuron_Hand-tuned.svg/1280px-Neuron_Hand-tuned.svg.png",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Multiple_sclerosis_MRI.jpg/1280px-Multiple_sclerosis_MRI.jpg",
       "q": "ما هو التشخيص الموضح بالأشعة؟",
       "a": "Multiple sclerosis (MS)"
     },
     {
       "points": 400,
       "desc": "Meningioma MRI",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Anaplastic_astrocytoma.jpg/960px-Anaplastic_astrocytoma.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Contrast_enhanced_MRI_-_Meningioma.jpg/1280px-Contrast_enhanced_MRI_-_Meningioma.jpg",
       "q": "ما هو نوع الورم الموضح بالأشعة؟",
       "a": "Meningioma"
     },
     {
       "points": 400,
       "desc": "Pituitary adenoma MRI",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Oligodendroglioma1_high_mag.jpg/1280px-Oligodendroglioma1_high_mag.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Hypophysomegaly-MRI-T1-contrast-sagittal.jpg/1280px-Hypophysomegaly-MRI-T1-contrast-sagittal.jpg",
       "q": "ما هو نوع الورم الموضح بالأشعة؟",
       "a": "Pituitary adenoma"
     },
@@ -774,14 +774,14 @@
     {
       "points": 600,
       "desc": "Pick bodies histology",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/8/81/Gray940_-_sweat_gland.png",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Pick_bodies.jpg/1280px-Pick_bodies.jpg",
       "q": "ما هو التشخيص الموضح مجهرياً؟",
       "a": "Pick disease"
     },
     {
       "points": 600,
       "desc": "Schaumann body sarcoidosis",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Asteroid_bodies_high_mag_cropped.jpg/500px-Asteroid_bodies_high_mag_cropped.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Schaumann_body.jpg/500px-Schaumann_body.jpg",
       "q": "ما اسم هذه الأجسام الموضحة؟",
       "a": "Schaumann bodies"
     },
@@ -795,7 +795,7 @@
     {
       "points": 600,
       "desc": "Flexner Wintersteiner rosette",
-      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Neuroblastoma_rosettes.jpg/1280px-Neuroblastoma_rosettes.jpg",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Retinoblastoma_Flexner_Wintersteiner.jpg/1280px-Retinoblastoma_Flexner_Wintersteiner.jpg",
       "q": "ما اسم هذا الترتيب الخلوي؟",
       "a": "Flexner Wintersteiner rosette"
     }
