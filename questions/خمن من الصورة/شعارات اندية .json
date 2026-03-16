@@ -1,0 +1,565 @@
+{
+  "category": "شعارات أندية (للمحترفين)",
+  "questions": [
+    {
+      "points": 200,
+      "desc": "نادي نوتينغهام فورست",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Ian_Bowyer.jpg/250px-Ian_Bowyer.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "نوتينغهام فورست"
+    },
+    {
+      "points": 200,
+      "desc": "نادي سانت إتيان",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/DSC_5240_%289326334893%29_%28Claude_Puel%29.jpg/500px-DSC_5240_%289326334893%29_%28Claude_Puel%29.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "سانت إتيان"
+    },
+    {
+      "points": 200,
+      "desc": "نادي أتلتيك بيلباو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/2015_UEFA_Super_Cup_64_crop.jpg/330px-2015_UEFA_Super_Cup_64_crop.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "أتلتيك بيلباو"
+    },
+    {
+      "points": 200,
+      "desc": "نادي ريد بول سالزبورغ",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Dominik_Szoboszlai_04012026_%281%29.jpg/1280px-Dominik_Szoboszlai_04012026_%281%29.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "ريد بول سالزبورغ"
+    },
+    {
+      "points": 200,
+      "desc": "نادي ريفر بليت",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Club_Atl%C3%A9tico_River_Plate_logo.svg/1280px-Club_Atl%C3%A9tico_River_Plate_logo.svg.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "ريفر بليت"
+    },
+    {
+      "points": 200,
+      "desc": "نادي بوكا جونيورز",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Boca_Juniors_logo18.svg/1280px-Boca_Juniors_logo18.svg.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "بوكا جونيورز"
+    },
+    {
+      "points": 200,
+      "desc": "نادي فلامنغو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Clube_de_Regatas_do_Flamengo_logo.svg/1280px-Clube_de_Regatas_do_Flamengo_logo.svg.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "فلامنغو"
+    },
+    {
+      "points": 200,
+      "desc": "نادي سيلتيك",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Celtic_FC_trophy_case.JPG/1280px-Celtic_FC_trophy_case.JPG",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "نادي سيلتيك"
+    },
+    {
+      "points": 200,
+      "desc": "نادي آيندهوفن",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/2008_Georg_Koch.JPG/250px-2008_Georg_Koch.JPG",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "آيندهوفن"
+    },
+    {
+      "points": 200,
+      "desc": "نادي سامبدوريا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Sampdoria_through_the_ages.jpg/1280px-Sampdoria_through_the_ages.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "سامبدوريا"
+    },
+    {
+      "points": 200,
+      "desc": "نادي وست هام يونايتد",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Bobby_Moore_1969.jpg/500px-Bobby_Moore_1969.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "وست هام"
+    },
+    {
+      "points": 200,
+      "desc": "نادي فينورد",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/MCI_VS_FER_2024_%28Anis_Hadj_Moussa%29.jpg/120px-MCI_VS_FER_2024_%28Anis_Hadj_Moussa%29.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "فينورد"
+    },
+    {
+      "points": 200,
+      "desc": "نادي تورينو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Torino_through_the_ages.jpg/1280px-Torino_through_the_ages.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "تورينو"
+    },
+    {
+      "points": 200,
+      "desc": "نادي بوردو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Chamakh_Emirates_Cup_cropped.jpg/1280px-Chamakh_Emirates_Cup_cropped.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "بوردو"
+    },
+    {
+      "points": 200,
+      "desc": "نادي باليرمو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/PSG-Shakhter15_%2812%29.jpg/330px-PSG-Shakhter15_%2812%29.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "باليرمو"
+    },
+    {
+      "points": 200,
+      "desc": "شاختار دونيتسك",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/%D0%92%D0%B8%D0%B4_%D0%B8%D0%B7_%D0%94%D0%BE%D0%BD%D0%B5%D1%86%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%BD%D0%BE%D0%B9_%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D0%B8_003.jpg/1280px-%D0%92%D0%B8%D0%B4_%D0%B8%D0%B7_%D0%94%D0%BE%D0%BD%D0%B5%D1%86%D0%BA%D0%BE%D0%B9_%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D0%BD%D0%BE%D0%B9_%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D0%B8_003.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "شاختار"
+    },
+    {
+      "points": 200,
+      "desc": "نادي بشكتاش",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/BesiktasJK-Logo.svg/1280px-BesiktasJK-Logo.svg.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "بشكتاش"
+    },
+    {
+      "points": 200,
+      "desc": "غلطة سراي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Galatasaaray_5_Stars.png/500px-Galatasaaray_5_Stars.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "غلطة سراي"
+    },
+    {
+      "points": 200,
+      "desc": "نادي سانتوس",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Santos_Logo.png/960px-Santos_Logo.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "سانتوس"
+    },
+    {
+      "points": 200,
+      "desc": "نادي كروزيرو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Cruzeiro_Esporte_Clube_%28logo%29.svg/1280px-Cruzeiro_Esporte_Clube_%28logo%29.svg.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "كروزيرو"
+    },
+    {
+      "points": 200,
+      "desc": "نادي جريميو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Novorizontino.jpg/120px-Novorizontino.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "جريميو"
+    },
+    {
+      "points": 200,
+      "desc": "إستوديانتيس دي لا بلاتا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Escudo_de_Estudiantes_de_La_Plata.svg/1280px-Escudo_de_Estudiantes_de_La_Plata.svg.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "إستوديانتيس"
+    },
+    {
+      "points": 200,
+      "desc": "كولو كولو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Kolo_Toure_8932.JPG/500px-Kolo_Toure_8932.JPG",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "كولو كولو"
+    },
+    {
+      "points": 200,
+      "desc": "أونيفرسيداد دي تشيلي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Jorge_Sampaoli_2018.jpg/500px-Jorge_Sampaoli_2018.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "أونيفرسيداد دي تشيلي"
+    },
+    {
+      "points": 200,
+      "desc": "ناسيونال مونتيفيديو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Escudo_del_Club_Nacional_de_Football.svg/1280px-Escudo_del_Club_Nacional_de_Football.svg.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "ناسيونال"
+    },
+    {
+      "points": 200,
+      "desc": "نادي بينارول",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Escudo_del_Club_Atl%C3%A9tico_Pe%C3%B1arol.svg/1280px-Escudo_del_Club_Atl%C3%A9tico_Pe%C3%B1arol.svg.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "بينارول"
+    },
+    {
+      "points": 400,
+      "desc": "شالكه 04",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/FC_Schalke_04_Logo.svg/1280px-FC_Schalke_04_Logo.svg.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "شالكه"
+    },
+    {
+      "points": 400,
+      "desc": "بوروسيا مونشنغلادباخ",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Borussia_M%C3%B6nchengladbach_logo.svg/1280px-Borussia_M%C3%B6nchengladbach_logo.svg.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "مونشنغلادباخ"
+    },
+    {
+      "points": 400,
+      "desc": "نادي بارما",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Logo_Parma_Calcio_1913_%28adozione_2016%29.png/500px-Logo_Parma_Calcio_1913_%28adozione_2016%29.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "بارما"
+    },
+    {
+      "points": 400,
+      "desc": "فيورنتينا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/ACF_Fiorentina_-_logo_%28Italy%2C_2022%29.svg/1280px-ACF_Fiorentina_-_logo_%28Italy%2C_2022%29.svg.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "فيورنتينا"
+    },
+    {
+      "points": 400,
+      "desc": "كلوب بروج",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Pusk%C3%A1s_Ar%C3%A9na_05.jpg/1280px-Pusk%C3%A1s_Ar%C3%A9na_05.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "كلوب بروج"
+    },
+    {
+      "points": 400,
+      "desc": "أولمبياكوس",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Ayoub_El_Kaabi_vs_Niger_%28cropped%29.jpg/960px-Ayoub_El_Kaabi_vs_Niger_%28cropped%29.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "أولمبياكوس"
+    },
+    {
+      "points": 400,
+      "desc": "باناثينايكوس",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Ferenc_Pusk%C3%A1s_%28cropped%29.jpg/1280px-Ferenc_Pusk%C3%A1s_%28cropped%29.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "باناثينايكوس"
+    },
+    {
+      "points": 400,
+      "desc": "ستيوا بوخارست",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Fcsb-logo.svg/1280px-Fcsb-logo.svg.png",
+      "q": "من هو صاحب هذا الشعار? ",
+      "a": "ستيوا بوخارست"
+    },
+    {
+      "points": 400,
+      "desc": "سيسكا موسكو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/AC_Milan_team_celebrate.jpg/960px-AC_Milan_team_celebrate.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "سيسكا موسكو"
+    },
+    {
+      "points": 400,
+      "desc": "زينيت سانت بطرسبرغ",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/FC_Zenit_2_star_2023_logo.png/960px-FC_Zenit_2_star_2023_logo.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "زينيت"
+    },
+    {
+      "points": 400,
+      "desc": "سبارتاك موسكو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Paok-spartak_%2815%29.jpg/1280px-Paok-spartak_%2815%29.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "سبارتاك موسكو"
+    },
+    {
+      "points": 400,
+      "desc": "نادي بازل",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/CH-000957-X-10832_Duerrwang.tif/lossy-page1-1000px-CH-000957-X-10832_Duerrwang.tif.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "بازل"
+    },
+    {
+      "points": 400,
+      "desc": "ساو باولو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sao_Paulo_Skyline_in_Brazil.jpg/960px-Sao_Paulo_Skyline_in_Brazil.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "ساو باولو"
+    },
+    {
+      "points": 400,
+      "desc": "نادي إنترناسيونال",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Sport_Club_Internacional_logo.svg/1280px-Sport_Club_Internacional_logo.svg.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "إنترناسيونال"
+    },
+    {
+      "points": 400,
+      "desc": "باوك سالونيكا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Shikabala_2024_%28cropped%29.jpg/330px-Shikabala_2024_%28cropped%29.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "باوك"
+    },
+    {
+      "points": 400,
+      "desc": "هايدوك سبليت",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Founding_of_Hajduk.jpg/500px-Founding_of_Hajduk.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "هايدوك سبليت"
+    },
+    {
+      "points": 400,
+      "desc": "دينامو زغرب",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Logo_GNK_Dinamo_Zagreb_%282019%29.svg/1280px-Logo_GNK_Dinamo_Zagreb_%282019%29.svg.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "دينامو زغرب"
+    },
+    {
+      "points": 400,
+      "desc": "النجم الأحمر بلغراد",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Coppa_Campioni.svg/1280px-Coppa_Campioni.svg.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "النجم الأحمر"
+    },
+    {
+      "points": 400,
+      "desc": "نادي بارتيزان",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Stadion_Partizana.jpg/1280px-Stadion_Partizana.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "بارتيزان"
+    },
+    {
+      "points": 400,
+      "desc": "سلافيا براغ",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/SK_Slavia_Praha_full_logo.svg/1280px-SK_Slavia_Praha_full_logo.svg.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "سلافيا براغ"
+    },
+    {
+      "points": 400,
+      "desc": "سبارتا براغ",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/AC-Sparta-LOGO2021.svg/1280px-AC-Sparta-LOGO2021.svg.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "سبارتا براغ"
+    },
+    {
+      "points": 400,
+      "desc": "ليغيا وارسو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Muzeum_Legii_Warszawa_06.JPG/1280px-Muzeum_Legii_Warszawa_06.JPG",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "ليغيا وارسو"
+    },
+    {
+      "points": 400,
+      "desc": "نادي روزنبرغ",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Twilight2.png/500px-Twilight2.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "روزنبرغ"
+    },
+    {
+      "points": 400,
+      "desc": "نادي مالمو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Centrala_Malm%C3%B6.jpg/1280px-Centrala_Malm%C3%B6.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "مالمو"
+    },
+    {
+      "points": 400,
+      "desc": "غوانغجو إيفرغراند",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Felip%C3%A3o_cropped.jpg/1280px-Felip%C3%A3o_cropped.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "غوانغجو"
+    },
+    {
+      "points": 400,
+      "desc": "كاشيما أنتلرز",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Zico_2012_3.jpg/1280px-Zico_2012_3.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "كاشيما أنتلرز"
+    },
+    {
+      "points": 400,
+      "desc": "نادي برسبوليس",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Persepolis_W.F.C._vs_Mehregan_W.F.C.%2C_14_November_2024_2_%28cropped%29.jpg/500px-Persepolis_W.F.C._vs_Mehregan_W.F.C.%2C_14_November_2024_2_%28cropped%29.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "برسبوليس"
+    },
+    {
+      "points": 400,
+      "desc": "استقلال طهران",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/5/52/Azadi_Stadium_ACL_2018.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "استقلال"
+    },
+    {
+      "points": 600,
+      "desc": "لودوغورتس رازغراد",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Pusk%C3%A1s_Ar%C3%A9na_05.jpg/1280px-Pusk%C3%A1s_Ar%C3%A9na_05.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "لودوغورتس"
+    },
+    {
+      "points": 600,
+      "desc": "نادي كاراباخ",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Coat_of_arms_of_Ganja.png/960px-Coat_of_arms_of_Ganja.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "كاراباخ"
+    },
+    {
+      "points": 600,
+      "desc": "نادي أستانا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/%D0%9C%D0%B0%D1%82%D1%87_%C2%AB%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%BE%C2%BB_-_%C2%AB%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0%C2%BB_2-2._20_%D1%81%D0%B5%D0%BD%D1%82%D1%8F%D0%B1%D1%80%D1%8F_2018_%D0%B3%D0%BE%D0%B4%D0%B0_%E2%80%94_908057.jpg/960px-%D0%9C%D0%B0%D1%82%D1%87_%C2%AB%D0%94%D0%B8%D0%BD%D0%B0%D0%BC%D0%BE%C2%BB_-_%C2%AB%D0%90%D1%81%D1%82%D0%B0%D0%BD%D0%B0%C2%BB_2-2._20_%D1%81%D0%B5%D0%BD%D1%82%D1%8F%D0%B1%D1%80%D1%8F_2018_%D0%B3%D0%BE%D0%B4%D0%B0_%E2%80%94_908057.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "أستانا"
+    },
+    {
+      "points": 600,
+      "desc": "باتي بوريسوف",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Logo_uefa_2012.png/1280px-Logo_uefa_2012.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "باتي بوريسوف"
+    },
+    {
+      "points": 600,
+      "desc": "بودو غليمت",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Pusk%C3%A1s_Ar%C3%A9na_05.jpg/1280px-Pusk%C3%A1s_Ar%C3%A9na_05.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "بودو غليمت"
+    },
+    {
+      "points": 600,
+      "desc": "يونيون برلين",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Stadion_an_der_Alten_F%C3%B6rsterei.png/960px-Stadion_an_der_Alten_F%C3%B6rsterei.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "يونيون برلين"
+    },
+    {
+      "points": 600,
+      "desc": "ريال سوسيداد",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Seville_Estadio_Ol%C3%ADmpico_de_La_Cartuja_1.jpg/1280px-Seville_Estadio_Ol%C3%ADmpico_de_La_Cartuja_1.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "ريال سوسيداد"
+    },
+    {
+      "points": 600,
+      "desc": "تورونتو إف سي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Jon_Jones_-_Supporting_Brain_Health_Study.jpg/500px-Jon_Jones_-_Supporting_Brain_Health_Study.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "تورونتو"
+    },
+    {
+      "points": 600,
+      "desc": "سياتل ساوندرز",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Aerial_view_of_railroads_in_Seattle.jpg/1280px-Aerial_view_of_railroads_in_Seattle.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "سياتل ساوندرز"
+    },
+    {
+      "points": 600,
+      "desc": "إنديبندينتي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Escudo_del_Club_Atl%C3%A9tico_Independiente.svg/1280px-Escudo_del_Club_Atl%C3%A9tico_Independiente.svg.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "إنديبندينتي"
+    },
+    {
+      "points": 600,
+      "desc": "راسينغ كلوب",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Racing_Club_de_Tunis.jpg/250px-Racing_Club_de_Tunis.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "راسينغ"
+    },
+    {
+      "points": 600,
+      "desc": "سان لورينزو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Escudo_del_Club_Atl%C3%A9tico_San_Lorenzo_de_Almagro.svg/1280px-Escudo_del_Club_Atl%C3%A9tico_San_Lorenzo_de_Almagro.svg.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "سان لورينزو"
+    },
+    {
+      "points": 600,
+      "desc": "فيليز سارسفيلد",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Escudo_del_Club_Atl%C3%A9tico_V%C3%A9lez_Sarsfield.svg/1280px-Escudo_del_Club_Atl%C3%A9tico_V%C3%A9lez_Sarsfield.svg.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "فيليز سارسفيلد"
+    },
+    {
+      "points": 600,
+      "desc": "إنديبندينتي dيل فال",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Escudoindependientedelvalle2023.png/500px-Escudoindependientedelvalle2023.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "انديبندينتي ديل فال"
+    },
+    {
+      "points": 600,
+      "desc": "أتلتيكو ناسيونال",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Atl%C3%A9tico_Nacional.png/330px-Atl%C3%A9tico_Nacional.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "أتلتيكو ناسيونال"
+    },
+    {
+      "points": 600,
+      "desc": "ميلوناريوس",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Di_stefano_argentina_%28cropped%29.jpg/330px-Di_stefano_argentina_%28cropped%29.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "ميلوناريوس"
+    },
+    {
+      "points": 600,
+      "desc": "يونيفرسيتاريو دي بيرو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Escudo_del_Club_Universitario_de_Deportes.svg/1280px-Escudo_del_Club_Universitario_de_Deportes.svg.png",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "يونيفرسيتاريو"
+    },
+    {
+      "points": 600,
+      "desc": "نادي الهلال السوداني",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Alg%C3%A9rie_-_Arm%C3%A9nie_-_20140531_-_Hilal_Soudani.jpg/1280px-Alg%C3%A9rie_-_Arm%C3%A9nie_-_20140531_-_Hilal_Soudani.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "الهلال"
+    },
+    {
+      "points": 600,
+      "desc": "تي بي مازيمبي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Mohammed_Bin_Fahd_Stadium%2C_Dammam%2C_Saudi_Arabia.jpg/1280px-Mohammed_Bin_Fahd_Stadium%2C_Dammam%2C_Saudi_Arabia.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "مازيمبي"
+    },
+    {
+      "points": 600,
+      "desc": "أورلاندو بيراتس",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Orlando_pirates_fans_6.jpg/500px-Orlando_pirates_fans_6.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "أورلاندو بيراتس"
+    },
+    {
+      "points": 600,
+      "desc": "أوراوا رد دايموندز",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/AFC_Champions_League_trophy.jpg/500px-AFC_Champions_League_trophy.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "أوراوا"
+    },
+    {
+      "points": 600,
+      "desc": "أولسان هيونداي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/0_Hyundai_Veracruz_1.jpg/1280px-0_Hyundai_Veracruz_1.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "أولسان"
+    },
+    {
+      "points": 600,
+      "desc": "سيدني إف سي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Dwight_Yorke_in_Chennai.jpg/500px-Dwight_Yorke_in_Chennai.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "سيدني"
+    },
+    {
+      "points": 600,
+      "desc": "يوكوهاما مارينوس",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/AFC_Champions_League_trophy.jpg/500px-AFC_Champions_League_trophy.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "يوكوهاما مارينوس"
+    },
+    {
+      "points": 600,
+      "desc": "شيميزو إس-بولس",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Jader_Volnei_Spindler_2012.jpg/1280px-Jader_Volnei_Spindler_2012.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "شيميزو"
+    },
+    {
+      "points": 600,
+      "desc": "سانفريس هيروشيما",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Edion-PeaceWing-Hiroshima-from-Sorazaya-Bridge.jpg/1280px-Edion-PeaceWing-Hiroshima-from-Sorazaya-Bridge.jpg",
+      "q": "من هو صاحب هذا الشعار؟",
+      "a": "سانفريس هيروشيما"
+    }
+  ]
+}

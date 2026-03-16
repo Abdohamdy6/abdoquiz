@@ -1,0 +1,705 @@
+{
+  "category": "خمن المدينة",
+  "questions": [
+    {
+      "points": 200,
+      "desc": "مدينة باريس",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/960px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "باريس"
+    },
+    {
+      "points": 200,
+      "desc": "مدينة نيويورك",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg/960px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu_%28cropped%29.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "نيويورك"
+    },
+    {
+      "points": 200,
+      "desc": "مدينة لندن",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/London_Skyline_%28125508655%29.jpeg/960px-London_Skyline_%28125508655%29.jpeg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "لندن"
+    },
+    {
+      "points": 200,
+      "desc": "مدينة دبي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Dubai_Skyline_mit_Burj_Khalifa_%28cropped%29.jpg/960px-Dubai_Skyline_mit_Burj_Khalifa_%28cropped%29.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "دبي"
+    },
+    {
+      "points": 200,
+      "desc": "القاهرة",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Cairo_Opera_House%2C_Al_Hurriyah_Park_and_the_Nile_river_%2814797782354%29.jpg/960px-Cairo_Opera_House%2C_Al_Hurriyah_Park_and_the_Nile_river_%2814797782354%29.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "القاهرة"
+    },
+    {
+      "points": 200,
+      "desc": "مدينة طوكيو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Tokyo_Montage_2015.jpg/500px-Tokyo_Montage_2015.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "طوكيو"
+    },
+    {
+      "points": 200,
+      "desc": "روما",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Rome_Skyline_%288012016319%29.jpg/960px-Rome_Skyline_%288012016319%29.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "روما"
+    },
+    {
+      "points": 200,
+      "desc": "إسطنبول",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Modern_Istanbul_skyline.jpg/960px-Modern_Istanbul_skyline.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "إسطنبول"
+    },
+    {
+      "points": 200,
+      "desc": "موسكو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Saint_Basil%27s_Cathedral_and_the_Red_Square.jpg/960px-Saint_Basil%27s_Cathedral_and_the_Red_Square.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "موسكو"
+    },
+    {
+      "points": 200,
+      "desc": "بكين",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Skyline_of_Beijing_CBD_from_the_southeast_%2820210907094201%29.jpg/960px-Skyline_of_Beijing_CBD_from_the_southeast_%2820210907094201%29.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "بكين"
+    },
+    {
+      "points": 200,
+      "desc": "سيدني",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/00_3178_Sydney%2C_Australia.jpg/960px-00_3178_Sydney%2C_Australia.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "سيدني"
+    },
+    {
+      "points": 200,
+      "desc": "مكة",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Makkah_Montage.jpg/960px-Makkah_Montage.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "مكة المكرمة"
+    },
+    {
+      "points": 200,
+      "desc": "القدس",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Jerusalem_Dome_of_the_rock_BW_14.JPG/960px-Jerusalem_Dome_of_the_rock_BW_14.JPG",
+      "q": "ما هي هذه المدينة؟",
+      "a": "القدس"
+    },
+    {
+      "points": 200,
+      "desc": "مدريد",
+      "image": "https://ar.wikipedia.org/wiki/%D9%85%D8%AF%D8%B1%D9%8A%D8%AF#/media/%D9%85%D9%84%D9%81:CollageMadrid.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "مدريد"
+    },
+    {
+      "points": 200,
+      "desc": "برشلونة",
+      "image": "https://upload.wikimedia.org/wikipedia/ar/thumb/4/47/FC_Barcelona_%28crest%29.svg/960px-FC_Barcelona_%28crest%29.svg.png",
+      "q": "ما هي هذه المدينة؟",
+      "a": "برشلونة"
+    },
+    {
+      "points": 200,
+      "desc": "لوس أنجلوس",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Flag_of_Los_Angeles%2C_California.svg/960px-Flag_of_Los_Angeles%2C_California.svg.png",
+      "q": "ما هي هذه المدينة؟",
+      "a": "لوس أنجلوس"
+    },
+    {
+      "points": 200,
+      "desc": "ريو دي جانيرو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Cidade_Maravilhosa.jpg/960px-Cidade_Maravilhosa.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "ريو دي جانيرو"
+    },
+    {
+      "points": 200,
+      "desc": "تورونتو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Flag_of_Toronto%2C_Canada.svg/960px-Flag_of_Toronto%2C_Canada.svg.png",
+      "q": "ما هي هذه المدينة؟",
+      "a": "تورونتو"
+    },
+    {
+      "points": 200,
+      "desc": "أمستردام",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Amsterdam_airphoto.jpg/960px-Amsterdam_airphoto.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "أمستردام"
+    },
+    {
+      "points": 200,
+      "desc": "الإسكندرية",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Corniche_of_Alexandria.jpg/960px-Corniche_of_Alexandria.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "الإسكندرية"
+    },
+    {
+      "points": 200,
+      "desc": "الرياض",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Masmak.JPG/960px-Masmak.JPG",
+      "q": "ما هي هذه المدينة؟",
+      "a": "الرياض"
+    },
+    {
+      "points": 200,
+      "desc": "أبو ظبي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Abu_Dhabi_in_United_Arab_Emirates.svg/960px-Abu_Dhabi_in_United_Arab_Emirates.svg.png",
+      "q": "ما هي هذه المدينة؟",
+      "a": "أبو ظبي"
+    },
+    {
+      "points": 200,
+      "desc": "الدوحة",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Doha_skyline_in_the_morning_%2812544910974%29.jpg/960px-Doha_skyline_in_the_morning_%2812544910974%29.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "الدوحة"
+    },
+    {
+      "points": 200,
+      "desc": "مدينة الكويت",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Flag_of_Kuwait.svg/960px-Flag_of_Kuwait.svg.png",
+      "q": "ما هي هذه المدينة؟",
+      "a": "الكويت"
+    },
+    {
+      "points": 200,
+      "desc": "بيروت",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Beirut_close_to_plane_descent.jpg/960px-Beirut_close_to_plane_descent.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "بيروت"
+    },
+    {
+      "points": 200,
+      "desc": "دمشق",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Umayyad_Mosque_night.jpg/960px-Umayyad_Mosque_night.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "دمشق"
+    },
+    {
+      "points": 200,
+      "desc": "بغداد",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Flag_of_Baghdad.svg/960px-Flag_of_Baghdad.svg.png",
+      "q": "ما هي هذه المدينة؟",
+      "a": "بغداد"
+    },
+    {
+      "points": 200,
+      "desc": "عمان (مدينة)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/AMMAN_2.jpg/960px-AMMAN_2.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "عمان"
+    },
+    {
+      "points": 200,
+      "desc": "تونس (مدينة)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/MontageTunis.jpg/500px-MontageTunis.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "تونس"
+    },
+    {
+      "points": 200,
+      "desc": "الدار البيضاء",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Casa_finance_city_6.jpg/960px-Casa_finance_city_6.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "الدار البيضاء"
+    },
+    {
+      "points": 200,
+      "desc": "الجزائر (مدينة)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D8%AF_%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2%D9%8A_-_%D8%A7%D9%84%D8%AC%D8%B2%D8%A7%D8%A6%D8%B1.jpg/960px-%D8%A7%D9%84%D8%A8%D8%B1%D9%8A%D8%AF_%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2%D9%8A_-_%D8%A7%D9%84%D8%AC%D8%B2%D8%A7%D8%A6%D8%B1.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "الجزائر"
+    },
+    {
+      "points": 200,
+      "desc": "برلين",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Cityscape_Berlin.jpg/960px-Cityscape_Berlin.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "برلين"
+    },
+    {
+      "points": 200,
+      "desc": "أثينا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Akropolis_2015.jpg/960px-Akropolis_2015.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "أثينا"
+    },
+    {
+      "points": 200,
+      "desc": "بانكوك",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Temple_of_the_Emerald_of_buddha_or_Wat_Phra_Kaew_%28cropped%29.jpg/960px-Temple_of_the_Emerald_of_buddha_or_Wat_Phra_Kaew_%28cropped%29.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "بانكوك"
+    },
+    {
+      "points": 400,
+      "desc": "البندقية",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Venice_Old_Town_Lagoon_Aerial_View.jpg/960px-Venice_Old_Town_Lagoon_Aerial_View.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "فينيسيا (البندقية)"
+    },
+    {
+      "points": 400,
+      "desc": "ميلانو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Milano%2C_Duomo_with_Milan_Cathedral_and_Galleria_Vittorio_Emanuele_II%2C_2016.jpg/960px-Milano%2C_Duomo_with_Milan_Cathedral_and_Galleria_Vittorio_Emanuele_II%2C_2016.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "ميلانو"
+    },
+    {
+      "points": 400,
+      "desc": "ميونخ",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/960px-Stadtbild_M%C3%BCnchen.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "ميونخ"
+    },
+    {
+      "points": 400,
+      "desc": "فرانكفورت",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Frankfurter_Altstadt_mit_Skyline_2019_%28100MP%29.jpg/960px-Frankfurter_Altstadt_mit_Skyline_2019_%28100MP%29.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "فرانكفورت"
+    },
+    {
+      "points": 400,
+      "desc": "فيينا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Wien_katedra_sw_Szczepana_widok_z_wiezy_6.jpg/960px-Wien_katedra_sw_Szczepana_widok_z_wiezy_6.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "فيينا"
+    },
+    {
+      "points": 400,
+      "desc": "براغ",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Pet%C5%99%C3%ADn_Tower_View_IMG_3020.JPG/960px-Pet%C5%99%C3%ADn_Tower_View_IMG_3020.JPG",
+      "q": "ما هي هذه المدينة؟",
+      "a": "براغ"
+    },
+    {
+      "points": 400,
+      "desc": "بودابست",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Budapest%2C_Hungary_%28explored%29_%2814995308504%29.jpg/960px-Budapest%2C_Hungary_%28explored%29_%2814995308504%29.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "بودابست"
+    },
+    {
+      "points": 400,
+      "desc": "ستوكهولم",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Stockholm.jpg/960px-Stockholm.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "ستوكهولم"
+    },
+    {
+      "points": 400,
+      "desc": "أوسلو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Bill_Clinton%2C_Yitzhak_Rabin%2C_Yasser_Arafat_at_the_White_House_1993-09-13.jpg/960px-Bill_Clinton%2C_Yitzhak_Rabin%2C_Yasser_Arafat_at_the_White_House_1993-09-13.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "أوسلو"
+    },
+    {
+      "points": 400,
+      "desc": "كوبنهاغن",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Copenhagen_-_view_from_Christiansborg_castle.jpg/960px-Copenhagen_-_view_from_Christiansborg_castle.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "كوبنهاغن"
+    },
+    {
+      "points": 400,
+      "desc": "لشبونة",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Lisbon_set_of_images.jpg/500px-Lisbon_set_of_images.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "لشبونة"
+    },
+    {
+      "points": 400,
+      "desc": "جنيف",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Views_of_Geneva.jpg/960px-Views_of_Geneva.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "جنيف"
+    },
+    {
+      "points": 400,
+      "desc": "زيورخ",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Zuerich_Fraumuenster_St_Peter.jpg/960px-Zuerich_Fraumuenster_St_Peter.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "زيورخ"
+    },
+    {
+      "points": 400,
+      "desc": "سول",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/%EB%8D%95%EC%88%98%EA%B6%81%EC%9D%98_%EA%B0%80%EC%9D%84.jpg/960px-%EB%8D%95%EC%88%98%EA%B6%81%EC%9D%98_%EA%B0%80%EC%9D%84.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "سيول"
+    },
+    {
+      "points": 400,
+      "desc": "سنغافورة",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Singapore.svg/960px-Flag_of_Singapore.svg.png",
+      "q": "ما هي هذه المدينة؟",
+      "a": "سنغافورة"
+    },
+    {
+      "points": 400,
+      "desc": "كوالالمبور",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Kuala_Lumpur_with_Petronas_Towers.jpg/500px-Kuala_Lumpur_with_Petronas_Towers.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "كوالالمبور"
+    },
+    {
+      "points": 400,
+      "desc": "جاكرتا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Jakarta.jpg/960px-Jakarta.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "جاكرتا"
+    },
+    {
+      "points": 400,
+      "desc": "مانيلا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Manila.svg/960px-Flag_of_Manila.svg.png",
+      "q": "ما هي هذه المدينة؟",
+      "a": "مانيلا"
+    },
+    {
+      "points": 400,
+      "desc": "نيودلهي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Rashtrapati_bhawan.jpg/960px-Rashtrapati_bhawan.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "نيودلهي"
+    },
+    {
+      "points": 400,
+      "desc": "مومباي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Mumbai_locator_map.png/120px-Mumbai_locator_map.png",
+      "q": "ما هي هذه المدينة؟",
+      "a": "مومباي"
+    },
+    {
+      "points": 400,
+      "desc": "كيب تاون",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Ciudad_del_Cabo_desde_Cabeza_de_Le%C3%B3n%2C_Sud%C3%A1frica%2C_2018-07-22%2C_DD_34.jpg/960px-Ciudad_del_Cabo_desde_Cabeza_de_Le%C3%B3n%2C_Sud%C3%A1frica%2C_2018-07-22%2C_DD_34.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "كيب تاون"
+    },
+    {
+      "points": 400,
+      "desc": "جوهانسبرغ",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Johannesburg_CBD.jpg/960px-Johannesburg_CBD.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "جوهانسبرغ"
+    },
+    {
+      "points": 400,
+      "desc": "بوينس آيرس",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Vista_a%C3%A9rea_de_la_Plaza_del_Congreso_10.jpg/960px-Vista_a%C3%A9rea_de_la_Plaza_del_Congreso_10.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "بوينس آيرس"
+    },
+    {
+      "points": 400,
+      "desc": "ساو باولو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sao_Paulo_Skyline_in_Brazil.jpg/960px-Sao_Paulo_Skyline_in_Brazil.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "ساو باولو"
+    },
+    {
+      "points": 400,
+      "desc": "مكسيكو سيتي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Sobrevuelos_CDMX_HJ2A5091_%2840386338731%29.jpg/960px-Sobrevuelos_CDMX_HJ2A5091_%2840386338731%29.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "مكسيكو سيتي"
+    },
+    {
+      "points": 400,
+      "desc": "هافانا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/DJI_0197_crp_wiki.jpg/960px-DJI_0197_crp_wiki.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "هافانا"
+    },
+    {
+      "points": 400,
+      "desc": "شيكاغو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/2010-02-19_3000x2000_chicago_skyline.jpg/960px-2010-02-19_3000x2000_chicago_skyline.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "شيكاغو"
+    },
+    {
+      "points": 400,
+      "desc": "سان فرانسيسكو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/San_Francisco_from_the_Marin_Headlands_in_March_2019.jpg/960px-San_Francisco_from_the_Marin_Headlands_in_March_2019.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "سان فرانسيسكو"
+    },
+    {
+      "points": 400,
+      "desc": "ميامي",
+      "image": "https://ar.wikipedia.org/wiki/%D9%85%D9%8A%D8%A7%D9%85%D9%8A#/media/%D9%85%D9%84%D9%81:Downtown_Miami_aerial_2008.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "ميامي"
+    },
+    {
+      "points": 400,
+      "desc": "مونتريال",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Mtl_from_mont_royal_%28cropped%29.jpg/960px-Mtl_from_mont_royal_%28cropped%29.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "مونتريال"
+    },
+    {
+      "points": 400,
+      "desc": "ملبورن",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Flag_of_Melbourne.svg/960px-Flag_of_Melbourne.svg.png",
+      "q": "ما هي هذه المدينة؟",
+      "a": "ملبورن"
+    },
+    {
+      "points": 400,
+      "desc": "أوكلاند (نيوزيلندا)",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Flag_of_New_Zealand.svg/960px-Flag_of_New_Zealand.svg.png",
+      "q": "ما هي هذه المدينة؟",
+      "a": "أوكلاند"
+    },
+    {
+      "points": 400,
+      "desc": "سانت بطرسبرغ",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Peter_%26_Paul_fortress_in_SPB_03.jpg/960px-Peter_%26_Paul_fortress_in_SPB_03.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "سانت بطرسبرغ"
+    },
+    {
+      "points": 600,
+      "desc": "كيوتو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Pedestrian_road_with_pavements%2C_paper_umbrellas_and_people_in_yukata%2C_Higashiyama-ku%2C_Kyoto%2C_Japan.jpg/960px-Pedestrian_road_with_pavements%2C_paper_umbrellas_and_people_in_yukata%2C_Higashiyama-ku%2C_Kyoto%2C_Japan.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "كيوتو"
+    },
+    {
+      "points": 600,
+      "desc": "أوساكا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Osaka_Castle_02bs3200.jpg/960px-Osaka_Castle_02bs3200.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "أوساكا"
+    },
+    {
+      "points": 600,
+      "desc": "شانغهاي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Shanghai_montage.png/960px-Shanghai_montage.png",
+      "q": "ما هي هذه المدينة؟",
+      "a": "شانغهاي"
+    },
+    {
+      "points": 600,
+      "desc": "هونغ كونغ",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Flag_of_Hong_Kong.svg/960px-Flag_of_Hong_Kong.svg.png",
+      "q": "ما هي هذه المدينة؟",
+      "a": "هونغ كونغ"
+    },
+    {
+      "points": 600,
+      "desc": "تايبيه",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/20260204_Taipei%2C_Taiwan_Skyline.jpg/960px-20260204_Taipei%2C_Taiwan_Skyline.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "تايبيه"
+    },
+    {
+      "points": 600,
+      "desc": "هانوي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Hanoi_Skyline_-_NKS.jpg/960px-Hanoi_Skyline_-_NKS.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "هانوي"
+    },
+    {
+      "points": 600,
+      "desc": "كابل",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Kabul%2C_Afghanistan_view.jpg/500px-Kabul%2C_Afghanistan_view.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "كابل"
+    },
+    {
+      "points": 600,
+      "desc": "طهران",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Towers_in_Tehran_City_at_night.jpg/500px-Towers_in_Tehran_City_at_night.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "طهران"
+    },
+    {
+      "points": 600,
+      "desc": "باكو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Aerial_View_of_Baku%2C_May_2012.jpg/960px-Aerial_View_of_Baku%2C_May_2012.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "باكو"
+    },
+    {
+      "points": 600,
+      "desc": "تبليسي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Flag_of_Tbilisi.svg/960px-Flag_of_Tbilisi.svg.png",
+      "q": "ما هي هذه المدينة؟",
+      "a": "تبليسي"
+    },
+    {
+      "points": 600,
+      "desc": "يريفان",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Mount_Ararat_and_the_Yerevan_skyline_%28June_2018%29.jpg/960px-Mount_Ararat_and_the_Yerevan_skyline_%28June_2018%29.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "يريفان"
+    },
+    {
+      "points": 600,
+      "desc": "كييف",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/P1130119-1.JPG/960px-P1130119-1.JPG",
+      "q": "ما هي هذه المدينة؟",
+      "a": "كييف"
+    },
+    {
+      "points": 600,
+      "desc": "وارسو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Castle_Square_%2822346p%29.jpg/960px-Castle_Square_%2822346p%29.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "وارسو"
+    },
+    {
+      "points": 600,
+      "desc": "بوخارست",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Ateneul_Rom%C3%A2n_1.jpg/960px-Ateneul_Rom%C3%A2n_1.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "بوخارست"
+    },
+    {
+      "points": 600,
+      "desc": "صوفيا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Hagia_Sophia_Mars_2013.jpg/960px-Hagia_Sophia_Mars_2013.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "صوفيا"
+    },
+    {
+      "points": 600,
+      "desc": "بلغراد",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Belgrade_iz_balona.jpg/960px-Belgrade_iz_balona.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "بلغراد"
+    },
+    {
+      "points": 600,
+      "desc": "زغرب",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Zagreb_%2829255640143%29.jpg/960px-Zagreb_%2829255640143%29.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "زغرب"
+    },
+    {
+      "points": 600,
+      "desc": "سراييفو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Sarajevo.jpg/500px-Sarajevo.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "سراييفو"
+    },
+    {
+      "points": 600,
+      "desc": "إدنبرة",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Edinburgh_cityscapes_-_aerial_-_2025-04-19_20.jpg/960px-Edinburgh_cityscapes_-_aerial_-_2025-04-19_20.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "إدنبرة"
+    },
+    {
+      "points": 600,
+      "desc": "دبلن",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Ei-map.svg/960px-Ei-map.svg.png",
+      "q": "ما هي هذه المدينة؟",
+      "a": "دبلن"
+    },
+    {
+      "points": 600,
+      "desc": "ريكيافيك",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Reykjav%C3%ADk_s%C3%A9%C3%B0_%C3%BAr_Hallgr%C3%ADmskirkju.jpeg/960px-Reykjav%C3%ADk_s%C3%A9%C3%B0_%C3%BAr_Hallgr%C3%ADmskirkju.jpeg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "ريكيافيك"
+    },
+    {
+      "points": 600,
+      "desc": "هلسنكي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Helsinki_Lutheran_Cathedral_%28panoraaman%C3%A4k%C3%B6ala%29-2_%28s%C3%A4%C3%A4t%C3%B6%29.jpg/960px-Helsinki_Lutheran_Cathedral_%28panoraaman%C3%A4k%C3%B6ala%29-2_%28s%C3%A4%C3%A4t%C3%B6%29.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "هلسنكي"
+    },
+    {
+      "points": 600,
+      "desc": "ليما",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Square_in_Lima_Peru_01.jpg/960px-Square_in_Lima_Peru_01.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "ليما"
+    },
+    {
+      "points": 600,
+      "desc": "بوغوتا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Centro_internacional.JPG/960px-Centro_internacional.JPG",
+      "q": "ما هي هذه المدينة؟",
+      "a": "بوغوتا"
+    },
+    {
+      "points": 600,
+      "desc": "سانتياغو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/MontajeStgo-4.jpg/960px-MontajeStgo-4.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "سانتياغو"
+    },
+    {
+      "points": 600,
+      "desc": "كاراكاس",
+      "image": "https://ar.wikipedia.org/wiki/%D9%83%D8%B1%D8%A7%D9%83%D8%A7%D8%B3#/media/%D9%85%D9%84%D9%81:Caracas_desde_el_%C3%A1vila.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "كاراكاس"
+    },
+    {
+      "points": 600,
+      "desc": "نيروبي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Nairobi%2C_view_from_KICC.JPG/960px-Nairobi%2C_view_from_KICC.JPG",
+      "q": "ما هي هذه المدينة؟",
+      "a": "نيروبي"
+    },
+    {
+      "points": 600,
+      "desc": "أديس أبابا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/AddisView.jpg/960px-AddisView.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "أديس أبابا"
+    },
+    {
+      "points": 600,
+      "desc": "داكار",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/President_Hiss%C3%A8ne_Habr%C3%A9_of_Chad.jpg/500px-President_Hiss%C3%A8ne_Habr%C3%A9_of_Chad.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "داكار"
+    },
+    {
+      "points": 600,
+      "desc": "مارسيليا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Notre_Dame_de_la_Garde.jpg/960px-Notre_Dame_de_la_Garde.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "مارسيليا"
+    },
+    {
+      "points": 600,
+      "desc": "نابولي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Naples_from_the_Castello_Sant_Elmo_with_Abbazia_San_Martino_the_port_and_the_Vesuv.jpg/960px-Naples_from_the_Castello_Sant_Elmo_with_Abbazia_San_Martino_the_port_and_the_Vesuv.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "نابولي"
+    },
+    {
+      "points": 600,
+      "desc": "فلورنسا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Sunset_over_florence_1.jpg/960px-Sunset_over_florence_1.jpg",
+      "q": "ما هي هذه المدينة؟",
+      "a": "فلورنسا"
+    },
+    {
+      "points": 600,
+      "desc": "بورتو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Porto_montage.PNG/330px-Porto_montage.PNG",
+      "q": "ما هي هذه المدينة؟",
+      "a": "بورتو"
+    }
+  ]
+}

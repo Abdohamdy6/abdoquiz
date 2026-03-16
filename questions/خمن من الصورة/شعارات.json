@@ -1,0 +1,600 @@
+{
+  "category": "خمن البراند (ليفل التنين 100)",
+  "questions": [
+    {
+      "points": 200,
+      "desc": "شعار شركة كوينيجسيج",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Koenigsegg_logotype2014.png/960px-Koenigsegg_logotype2014.png",
+      "q": "ماركة سيارات سويدية خارقة، شعارها درع فيه مربعات صفراء وحمراء، ما هي؟",
+      "a": "كوينيجسيج (Koenigsegg)"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة مازيراتي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Maserati_Mod%C3%A8ne_0002.JPG/960px-Maserati_Mod%C3%A8ne_0002.JPG",
+      "q": "براند إيطالي فخم، شعاره رمح ثلاثي الرؤوس (Trident)، ما هو؟",
+      "a": "مازيراتي"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة أستون مارتن",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/StarMotorsAstonMartin.JPG/960px-StarMotorsAstonMartin.JPG",
+      "q": "سيارة جيمس بوند المفضلة، براند بريطاني شعاره جناحان مفرودان، ما هو؟",
+      "a": "أستون مارتن"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة بوجاتي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Bugatti_logo.svg/960px-Bugatti_logo.svg.png",
+      "q": "صاحبة أسرع سيارات في العالم (شيرون وفيرون)، ما هو براندها؟",
+      "a": "بوجاتي"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة لامبورغيني",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Lamborghini%2C_Sant%27Agata_Bolognese%2C_Bologna.jpg/960px-Lamborghini%2C_Sant%27Agata_Bolognese%2C_Bologna.jpg",
+      "q": "ماركة إيطالية شعارها الثور الذهبي، ما هي؟",
+      "a": "لامبورغيني"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة لوتس للسيارات",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/1949_Daimler_DE_36_%22Green_Goddess%22%2C_Hooper_drophead_coup%C3%A9_8853058256.jpg/960px-1949_Daimler_DE_36_%22Green_Goddess%22%2C_Hooper_drophead_coup%C3%A9_8853058256.jpg",
+      "q": "براند بريطاني للسيارات الرياضية الخفيفة، شعاره دائرة صفراء ومثلث أخضر، ما هو؟",
+      "a": "لوتس"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة ألفا روميو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/FiatMirafiori6.jpg/960px-FiatMirafiori6.jpg",
+      "q": "ماركة إيطالية شعارها فيه ثعبان يبتلع رجلاً وصليب أحمر، ما هي؟",
+      "a": "ألفا روميو"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة إنفينيتي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Infiniti_Auto_Dealership_-_panoramio.jpg/960px-Infiniti_Auto_Dealership_-_panoramio.jpg",
+      "q": "الفرع الفخم لشركة نيسان اليابانية، ما هو براندها؟",
+      "a": "إنفينيتي"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة ميني كوبر",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Mini_1969_logo.svg/960px-Mini_1969_logo.svg.png",
+      "q": "سيارات بريطانية صغيرة الحجم، شعارها أجنحة فضية وبداخلها اسم البراند، ما هي؟",
+      "a": "ميني"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة جاغوار",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Jaguar_%2825743482616%29.jpg/960px-Jaguar_%2825743482616%29.jpg",
+      "q": "سيارة بريطانية فارهة شعارها فهد يقفز، ما هي؟",
+      "a": "جاغوار"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة بنتلي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Bentley_Motors%2C_Crewe_-_geograph.org.uk_-_247611.jpg/500px-Bentley_Motors%2C_Crewe_-_geograph.org.uk_-_247611.jpg",
+      "q": "سيارة بريطانية فائقة الفخامة شعارها حرف B بجناحين، ما هي؟",
+      "a": "بنتلي"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة رولز رويس",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Rolls-Royce_Motors_emblem.svg/960px-Rolls-Royce_Motors_emblem.svg.png",
+      "q": "قمة الفخامة البريطانية، شعارها حرفي R متداخلين، ما هي؟",
+      "a": "رولز رويس"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة كاديلاك",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Cadillac_emblem.jpg/960px-Cadillac_emblem.jpg",
+      "q": "ماركة السيارات الأمريكية التي تمثل الفخامة الكلاسيكية، ما هي؟",
+      "a": "كاديلاك"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة لكزس",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Lexus_of_Sapporo.jpg/960px-Lexus_of_Sapporo.jpg",
+      "q": "الفرع الفخم لشركة تويوتا اليابانية، ما هو؟",
+      "a": "لكزس"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة مازدا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Mazda_head_office_20200607.JPG/960px-Mazda_head_office_20200607.JPG",
+      "q": "شركة يابانية شعارها حرف M يشبه أجنحة طائر، ما هي؟",
+      "a": "مازدا"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة سوبارو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Subaru_logo_%28transparent%29.svg/960px-Subaru_logo_%28transparent%29.svg.png",
+      "q": "شركة يابانية شعارها يمثل مجموعة نجوم (الثريا)، ما هي؟",
+      "a": "سوبارو"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة ميتسوبيشي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Mitsubishi_motors_new_logo.svg/960px-Mitsubishi_motors_new_logo.svg.png",
+      "q": "ماركة يابانية شعارها 3 ماسات حمراء، ما هي؟",
+      "a": "ميتسوبيشي"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة دودج",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Dodge_Building%2C_Newburyport_MA.jpg/960px-Dodge_Building%2C_Newburyport_MA.jpg",
+      "q": "ماركة أمريكية مشهورة بسيارات العضلات (Muscle Cars)، ما هي؟",
+      "a": "دودج"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة همر",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Kudu_logo_%28Saudi_Arabia%2C_2016%29_%28background%2C_without_wordmark_variant%29.svg/960px-Kudu_logo_%28Saudi_Arabia%2C_2016%29_%28background%2C_without_wordmark_variant%29.svg.png",
+      "q": "سيارة الدفع الرباعي الضخمة المشتقة من مركبات الجيش، ما هي؟",
+      "a": "همر (Hummer)"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة بويك",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Buick_logo_1980.png/500px-Buick_logo_1980.png",
+      "q": "ماركة أمريكية قديمة تابعة لـ GM شعارها 3 دروع مائلة، ما هي؟",
+      "a": "بويك (Buick)"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة لينكولن",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Lincoln_Plant_Remains_Detroit_MI_B.JPG/960px-Lincoln_Plant_Remains_Detroit_MI_B.JPG",
+      "q": "الفرع الفخم لشركة فورد الأمريكية، ما هو؟",
+      "a": "لينكولن"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة كرايسلر",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Chrysler_World_Headquarters_and_Technology_Center_%2851378087937%29.jpg/960px-Chrysler_World_Headquarters_and_Technology_Center_%2851378087937%29.jpg",
+      "q": "واحدة من أضخم 3 شركات سيارات أمريكية، ما هي؟",
+      "a": "كرايسلر"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة تسلا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Tesla_Motors.svg/960px-Tesla_Motors.svg.png",
+      "q": "رائدة السيارات الكهربائية في العالم، ما هي؟",
+      "a": "تسلا"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة فولفو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Volvo-Iron-Mark-Black.svg/960px-Volvo-Iron-Mark-Black.svg.png",
+      "q": "أكثر شركة سيارات تهتم بالأمان في العالم، سويدية الأصل، ما هي؟",
+      "a": "فولفو"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة سكودا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/%C5%A0koda_nieuw.png/330px-%C5%A0koda_nieuw.png",
+      "q": "ماركة سيارات تشيكية تابعة لمجموعة فولكس فاجن، ما هي؟",
+      "a": "سكودا"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة سيات",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/SEAT_S.A._logo.svg/960px-SEAT_S.A._logo.svg.png",
+      "q": "أشهر ماركة سيارات إسبانية، ما هي؟",
+      "a": "سيات"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة فيات",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/FiatMirafiori6.jpg/960px-FiatMirafiori6.jpg",
+      "q": "العملاق الإيطالي صاحب سيارات الـ 500، ما هي؟",
+      "a": "فيات"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة رينو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Renault_Technocentre%2C_entr%C3%A9e_de_l%27Avanc%C3%A9e.jpg/960px-Renault_Technocentre%2C_entr%C3%A9e_de_l%27Avanc%C3%A9e.jpg",
+      "q": "ماركة فرنسية شعارها شكل المعين الفضي، ما هي؟",
+      "a": "رينو"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة بيجو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/406_TCT_1.JPG/960px-406_TCT_1.JPG",
+      "q": "ماركة فرنسية شعارها الأسد الفضي، ما هي؟",
+      "a": "بيجو"
+    },
+    {
+      "points": 200,
+      "desc": "شعار شركة ستروين",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Citroen_2022.svg/960px-Citroen_2022.svg.png",
+      "q": "ماركة فرنسية شعارها سهمين للأعلى (Chevrons)، ما هي؟",
+      "a": "ستروين"
+    },
+    {
+      "points": 400,
+      "desc": "شعار شركة هوبلو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Louis_Vuitton_logo_and_wordmark.svg/960px-Louis_Vuitton_logo_and_wordmark.svg.png",
+      "q": "ساعات سويسرية فاخرة شعارها حرف H بتصميم هندسي، ما هي؟",
+      "a": "هوبلو (Hublot)"
+    },
+    {
+      "points": 400,
+      "desc": "شعار شركة أوديمار بيغيه",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Logo_Audemars_Piguet.svg/960px-Logo_Audemars_Piguet.svg.png",
+      "q": "صاحبة ساعة (Royal Oak) الأسطورية، ما هو اسم البراند? ",
+      "a": "Audemars Piguet"
+    },
+    {
+      "points": 400,
+      "desc": "شعار شركة باتيك فيليب",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Vertu-Constellation.jpg/330px-Vertu-Constellation.jpg",
+      "q": "تعتبر (رولز رويس) الساعات، شعارها صليب كالاترافا، ما هي؟",
+      "a": "باتيك فيليب"
+    },
+    {
+      "points": 400,
+      "desc": "شعار شركة فاشيرون كونستانتين",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/PRINCESS_DIANA_wide._%C2%A9_copyright_2010_%285112486245%29.jpg/500px-PRINCESS_DIANA_wide._%C2%A9_copyright_2010_%285112486245%29.jpg",
+      "q": "أقدم شركة ساعات مستمرة في العالم بدون انقطاع، شعارها صليب مالطا، ما هي؟",
+      "a": "فاشيرون كونستانتين"
+    },
+    {
+      "points": 400,
+      "desc": "شعار شركة بريغيه",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Jaeger_Lecoultre_img_0992.jpg/960px-Jaeger_Lecoultre_img_0992.jpg",
+      "q": "مخترع التوربيون، ساعات سويسرية فرنسية عريقة جداً، ما هي؟",
+      "a": "بريغيه (Breguet)"
+    },
+    {
+      "points": 400,
+      "desc": "شعار شركة كارتييه",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Cartier_Paris.jpg/960px-Cartier_Paris.jpg",
+      "q": "لقبت بـ (ملك الصاغة وصائغ الملوك)، براند فرنسي للساعات والمجوهرات، ما هو؟",
+      "a": "كارتييه"
+    },
+    {
+      "points": 400,
+      "desc": "شعار شركة آي دبليو سي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/CDW_Logo.svg/960px-CDW_Logo.svg.png",
+      "q": "ساعات (شافهاوزن) السويسرية الشهيرة، ما هو اختصار براندها؟",
+      "a": "IWC"
+    },
+    {
+      "points": 400,
+      "desc": "شعار شركة شوبارد",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Passeig_de_Gr%C3%A0cia%2C_Barcelona%2C_January_2015_%2804%29.jpg/960px-Passeig_de_Gr%C3%A0cia%2C_Barcelona%2C_January_2015_%2804%29.jpg",
+      "q": "براند سويسري مشهور بالمجوهرات الفاخرة وساعات (Happy Diamonds)، ما هو؟",
+      "a": "شوبارد"
+    },
+    {
+      "points": 400,
+      "desc": "شعار شركة زينيث للساعات",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Compaq_logo_new.svg/960px-Compaq_logo_new.svg.png",
+      "q": "ماركة سويسرية شعارها نجمة خماسية، اشتهرت بمحرك (El Primero)، ما هي؟",
+      "a": "زينيث (Zenith)"
+    },
+    {
+      "points": 400,
+      "desc": "شعار شركة أوميغا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Opelopelvauxhomega.JPG/500px-Opelopelvauxhomega.JPG",
+      "q": "المنافس التقليدي لرولكس، وأول ساعة هبطت على القمر، ما هي؟",
+      "a": "أوميغا"
+    },
+    {
+      "points": 400,
+      "desc": "شعار شركة تاغ هوير",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/TAG_Heuer_Logo.svg/960px-TAG_Heuer_Logo.svg.png",
+      "q": "ماركة ساعات سويسرية مرتبطة بسباقات السيارات، ما هي؟",
+      "a": "تاغ هوير"
+    },
+    {
+      "points": 400,
+      "desc": "شعار شركة تيودور",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_England.svg/960px-Flag_of_England.svg.png",
+      "q": "الأخت الصغرى لشركة رولكس، براند سويسري شعاره الدرع، ما هو؟",
+      "a": "تيودور"
+    },
+    {
+      "points": 400,
+      "desc": "شعار شركة لونجين",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/St_Imier.jpg/500px-St_Imier.jpg",
+      "q": "براند سويسري عريق شعاره الساعة الرملية المجنحة، ما هو؟",
+      "a": "لونجين"
+    },
+    {
+      "points": 400,
+      "desc": "شعار شركة بريتلينغ",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Breitling_MG_2683.jpg/960px-Breitling_MG_2683.jpg",
+      "q": "ماركة ساعات مشهورة بارتباطها بالطيران، شعارها حرف B بجناحين، ما هي؟",
+      "a": "بريتلينغ"
+    },
+    {
+      "points": 400,
+      "desc": "شعار شركة بلانبان",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Blancpain_MG_2605.jpg/960px-Blancpain_MG_2605.jpg",
+      "q": "أقدم ماركة ساعات مسجلة في التاريخ، ما هي؟",
+      "a": "بلانبان"
+    },
+    {
+      "points": 400,
+      "desc": "شعار شركة جيرار بيريجو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Cour_du_Temple_-_Limoges.JPG/960px-Cour_du_Temple_-_Limoges.JPG",
+      "q": "ماركة سويسرية فاخرة جداً تأسست عام 1791، ما هي؟",
+      "a": "جيرار بيريجو"
+    },
+    {
+      "points": 400,
+      "desc": "شعار شركة بياجيه",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Piaget_logo.svg/960px-Piaget_logo.svg.png",
+      "q": "ماركة سويسرية متخصصة في الساعات والمجوهرات النحيفة جداً، ما هي؟",
+      "a": "بياجيه"
+    },
+    {
+      "points": 400,
+      "desc": "شعار شركة جيوردانو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Giordanojf.JPG/960px-Giordanojf.JPG",
+      "q": "براند ملابس عالمي، مشهور بشعاره المكتوب ببساطة، ما هو؟",
+      "a": "جيوردانو"
+    },
+    {
+      "points": 400,
+      "desc": "شعار شركة بالنسياغا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/HK_CWB_%E9%8A%85%E9%91%BC%E7%81%A3_Causeway_Bay_%E6%99%82%E4%BB%A3%E5%BB%A3%E5%A0%B4_Times_Square_mall_shop_June_2020_SS2_36.jpg/960px-HK_CWB_%E9%8A%85%E9%91%BC%E7%81%A3_Causeway_Bay_%E6%99%82%E4%BB%A3%E5%BB%A3%E5%A0%B4_Times_Square_mall_shop_June_2020_SS2_36.jpg",
+      "q": "دار أزياء إسبانية فرنسية مشهورة بتصاميمها الغريبة، ما هي؟",
+      "a": "بالنسياغا"
+    },
+    {
+      "points": 400,
+      "desc": "شعار شركة غوتشي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/1960s_Gucci_Logo.svg/960px-1960s_Gucci_Logo.svg.png",
+      "q": "دار أزياء إيطالية شعارها حرفي G متداخلين، ما هي؟",
+      "a": "غوتشي"
+    },
+    {
+      "points": 400,
+      "desc": "شعار شركة فيرساتشي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Donatella_Versace_Time_Shankbone_2010.jpg/960px-Donatella_Versace_Time_Shankbone_2010.jpg",
+      "q": "دار أزياء إيطالية شعارها رأس الميدوسا، ما هي؟",
+      "a": "فيرساتشي"
+    },
+    {
+      "points": 400,
+      "desc": "شعار شركة برادا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Prada_milano.JPG/960px-Prada_milano.JPG",
+      "q": "ماركة إيطالية فاخرة للملابس والحقائب، ما هي؟",
+      "a": "برادا"
+    },
+    {
+      "points": 400,
+      "desc": "شعار شركة رالف لورين",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Gertrude_Rhinelander_Waldo_House_%2851660337406%29.jpg/960px-Gertrude_Rhinelander_Waldo_House_%2851660337406%29.jpg",
+      "q": "براند أمريكي شعاره لاعب بولو على حصان، ما هو؟",
+      "a": "رالف لورين"
+    },
+    {
+      "points": 400,
+      "desc": "شعار شركة هيرميس",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Rue_du_Faubourg-Saint-Honor%C3%A9%2C_Paris_May_2006.jpg/960px-Rue_du_Faubourg-Saint-Honor%C3%A9%2C_Paris_May_2006.jpg",
+      "q": "أفخم براند جلود في العالم، فرنسي المنشأ، ما هو؟",
+      "a": "هيرميس"
+    },
+    {
+      "points": 400,
+      "desc": "شعار شركة جيفنشي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Givenchy_GeorgeV.jpg/960px-Givenchy_GeorgeV.jpg",
+      "q": "دار أزياء وعطور فرنسية فاخرة، ما هي؟",
+      "a": "جيفنشي"
+    },
+    {
+      "points": 400,
+      "desc": "شعار شركة أرماني",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/GiorgioArmaniViennaKohlmarkt.jpg/960px-GiorgioArmaniViennaKohlmarkt.jpg",
+      "q": "إمبراطورية أزياء إيطالية أسسها جورجيو، ما هي؟",
+      "a": "أرماني"
+    },
+    {
+      "points": 400,
+      "desc": "شعار شركة بربري",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Burberry_Oslo.jpg/960px-Burberry_Oslo.jpg",
+      "q": "ماركة بريطانية مشهورة بنقشة المربعات والمعاطف، ما هي؟",
+      "a": "بربري"
+    },
+    {
+      "points": 600,
+      "desc": "شعار شركة ريثيون",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Raytheon_headquarters.jpg/960px-Raytheon_headquarters.jpg",
+      "q": "واحدة من أكبر شركات الدفاع والفضاء في العالم، تنتج صواريخ باتريوت، ما هي؟",
+      "a": "ريثيون (Raytheon)"
+    },
+    {
+      "points": 600,
+      "desc": "شعار شركة تاليس",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Thales_Paris-Saclay.JPG/960px-Thales_Paris-Saclay.JPG",
+      "q": "مجموعة فرنسية عملاقة في مجال الإلكترونيات والدفاع والطيران، ما هي؟",
+      "a": "تاليس (Thales)"
+    },
+    {
+      "points": 600,
+      "desc": "شعار شركة ستراتاسيس",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Stratasys_New_Logo.png/960px-Stratasys_New_Logo.png",
+      "q": "الشركة الرائدة عالمياً في مجال الطباعة ثلاثية الأبعاد الاحترافية، ما هي؟",
+      "a": "ستراتاسيس (Stratasys)"
+    },
+    {
+      "points": 600,
+      "desc": "شعار شركة سترايكر",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/General_Dynamics_Headquarters.jpg/960px-General_Dynamics_Headquarters.jpg",
+      "q": "شركة تكنولوجيا طبية أمريكية كبرى متخصصة في جراحة العظام والمعدات الجراحية، ما هي؟",
+      "a": "سترايكر (Stryker)"
+    },
+    {
+      "points": 600,
+      "desc": "شعار شركة مدترونيك",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/2009-0610-001-Fridley-MedtronicHQ.JPG/960px-2009-0610-001-Fridley-MedtronicHQ.JPG",
+      "q": "أكبر شركة تكنولوجيا طبية مستقلة في العالم، مشهورة بمنظمات القلب، ما هي؟",
+      "a": "مدترونيك (Medtronic)"
+    },
+    {
+      "points": 600,
+      "desc": "شعار شركة إيه إس إم إل",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/ASML_headquarters_Veldhoven.jpg/960px-ASML_headquarters_Veldhoven.jpg",
+      "q": "الشركة الهولندية الوحيدة في العالم التي تصنع الماكينات اللازمة لإنتاج الرقائق المتطورة، ما هي؟",
+      "a": "ASML"
+    },
+    {
+      "points": 600,
+      "desc": "شعار شركة بلاك روك",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Black-rock-hq.jpg/960px-Black-rock-hq.jpg",
+      "q": "أكبر شركة لإدارة الأصول في العالم، تتحكم في تريليونات الدولارات، ما هي؟",
+      "a": "بلاك روك (BlackRock)"
+    },
+    {
+      "points": 600,
+      "desc": "شعار شركة سبيس إكس",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Iridium-4_Mission_%2825557986177%29.jpg/960px-Iridium-4_Mission_%2825557986177%29.jpg",
+      "q": "شركة الفضاء الخاصة التي غيرت قواعد اللعبة، ما هي؟",
+      "a": "SpaceX"
+    },
+    {
+      "points": 600,
+      "desc": "شعار شركة بالانتير للتقنيات",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Palantir_1_2018-09-06.jpg/960px-Palantir_1_2018-09-06.jpg",
+      "q": "شركة برمجيات أمريكية غامضة متخصصة في تحليل البيانات الضخمة للاستخبارات، ما هي؟",
+      "a": "بالانتير (Palantir)"
+    },
+    {
+      "points": 600,
+      "desc": "شعار شركة نورث روب غرومان",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Eastman_Kodak_Company_logo_%282016%29.svg/960px-Eastman_Kodak_Company_logo_%282016%29.svg.png",
+      "q": "شركة صناعات عسكرية أمريكية أنتجت القاذفة B-2 Stealth، ما هي؟",
+      "a": "نورث روب غرومان"
+    },
+    {
+      "points": 600,
+      "desc": "شعار شركة بوسطن ديناميكس",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/2022_-_On_the_floor_SM7_6945_%2852472784103%29.jpg/960px-2022_-_On_the_floor_SM7_6945_%2852472784103%29.jpg",
+      "q": "الشركة المطورة للكلب الروبوت (Spot) والروبوت (Atlas)، ما هي؟",
+      "a": "بوسطن ديناميكس"
+    },
+    {
+      "points": 600,
+      "desc": "شعار شركة زايس",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Nikon_Logo.svg/960px-Nikon_Logo.svg.png",
+      "q": "أشهر شركة ألمانية لصناعة العدسات البصرية والمجاهر في العالم، ما هي؟",
+      "a": "زايس (Zeiss)"
+    },
+    {
+      "points": 600,
+      "desc": "شعار شركة باجاني",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Pagani_-_Flickr_-_exfordy.jpg/960px-Pagani_-_Flickr_-_exfordy.jpg",
+      "q": "ماركة سيارات إيطالية فائقة الندرة تصنع يدوياً بالكامل، ما هي؟",
+      "a": "باجاني"
+    },
+    {
+      "points": 600,
+      "desc": "شعار شركة ريزر",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Dolce_%26_Gabbana_Bal_Harbour.jpg/960px-Dolce_%26_Gabbana_Bal_Harbour.jpg",
+      "q": "براند مشهور بمعدات الجيمينج شعاره 3 ثعابين خضراء متداخلة، ما هو؟",
+      "a": "ريزر (Razer)"
+    },
+    {
+      "points": 600,
+      "desc": "شعار شركة انفيديا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/%E6%8A%80%E5%98%89%E7%A7%91%E6%8A%80%E7%B8%BD%E9%83%A8_20160512.jpg/960px-%E6%8A%80%E5%98%89%E7%A7%91%E6%8A%80%E7%B8%BD%E9%83%A8_20160512.jpg",
+      "q": "محرك الذكاء الاصطناعي في العالم حالياً، وصانعة كروت الشاشة، ما هي؟",
+      "a": "Nvidia"
+    },
+    {
+      "points": 600,
+      "desc": "شعار شركة أوراكل",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/%D9%82_%D8%B01.JPG/960px-%D9%82_%D8%B01.JPG",
+      "q": "شركة برمجيات قواعد بيانات عملاقة تملك لغة جافا، ما هي؟",
+      "a": "أوراكل"
+    },
+    {
+      "points": 600,
+      "desc": "شعار شركة سيسكو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/960px-Cisco_logo_blue_2016.svg.png",
+      "q": "العملاق الأمريكي لشبكات الإنترنت والراوترات، ما هي؟",
+      "a": "Cisco"
+    },
+    {
+      "points": 600,
+      "desc": "شعار شركة آي بي إم",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/IBM_Watson.PNG/960px-IBM_Watson.PNG",
+      "q": "العملاق الأزرق، أقدم شركة حواسيب في التاريخ، ما هي؟",
+      "a": "IBM"
+    },
+    {
+      "points": 600,
+      "desc": "شعار شركة ساب",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/FiatMirafiori6.jpg/960px-FiatMirafiori6.jpg",
+      "q": "شركة برمجيات ألمانية متخصصة في إدارة موارد الشركات، ما هي؟",
+      "a": "SAP"
+    },
+    {
+      "points": 600,
+      "desc": "شعار شركة باير",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Bild-Cecil_%E2%88%92_Foto-Exkursion_Berlin_2008_%E2%88%92_Bayer_Schering_Pharma.jpg/960px-Bild-Cecil_%E2%88%92_Foto-Exkursion_Berlin_2008_%E2%88%92_Bayer_Schering_Pharma.jpg",
+      "q": "العملاق الألماني للأدوية والكيميائيات، ما هو؟",
+      "a": "Bayer"
+    },
+    {
+      "points": 600,
+      "desc": "شعار شركة فايزر",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Eli_Lilly_and_Company.svg/960px-Eli_Lilly_and_Company.svg.png",
+      "q": "شركة الأدوية صاحبة أشهر لقاح لكورونا، ما هي؟",
+      "a": "Pfizer"
+    },
+    {
+      "points": 600,
+      "desc": "شعار شركة روش",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/HK_SKD_%E5%B0%87%E8%BB%8D%E6%BE%B3_TKO_%E6%97%A5%E5%87%BA%E5%BA%B7%E5%9F%8E_Lohas_Park_shopping_mall_shop_Yves_Rocher_December_2021_Px3_01.jpg/960px-HK_SKD_%E5%B0%87%E8%BB%8D%E6%BE%B3_TKO_%E6%97%A5%E5%87%BA%E5%BA%B7%E5%9F%8E_Lohas_Park_shopping_mall_shop_Yves_Rocher_December_2021_Px3_01.jpg",
+      "q": "شركة سويسرية رائدة في تشخيص الأمراض والأدوية السرطانية، ما هي؟",
+      "a": "Roche"
+    },
+    {
+      "points": 600,
+      "desc": "شعار شركة أبوت",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/SolvayAmericaUSoffices.jpg/960px-SolvayAmericaUSoffices.jpg",
+      "q": "شركة أمريكية للرعاية الصحية ومنتجات التغذية، ما هي؟",
+      "a": "Abbott"
+    },
+    {
+      "points": 600,
+      "desc": "شعار شركة جونسون آند جونسون",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Johnson_%26_Johnson_HQ_-_IMG_2615.JPG/960px-Johnson_%26_Johnson_HQ_-_IMG_2615.JPG",
+      "q": "صاحبة شعار (رعاية موثوقة) وأكبر شركة رعاية صحية في العالم، ما هي؟",
+      "a": "J&J"
+    },
+    {
+      "points": 600,
+      "desc": "شعار شركة نوفارتس",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Novartis_K25_Basel.jpg/960px-Novartis_K25_Basel.jpg",
+      "q": "شركة سويسرية كبرى للأدوية شعارها شكل يشبه الشعلة، ما هي؟",
+      "a": "Novartis"
+    },
+    {
+      "points": 600,
+      "desc": "شعار شركة ميرك",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Kurulu%C5%9Forhan.jpg/500px-Kurulu%C5%9Forhan.jpg",
+      "q": "أقدم شركة أدوية وكيميائيات في العالم، ألمانية الأصل، ما هي؟",
+      "a": "Merck"
+    },
+    {
+      "points": 600,
+      "desc": "شعار شركة تيفاني",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Louis_Vuitton_logo_and_wordmark.svg/960px-Louis_Vuitton_logo_and_wordmark.svg.png",
+      "q": "براند مجوهرات أمريكي فخم تملكه الآن مجموعة LVMH، ما هو؟",
+      "a": "تيفاني آند كو"
+    },
+    {
+      "points": 600,
+      "desc": "شعار شركة بولغاري",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Roma%2C_Piazza_Nicosia%2C_20.jpg/960px-Roma%2C_Piazza_Nicosia%2C_20.jpg",
+      "q": "ماركة إيطالية للمجوهرات والساعات الفاخرة تكتب اسمها بحرف V بدل U، ما هي؟",
+      "a": "Bvlgari"
+    }
+  ]
+}

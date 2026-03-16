@@ -1,0 +1,691 @@
+{
+  "category": "شخصيات أيقونية",
+  "questions": [
+    {
+      "points": 200,
+      "desc": "مايكل جاكسون",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Michael_Jackson_1983_%283x4_cropped%29_%28contrast%29.jpg/960px-Michael_Jackson_1983_%283x4_cropped%29_%28contrast%29.jpg",
+      "q": "من هو؟",
+      "a": "مايكل جاكسون"
+    },
+    {
+      "points": 200,
+      "desc": "أنجلينا جولي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Angelina_Jolie-643531_%28cropped%29.jpg/960px-Angelina_Jolie-643531_%28cropped%29.jpg",
+      "q": "من هي؟",
+      "a": "أنجلينا جولي"
+    },
+    {
+      "points": 200,
+      "desc": "محمد علي كلاي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Muhammad_Ali_NYWTS.jpg/960px-Muhammad_Ali_NYWTS.jpg",
+      "q": "من هو؟",
+      "a": "محمد علي كلاي"
+    },
+    {
+      "points": 200,
+      "desc": "مارلين مونرو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Monroecirca1953.jpg/960px-Monroecirca1953.jpg",
+      "q": "من هي؟",
+      "a": "مارلين مونرو"
+    },
+    {
+      "points": 200,
+      "desc": "بيل غيتس",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Bill_Gates_at_the_European_Commission_-_2025_-_P067383-987995_%28cropped%29.jpg/500px-Bill_Gates_at_the_European_Commission_-_2025_-_P067383-987995_%28cropped%29.jpg",
+      "q": "من هو؟",
+      "a": "بيل غيتس"
+    },
+    {
+      "points": 200,
+      "desc": "ستيف جوبز",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Steve_Jobs_Headshot_2010.JPG/960px-Steve_Jobs_Headshot_2010.JPG",
+      "q": "من هو؟",
+      "a": "ستيف جوبز"
+    },
+    {
+      "points": 200,
+      "desc": "الأميرة ديانا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Diana%2C_Princess_of_Wales_1997_%282%29.jpg/500px-Diana%2C_Princess_of_Wales_1997_%282%29.jpg",
+      "q": "من هي؟",
+      "a": "الأميرة ديانا"
+    },
+    {
+      "points": 200,
+      "desc": "إيلون ماسك",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Elon_Musk_-_54820081119_%28cropped%29.jpg/960px-Elon_Musk_-_54820081119_%28cropped%29.jpg",
+      "q": "من هو؟",
+      "a": "إيلون ماسك"
+    },
+    {
+      "points": 200,
+      "desc": "كريستيانو رونالدو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Cristiano_Ronaldo_2275_%28cropped%29.jpg/960px-Cristiano_Ronaldo_2275_%28cropped%29.jpg",
+      "q": "من هو؟",
+      "a": "كريستيانو رونالدو"
+    },
+    {
+      "points": 200,
+      "desc": "ليونيل ميسي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped_4%29.jpg/330px-Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped_4%29.jpg",
+      "q": "من هو؟",
+      "a": "ليونيل ميسي"
+    },
+    {
+      "points": 200,
+      "desc": "أم كلثوم",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/AmKulthum_bint_Ali.png/960px-AmKulthum_bint_Ali.png",
+      "q": "من هي؟",
+      "a": "أم كلثوم"
+    },
+    {
+      "points": 200,
+      "desc": "عادل إمام",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Adel_Imam_2009_cropped.jpg/500px-Adel_Imam_2009_cropped.jpg",
+      "q": "من هو؟",
+      "a": "عادل إمام"
+    },
+    {
+      "points": 200,
+      "desc": "والت ديزني",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Walt_disney_portrait.jpg/500px-Walt_disney_portrait.jpg",
+      "q": "من هو؟",
+      "a": "والت ديزني"
+    },
+    {
+      "points": 200,
+      "desc": "مستر بين",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Atkinson_Rowan_crop.jpg/500px-Atkinson_Rowan_crop.jpg",
+      "q": "من هو؟",
+      "a": "مستر بين"
+    },
+    {
+      "points": 200,
+      "desc": "ويل سميث",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Will_Smith_by_Gage_Skidmore.jpg/960px-Will_Smith_by_Gage_Skidmore.jpg",
+      "q": "من هو؟",
+      "a": "ويل سميث"
+    },
+    {
+      "points": 200,
+      "desc": "جاكي شان",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Jackie_Chan_July_2016.jpg/500px-Jackie_Chan_July_2016.jpg",
+      "q": "من هو؟",
+      "a": "جاكي شان"
+    },
+    {
+      "points": 200,
+      "desc": "أوبرا وينفري",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Oprah_in_2014.jpg/960px-Oprah_in_2014.jpg",
+      "q": "من هي؟",
+      "a": "أوبرا وينفري"
+    },
+    {
+      "points": 200,
+      "desc": "مارك زوكربيرغ",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg/960px-Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg",
+      "q": "من هو؟",
+      "a": "مارك زوكربيرغ"
+    },
+    {
+      "points": 200,
+      "desc": "بروس لي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Bruce_Lee_1973_%28cropped%29.jpg/330px-Bruce_Lee_1973_%28cropped%29.jpg",
+      "q": "من هو؟",
+      "a": "بروس لي"
+    },
+    {
+      "points": 200,
+      "desc": "أرنولد شوارزنيجر",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Arnold_Schwarzenegger_by_Gage_Skidmore_4.jpg/960px-Arnold_Schwarzenegger_by_Gage_Skidmore_4.jpg",
+      "q": "من هو؟",
+      "a": "أرنولد شوارزنيجر"
+    },
+    {
+      "points": 200,
+      "desc": "محمد صلاح",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Mohamed_Salah_2018.jpg/500px-Mohamed_Salah_2018.jpg",
+      "q": "من هو؟",
+      "a": "محمد صلاح"
+    },
+    {
+      "points": 200,
+      "desc": "أميتاب باتشان",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Indian_actor_Amitabh_Bachchan.jpg/960px-Indian_actor_Amitabh_Bachchan.jpg",
+      "q": "من هو؟",
+      "a": "أميتاب باتشان"
+    },
+    {
+      "points": 200,
+      "desc": "شاكيرا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/2023-11-16_Gala_de_los_Latin_Grammy%2C_03_%28cropped%2901.jpg/960px-2023-11-16_Gala_de_los_Latin_Grammy%2C_03_%28cropped%2901.jpg",
+      "q": "من هي؟",
+      "a": "شاكيرا"
+    },
+    {
+      "points": 200,
+      "desc": "الملك سلمان بن عبد العزيز آل سعود",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/%D8%A7%D9%84%D8%B5%D9%88%D8%B1%D8%A9_%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%D8%A9_%D9%84%D8%AE%D8%A7%D8%AF%D9%85_%D8%A7%D9%84%D8%AD%D8%B1%D9%85%D9%8A%D9%86_%D8%A7%D9%84%D8%B4%D8%B1%D9%8A%D9%81%D9%8A%D9%86_%D8%A7%D9%84%D9%85%D9%84%D9%83_%D8%B3%D9%84%D9%85%D8%A7%D9%86_%D8%A8%D9%86_%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2_%D8%A2%D9%84_%D8%B3%D8%B9%D9%88%D8%AF.jpg/960px-%D8%A7%D9%84%D8%B5%D9%88%D8%B1%D8%A9_%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%D8%A9_%D9%84%D8%AE%D8%A7%D8%AF%D9%85_%D8%A7%D9%84%D8%AD%D8%B1%D9%85%D9%8A%D9%86_%D8%A7%D9%84%D8%B4%D8%B1%D9%8A%D9%81%D9%8A%D9%86_%D8%A7%D9%84%D9%85%D9%84%D9%83_%D8%B3%D9%84%D9%85%D8%A7%D9%86_%D8%A8%D9%86_%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B9%D8%B2%D9%8A%D8%B2_%D8%A2%D9%84_%D8%B3%D8%B9%D9%88%D8%AF.jpg",
+      "q": "من هو؟",
+      "a": "الملك سلمان"
+    },
+    {
+      "points": 200,
+      "desc": "فلاديمير بوتين",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%9F%D1%83%D1%82%D0%B8%D0%BD_%2808-03-2024%29_%28cropped%29_%28higher_res%29.jpg/960px-%D0%92%D0%BB%D0%B0%D0%B4%D0%B8%D0%BC%D0%B8%D1%80_%D0%9F%D1%83%D1%82%D0%B8%D0%BD_%2808-03-2024%29_%28cropped%29_%28higher_res%29.jpg",
+      "q": "من هو؟",
+      "a": "بوتين"
+    },
+    {
+      "points": 200,
+      "desc": "باراك أوباما",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/President_Barack_Obama.jpg/960px-President_Barack_Obama.jpg",
+      "q": "من هو؟",
+      "a": "باراك أوباما"
+    },
+    {
+      "points": 200,
+      "desc": "دونالد ترامب",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29.jpg/960px-Official_Presidential_Portrait_of_President_Donald_J._Trump_%282025%29.jpg",
+      "q": "من هو؟",
+      "a": "دونالد ترامب"
+    },
+    {
+      "points": 200,
+      "desc": "بابا الفاتيكان فرانسيس",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/EU_%40_G7_Summit_2024_-_Family_photo_%2806%29_%28cropped%29.jpg/960px-EU_%40_G7_Summit_2024_-_Family_photo_%2806%29_%28cropped%29.jpg",
+      "q": "من هو؟",
+      "a": "البابا فرانسيس"
+    },
+    {
+      "points": 200,
+      "desc": "نيل آرمسترونغ",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Neil_Armstrong_pose.jpg/960px-Neil_Armstrong_pose.jpg",
+      "q": "من هو؟",
+      "a": "نيل آرمسترونغ"
+    },
+    {
+      "points": 200,
+      "desc": "أحمد الشقيري",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/%D8%A3%D8%AD%D9%85%D8%AF_%D8%A7%D9%84%D8%B4%D9%82%D9%8A%D8%B1%D9%8A_05.png/500px-%D8%A3%D8%AD%D9%85%D8%AF_%D8%A7%D9%84%D8%B4%D9%82%D9%8A%D8%B1%D9%8A_05.png",
+      "q": "من هو؟",
+      "a": "أحمد الشقيري"
+    },
+    {
+      "points": 200,
+      "desc": "جيف بيزوس",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg/500px-Jeff_Bezos_at_Amazon_Spheres_Grand_Opening_in_Seattle_-_2018_%2839074799225%29_%28cropped%29.jpg",
+      "q": "من هو؟",
+      "a": "جيف بيزوس"
+    },
+    {
+      "points": 200,
+      "desc": "توم كروز",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Tom_Cruise-2428.jpg/960px-Tom_Cruise-2428.jpg",
+      "q": "من هو؟",
+      "a": "توم كروز"
+    },
+    {
+      "points": 200,
+      "desc": "ليوناردو دي كابريو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Leonardo_DiCaprio_-_BFI_Southbank.jpg/960px-Leonardo_DiCaprio_-_BFI_Southbank.jpg",
+      "q": "من هو؟",
+      "a": "ليوناردو دي كابريو"
+    },
+    {
+      "points": 400,
+      "desc": "ألبرت أينشتاين",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Einstein_1921_by_F_Schmutzer_-_restoration.jpg/960px-Einstein_1921_by_F_Schmutzer_-_restoration.jpg",
+      "q": "من هو؟",
+      "a": "أينشتاين"
+    },
+    {
+      "points": 400,
+      "desc": "ماري كوري",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Mariecurie.jpg/960px-Mariecurie.jpg",
+      "q": "من هي؟",
+      "a": "ماري كوري"
+    },
+    {
+      "points": 400,
+      "desc": "فولتير",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Nicolas_de_Largilli%C3%A8re_-_Portrait_de_Voltaire_%281694-1778%29_en_1718_-_P208_-_Mus%C3%A9e_Carnavalet_-_2.jpg/960px-Nicolas_de_Largilli%C3%A8re_-_Portrait_de_Voltaire_%281694-1778%29_en_1718_-_P208_-_Mus%C3%A9e_Carnavalet_-_2.jpg",
+      "q": "من هو؟",
+      "a": "فولتير"
+    },
+    {
+      "points": 400,
+      "desc": "غاندي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Mahatma-Gandhi%2C_studio%2C_1931.jpg/960px-Mahatma-Gandhi%2C_studio%2C_1931.jpg",
+      "q": "من هو؟",
+      "a": "غاندي"
+    },
+    {
+      "points": 400,
+      "desc": "نيوتن",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/GodfreyKneller-IsaacNewton-1689.jpg/960px-GodfreyKneller-IsaacNewton-1689.jpg",
+      "q": "من هو؟",
+      "a": "إسحاق نيوتن"
+    },
+    {
+      "points": 400,
+      "desc": "فريدا كاهلو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Frida_Kahlo%2C_by_Guillermo_Kahlo_%28cropped%29.jpg/960px-Frida_Kahlo%2C_by_Guillermo_Kahlo_%28cropped%29.jpg",
+      "q": "من هي؟",
+      "a": "فريدا كاهلو"
+    },
+    {
+      "points": 400,
+      "desc": "تشي جيفارا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Che_Guevara_-_Guerrillero_Heroico_by_Alberto_Korda.jpg/960px-Che_Guevara_-_Guerrillero_Heroico_by_Alberto_Korda.jpg",
+      "q": "من هو؟",
+      "a": "جيفارا"
+    },
+    {
+      "points": 400,
+      "desc": "نيلسون مانديلا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Nelson_Mandela-2008_%28edit%29.jpg/500px-Nelson_Mandela-2008_%28edit%29.jpg",
+      "q": "من هو؟",
+      "a": "مانديلا"
+    },
+    {
+      "points": 400,
+      "desc": "دالي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Dalli_Jordan.jpg/330px-Dalli_Jordan.jpg",
+      "q": "من هو؟",
+      "a": "سلفادور دالي"
+    },
+    {
+      "points": 400,
+      "desc": "بيتهوفن",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Joseph_Karl_Stieler%27s_Beethoven_mit_dem_Manuskript_der_Missa_solemnis.jpg/960px-Joseph_Karl_Stieler%27s_Beethoven_mit_dem_Manuskript_der_Missa_solemnis.jpg",
+      "q": "من هو؟",
+      "a": "بيتهوفن"
+    },
+    {
+      "points": 400,
+      "desc": "توماس إديسون",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Thomas_Edison2.jpg/960px-Thomas_Edison2.jpg",
+      "q": "من هو؟",
+      "a": "إديسون"
+    },
+    {
+      "points": 400,
+      "desc": "غاليليو غاليلي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Galileo_Galilei_%281564-1642%29_RMG_BHC2700.tiff/lossy-page1-800px-Galileo_Galilei_%281564-1642%29_RMG_BHC2700.tiff.jpg",
+      "q": "من هو؟",
+      "a": "غاليليو"
+    },
+    {
+      "points": 400,
+      "desc": "فنسنت فان غوخ",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg/960px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project_%28454045%29.jpg",
+      "q": "من هو؟",
+      "a": "فان غوخ"
+    },
+    {
+      "points": 400,
+      "desc": "موزارت",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/The_Mozart_Family_-_Wolfgang_Amadeus_Mozart_headshot.jpg/960px-The_Mozart_Family_-_Wolfgang_Amadeus_Mozart_headshot.jpg",
+      "q": "من هو؟",
+      "a": "موزارت"
+    },
+    {
+      "points": 400,
+      "desc": "صدام حسين",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Saddam_Hussein_1979.jpg/500px-Saddam_Hussein_1979.jpg",
+      "q": "من هو؟",
+      "a": "صدام حسين"
+    },
+    {
+      "points": 400,
+      "desc": "معمر القذافي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Moamer_el_Gadafi_%28cropped%29.jpg/960px-Moamer_el_Gadafi_%28cropped%29.jpg",
+      "q": "من هو؟",
+      "a": "القذافي"
+    },
+    {
+      "points": 400,
+      "desc": "ياسر عرفات",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Leader_of_the_PLO%2C_Yasser_Arafat%2C_1996_Dan_Hadani_Archive.jpg/960px-Leader_of_the_PLO%2C_Yasser_Arafat%2C_1996_Dan_Hadani_Archive.jpg",
+      "q": "من هو؟",
+      "a": "ياسر عرفات"
+    },
+    {
+      "points": 400,
+      "desc": "نابليون بونابرت",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Painting_of_Napoleon_Bonaparte_by_Jacques-Louis_David%2C_1813.jpg/330px-Painting_of_Napoleon_Bonaparte_by_Jacques-Louis_David%2C_1813.jpg",
+      "q": "من هو؟",
+      "a": "نابليون"
+    },
+    {
+      "points": 400,
+      "desc": "هتلر",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Adolf_Hitler_cropped_restored_3x4.jpg/960px-Adolf_Hitler_cropped_restored_3x4.jpg",
+      "q": "من هو؟",
+      "a": "هتلر"
+    },
+    {
+      "points": 400,
+      "desc": "ونستون تشرشل",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Sir_Winston_Churchill_-_19086236948.jpg/960px-Sir_Winston_Churchill_-_19086236948.jpg",
+      "q": "من هو؟",
+      "a": "تشرشل"
+    },
+    {
+      "points": 400,
+      "desc": "مارغريت ثاتشر",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Margaret_Thatcher_%281983%29.jpg/960px-Margaret_Thatcher_%281983%29.jpg",
+      "q": "من هي؟",
+      "a": "ثاتشر"
+    },
+    {
+      "points": 400,
+      "desc": "فيدل كاسترو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Fidel_Castro_1950s.jpg/500px-Fidel_Castro_1950s.jpg",
+      "q": "من هو؟",
+      "a": "كاسترو"
+    },
+    {
+      "points": 400,
+      "desc": "الخوارزمي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Al-Khwarizmi_portrait.jpg/330px-Al-Khwarizmi_portrait.jpg",
+      "q": "من هو؟",
+      "a": "الخوارزمي"
+    },
+    {
+      "points": 400,
+      "desc": "ابن سينا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/1950_%22Avicenna%22_stamp_of_Iran.jpg/330px-1950_%22Avicenna%22_stamp_of_Iran.jpg",
+      "q": "من هو؟",
+      "a": "ابن سينا"
+    },
+    {
+      "points": 400,
+      "desc": "باستير",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Louis_Pasteur.jpg/500px-Louis_Pasteur.jpg",
+      "q": "من هو؟",
+      "a": "لويس باستير"
+    },
+    {
+      "points": 400,
+      "desc": "إسكندر الأكبر",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Alexander_the_Great_Ny_Carlsberg_Glyptotek_IN574_n1.jpg/960px-Alexander_the_Great_Ny_Carlsberg_Glyptotek_IN574_n1.jpg",
+      "q": "من هو؟",
+      "a": "إسكندر الأكبر"
+    },
+    {
+      "points": 400,
+      "desc": "كليوباترا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Kleopatra-VII.-Altes-Museum-Berlin1.jpg/960px-Kleopatra-VII.-Altes-Museum-Berlin1.jpg",
+      "q": "من هي؟",
+      "a": "كليوباترا"
+    },
+    {
+      "points": 400,
+      "desc": "جورج واشنطن",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg/960px-Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg",
+      "q": "من هو؟",
+      "a": "واشنطن"
+    },
+    {
+      "points": 400,
+      "desc": "مالكوم إكس",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Malcolm_X_NYWTS_4.jpg/960px-Malcolm_X_NYWTS_4.jpg",
+      "q": "من هو؟",
+      "a": "مالكوم إكس"
+    },
+    {
+      "points": 400,
+      "desc": "ديفيد بيكهام",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/David_Beckham_UNICEF_%28cropped2%29.jpg/500px-David_Beckham_UNICEF_%28cropped2%29.jpg",
+      "q": "من هو؟",
+      "a": "بيكهام"
+    },
+    {
+      "points": 400,
+      "desc": "مايكل شوماخر",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Schumacher_china_2012.jpg/960px-Schumacher_china_2012.jpg",
+      "q": "من هو؟",
+      "a": "شوماخر"
+    },
+    {
+      "points": 400,
+      "desc": "تايجر وودز",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Tiger_Woods_in_May_2019.jpg/960px-Tiger_Woods_in_May_2019.jpg",
+      "q": "من هو؟",
+      "a": "تايجر وودز"
+    },
+    {
+      "points": 600,
+      "desc": "نيكولا تسلا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Tesla_circa_1890.jpeg/500px-Tesla_circa_1890.jpeg",
+      "q": "من هو؟",
+      "a": "تسلا"
+    },
+    {
+      "points": 600,
+      "desc": "ألان تورنغ",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Alan_Turing_%281951%29_%28crop%29.jpg/500px-Alan_Turing_%281951%29_%28crop%29.jpg",
+      "q": "من هو؟",
+      "a": "ألان تورنغ"
+    },
+    {
+      "points": 600,
+      "desc": "ستيفن هوكينج",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Stephen_Hawking.StarChild.jpg",
+      "q": "من هو؟",
+      "a": "ستيفن هوكينج"
+    },
+    {
+      "points": 600,
+      "desc": "تشارلز داروين",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Charles_Darwin_portrait.jpg/500px-Charles_Darwin_portrait.jpg",
+      "q": "من هو؟",
+      "a": "داروين"
+    },
+    {
+      "points": 600,
+      "desc": "سيغموند فرويد",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Sigmund_Freud%2C_by_Max_Halberstadt_%28cropped%29.jpg/960px-Sigmund_Freud%2C_by_Max_Halberstadt_%28cropped%29.jpg",
+      "q": "من هو؟",
+      "a": "فرويد"
+    },
+    {
+      "points": 600,
+      "desc": "نيتشه",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Nietzsche187a.jpg/960px-Nietzsche187a.jpg",
+      "q": "من هو؟",
+      "a": "نيتشه"
+    },
+    {
+      "points": 600,
+      "desc": "دوستويفسكي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Vasily_Perov_-_%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_-_Google_Art_Project.jpg/960px-Vasily_Perov_-_%D0%9F%D0%BE%D1%80%D1%82%D1%80%D0%B5%D1%82_%D0%A4.%D0%9C.%D0%94%D0%BE%D1%81%D1%82%D0%BE%D0%B5%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_-_Google_Art_Project.jpg",
+      "q": "من هو؟",
+      "a": "دوستويفسكي"
+    },
+    {
+      "points": 600,
+      "desc": "جورج أورويل",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/George_Orwell%2C_c._1940_%2841928180381%29.jpg/960px-George_Orwell%2C_c._1940_%2841928180381%29.jpg",
+      "q": "من هو؟",
+      "a": "جورج أورويل"
+    },
+    {
+      "points": 600,
+      "desc": "كافكا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Franz_Kafka%2C_1923.jpg/960px-Franz_Kafka%2C_1923.jpg",
+      "q": "من هو؟",
+      "a": "فرانز كافكا"
+    },
+    {
+      "points": 600,
+      "desc": "إرنست همنغواي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/ErnestHemingway.jpg/960px-ErnestHemingway.jpg",
+      "q": "من هو؟",
+      "a": "همنغواي"
+    },
+    {
+      "points": 600,
+      "desc": "بابلو نيرودا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Pablo_Neruda_1963.jpg/500px-Pablo_Neruda_1963.jpg",
+      "q": "من هو؟",
+      "a": "بابلو نيرودا"
+    },
+    {
+      "points": 600,
+      "desc": "ماركو بولو",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Marco_Polo_portrait.jpg/250px-Marco_Polo_portrait.jpg",
+      "q": "من هو؟",
+      "a": "ماركو بولو"
+    },
+    {
+      "points": 600,
+      "desc": "ابن بطوطة",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Bust_of_Ibn_Battuta_at_Ibn_Battuta_museum.jpg/960px-Bust_of_Ibn_Battuta_at_Ibn_Battuta_museum.jpg",
+      "q": "من هو؟",
+      "a": "ابن بطوطة"
+    },
+    {
+      "points": 600,
+      "desc": "فاسكو دا غاما",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Ignoto_portoghese%2C_ritratto_di_un_cavaliere_dell%27ordine_di_cristo%2C_1525-50_ca._02.jpg/960px-Ignoto_portoghese%2C_ritratto_di_un_cavaliere_dell%27ordine_di_cristo%2C_1525-50_ca._02.jpg",
+      "q": "من هو؟",
+      "a": "فاسكو دا غاما"
+    },
+    {
+      "points": 600,
+      "desc": "ماجلان",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Retrato_de_Hernando_de_Magallanes.jpg/960px-Retrato_de_Hernando_de_Magallanes.jpg",
+      "q": "من هو؟",
+      "a": "ماجلان"
+    },
+    {
+      "points": 600,
+      "desc": "أكيرا كوروساوا",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Akira_Kurosawa_and_Mikio_Naruse_during_the_shooting_of_Nadare%2C_1937.jpg",
+      "q": "من هو؟",
+      "a": "كوروساوا"
+    },
+    {
+      "points": 600,
+      "desc": "أغاتا كريستي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Traditional_pizza_from_Napoli.jpg/960px-Traditional_pizza_from_Napoli.jpg",
+      "q": "من هي؟",
+      "a": "أغاتا كريستي"
+    },
+    {
+      "points": 600,
+      "desc": "ألفريد هيتشكوك",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Hitchcock%2C_Alfred_02.jpg/500px-Hitchcock%2C_Alfred_02.jpg",
+      "q": "من هو؟",
+      "a": "هيتشكوك"
+    },
+    {
+      "points": 600,
+      "desc": "تشيخوف",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Anton_Chekhov_1889.jpg/960px-Anton_Chekhov_1889.jpg",
+      "q": "من هو؟",
+      "a": "أنطون تشيخوف"
+    },
+    {
+      "points": 600,
+      "desc": "عمر الخيام",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Omar_Khayyam2.JPG/960px-Omar_Khayyam2.JPG",
+      "q": "من هو؟",
+      "a": "عمر الخيام"
+    },
+    {
+      "points": 600,
+      "desc": "طه حسين",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Taha_Hussein.jpg/330px-Taha_Hussein.jpg",
+      "q": "من هو؟",
+      "a": "طه حسين"
+    },
+    {
+      "points": 600,
+      "desc": "نجيب محفوظ",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Nagib_Mahfouz.jpg/250px-Nagib_Mahfouz.jpg",
+      "q": "من هو؟",
+      "a": "نجيب محفوظ"
+    },
+    {
+      "points": 600,
+      "desc": "جمال حمدان",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Prof_Gamal_Hamdan.jpg/500px-Prof_Gamal_Hamdan.jpg",
+      "q": "من هو؟",
+      "a": "جمال حمدان"
+    },
+    {
+      "points": 600,
+      "desc": "ابن خلدون",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Ibn_Khald%C5%ABn%2C_Sayr_mulhimah_min_al-Sharq_wa-al-Gharb.png/500px-Ibn_Khald%C5%ABn%2C_Sayr_mulhimah_min_al-Sharq_wa-al-Gharb.png",
+      "q": "من هو؟",
+      "a": "ابن خلدون"
+    },
+    {
+      "points": 600,
+      "desc": "ابن رشد",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Statue_of_Averroes_in_C%C3%B3rdoba%2C_Spain.jpg/960px-Statue_of_Averroes_in_C%C3%B3rdoba%2C_Spain.jpg",
+      "q": "من هو؟",
+      "a": "ابن رشد"
+    },
+    {
+      "points": 600,
+      "desc": "صلاح الدين الأيوبي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Saladin%27s_imaginary_portrait.jpg/250px-Saladin%27s_imaginary_portrait.jpg",
+      "q": "من هو؟",
+      "a": "صلاح الدين الأيوبي"
+    },
+    {
+      "points": 600,
+      "desc": "جنكيز خان",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/YuanEmperorAlbumGenghisPortrait.jpg/960px-YuanEmperorAlbumGenghisPortrait.jpg",
+      "q": "من هو؟",
+      "a": "جنكيز خان"
+    },
+    {
+      "points": 600,
+      "desc": "أتاتورك",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Ataturk1930s.jpg/500px-Ataturk1930s.jpg",
+      "q": "من هو؟",
+      "a": "مصطفى كمال أتاتورك"
+    },
+    {
+      "points": 600,
+      "desc": "تشرشل",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Sir_Winston_Churchill_-_19086236948.jpg/960px-Sir_Winston_Churchill_-_19086236948.jpg",
+      "q": "من هو؟",
+      "a": "تشرشل"
+    },
+    {
+      "points": 600,
+      "desc": "المهدي بن بركة",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Mehdi_Ben_Barka_Anefo.jpg/500px-Mehdi_Ben_Barka_Anefo.jpg",
+      "q": "من هو؟",
+      "a": "بن بركة"
+    },
+    {
+      "points": 600,
+      "desc": "تشومسكي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Noam_Chomsky_portrait_2017.jpg/960px-Noam_Chomsky_portrait_2017.jpg",
+      "q": "من هو؟",
+      "a": "نعوم تشومسكي"
+    },
+    {
+      "points": 600,
+      "desc": "رونالدو البرازيلي",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Cristiano_Ronaldo_2275_%28cropped%29.jpg/960px-Cristiano_Ronaldo_2275_%28cropped%29.jpg",
+      "q": "من هو؟",
+      "a": "رونالدو نازاريو"
+    },
+    {
+      "points": 600,
+      "desc": "زين الدين زيدان",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Zinedine_Zidane_by_Tasnim_03.jpg/330px-Zinedine_Zidane_by_Tasnim_03.jpg",
+      "q": "من هو؟",
+      "a": "زيدان"
+    }
+  ]
+}
