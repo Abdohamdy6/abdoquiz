@@ -1,0 +1,705 @@
+{
+  "category": "Guess the Landmark",
+  "questions": [
+    {
+      "points": 200,
+      "desc": "Eiffel Tower Paris",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Champ_de_Mars_from_the_Eiffel_Tower_-_July_2006_edit.jpg/960px-Champ_de_Mars_from_the_Eiffel_Tower_-_July_2006_edit.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "برج إيفل - باريس، فرنسا"
+    },
+    {
+      "points": 200,
+      "desc": "Big Ben London clock tower",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Big_Ben%2C_Londres%2C_Inglaterra%2C_2022-11-23%2C_DD_70-72_HDR.jpg/960px-Big_Ben%2C_Londres%2C_Inglaterra%2C_2022-11-23%2C_DD_70-72_HDR.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "بيغ بن - لندن، إنجلترا"
+    },
+    {
+      "points": 200,
+      "desc": "Statue of Liberty New York",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Currier_and_Ives_Liberty2.jpg/960px-Currier_and_Ives_Liberty2.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "تمثال الحرية - نيويورك، أمريكا"
+    },
+    {
+      "points": 200,
+      "desc": "Great Wall of China",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/20090529_Great_Wall_8185.jpg/960px-20090529_Great_Wall_8185.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "سور الصين العظيم"
+    },
+    {
+      "points": 200,
+      "desc": "Colosseum Rome Italy",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Arch_Colosseum_Rome_Italy.jpg/960px-Arch_Colosseum_Rome_Italy.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "الكولوسيوم - روما، إيطاليا"
+    },
+    {
+      "points": 200,
+      "desc": "Pyramids of Giza Egypt",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/All_Gizah_Pyramids.jpg/960px-All_Gizah_Pyramids.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "أهرامات الجيزة - مصر"
+    },
+    {
+      "points": 200,
+      "desc": "Taj Mahal India",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Aks_The_Reflection_Taj_Mahal.jpg/960px-Aks_The_Reflection_Taj_Mahal.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "تاج محل - الهند"
+    },
+    {
+      "points": 200,
+      "desc": "Sydney Opera House Australia",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Sydney_%28AU%29%2C_Opera_House_--_2019_--_2152.jpg/960px-Sydney_%28AU%29%2C_Opera_House_--_2019_--_2152.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "دار الأوبرا - سيدني، أستراليا"
+    },
+    {
+      "points": 200,
+      "desc": "Mount Fuji Japan snow",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Mount_Fuji%2C_Japan_ESA19484504.jpeg/960px-Mount_Fuji%2C_Japan_ESA19484504.jpeg",
+      "q": "ما هو هذا الجبل الشهير؟",
+      "a": "جبل فوجي - اليابان"
+    },
+    {
+      "points": 200,
+      "desc": "Niagara Falls waterfall",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/3Falls_Niagara.jpg/960px-3Falls_Niagara.jpg",
+      "q": "ما هي هذه الشلالات الشهيرة؟",
+      "a": "شلالات نياغارا - أمريكا وكندا"
+    },
+    {
+      "points": 200,
+      "desc": "Burj Khalifa Dubai skyscraper",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Burj_Dubai%2C_world%27s_tallest_skyscraper_%28475240690%29.jpg/500px-Burj_Dubai%2C_world%27s_tallest_skyscraper_%28475240690%29.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "برج خليفة - دبي، الإمارات"
+    },
+    {
+      "points": 200,
+      "desc": "Machu Picchu Peru ancient ruins",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Explorations_in_Peru.djvu/page1-800px-Explorations_in_Peru.djvu.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "ماتشو بيتشو - بيرو"
+    },
+    {
+      "points": 200,
+      "desc": "Leaning Tower of Pisa Italy",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Campanile_D%C3%B4me_-_Pise_%28IT52%29_-_2022-08-31_-_20.jpg/960px-Campanile_D%C3%B4me_-_Pise_%28IT52%29_-_2022-08-31_-_20.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "برج بيزا المائل - إيطاليا"
+    },
+    {
+      "points": 200,
+      "desc": "Stonehenge England ancient stones",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Ancient_stone_crosses_of_England_%28IA_ancientstonecros00rimm%29.pdf/page1-500px-Ancient_stone_crosses_of_England_%28IA_ancientstonecros00rimm%29.pdf.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "ستونهنج - إنجلترا"
+    },
+    {
+      "points": 200,
+      "desc": "Acropolis Athens Greece Parthenon",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Acropolis_Parthenon_Athens_Greece.jpg/960px-Acropolis_Parthenon_Athens_Greece.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "الأكروبوليس - أثينا، اليونان"
+    },
+    {
+      "points": 200,
+      "desc": "Sagrada Familia Barcelona church",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/%28Barcelona%29_Armchair_dissenyat_per_Antoni_Gaud%C3%AD_-_Sagrada_Familia.jpg/960px-%28Barcelona%29_Armchair_dissenyat_per_Antoni_Gaud%C3%AD_-_Sagrada_Familia.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "كنيسة ساغرادا فاميليا - برشلونة، إسبانيا"
+    },
+    {
+      "points": 200,
+      "desc": "Christ the Redeemer Rio de Janeiro",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Christ-Redeemer-Rio-de-Janeiro.jpg/960px-Christ-Redeemer-Rio-de-Janeiro.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "تمثال المسيح الفادي - ريو دي جانيرو، البرازيل"
+    },
+    {
+      "points": 200,
+      "desc": "Golden Gate Bridge San Francisco",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Golden_Gate_Bridge_Yang_Ming_Line.jpg/960px-Golden_Gate_Bridge_Yang_Ming_Line.jpg",
+      "q": "ما هو هذا الجسر الشهير؟",
+      "a": "جسر البوابة الذهبية - سان فرانسيسكو، أمريكا"
+    },
+    {
+      "points": 200,
+      "desc": "Petra Jordan rose city",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Petra-75.jpg/960px-Petra-75.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "البتراء - الأردن"
+    },
+    {
+      "points": 200,
+      "desc": "Angkor Wat Cambodia temple",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/2014-Cambodge_Angkor_Wat_%2821%29.jpg/960px-2014-Cambodge_Angkor_Wat_%2821%29.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "أنكور وات - كمبوديا"
+    },
+    {
+      "points": 200,
+      "desc": "Hagia Sophia Istanbul Turkey",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Apse_mosaic_Hagia_Sophia_Virgin_and_Child.jpg/960px-Apse_mosaic_Hagia_Sophia_Virgin_and_Child.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "آيا صوفيا - إسطنبول، تركيا"
+    },
+    {
+      "points": 200,
+      "desc": "Empire State Building New York",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Empire_State_Building_pano.jpg/960px-Empire_State_Building_pano.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "مبنى إمباير ستيت - نيويورك"
+    },
+    {
+      "points": 200,
+      "desc": "Vatican St Peters Basilica Rome",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Basilica_Sancti_Petri_blue_hour.jpg/960px-Basilica_Sancti_Petri_blue_hour.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "كاتدرائية القديس بطرس - الفاتيكان"
+    },
+    {
+      "points": 200,
+      "desc": "Aurora Borealis Northern Lights",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Aurora_and_perseids.jpg/960px-Aurora_and_perseids.jpg",
+      "q": "ما هي هذه الظاهرة الطبيعية؟",
+      "a": "الشفق القطبي الشمالي"
+    },
+    {
+      "points": 200,
+      "desc": "Grand Canyon Arizona USA",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Grand_Canyon_%28Arizona%2C_USA%29%2C_South_Rim_nahe_Tusayan_--_2012_--_5848.jpg/960px-Grand_Canyon_%28Arizona%2C_USA%29%2C_South_Rim_nahe_Tusayan_--_2012_--_5848.jpg",
+      "q": "ما هو هذا المعلم الطبيعي الشهير؟",
+      "a": "الجراند كانيون - أريزونا، أمريكا"
+    },
+    {
+      "points": 200,
+      "desc": "Amazon rainforest river Brazil",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Aerial_view_of_the_Amazon_Rainforest.jpg/960px-Aerial_view_of_the_Amazon_Rainforest.jpg",
+      "q": "ما هو هذا النهر الشهير؟",
+      "a": "نهر الأمازون - البرازيل"
+    },
+    {
+      "points": 200,
+      "desc": "Sahara desert sand dunes",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Felis_margarita_01.jpg/960px-Felis_margarita_01.jpg",
+      "q": "ما هو هذا الصحراء الشهيرة؟",
+      "a": "الصحراء الكبرى الأفريقية"
+    },
+    {
+      "points": 200,
+      "desc": "Mount Everest Himalaya Nepal",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/20110810_North_Face_of_Everest_Tibet_China_Panoramic.jpg/960px-20110810_North_Face_of_Everest_Tibet_China_Panoramic.jpg",
+      "q": "ما هو هذا الجبل الشهير؟",
+      "a": "جبل إيفرست - نيبال"
+    },
+    {
+      "points": 200,
+      "desc": "Venice Italy canal gondola",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/%28Venice%29_-_Riva_del_Vin%2C_1097-98b.jpg/960px-%28Venice%29_-_Riva_del_Vin%2C_1097-98b.jpg",
+      "q": "ما هي هذه المدينة الشهيرة؟",
+      "a": "البندقية - إيطاليا"
+    },
+    {
+      "points": 200,
+      "desc": "Santorini Greece white buildings blue dome",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Blue_Dome_in_Santorini_-_Flickr_-_kuhnmi.jpg/960px-Blue_Dome_in_Santorini_-_Flickr_-_kuhnmi.jpg",
+      "q": "ما هي هذه المدينة الشهيرة؟",
+      "a": "سانتوريني - اليونان"
+    },
+    {
+      "points": 200,
+      "desc": "Great Barrier Reef Australia coral",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Aerial_views_of_The_Great_Barrier_Reef%2C_Queensland_%28Ank_Kumar%29_01.jpg/960px-Aerial_views_of_The_Great_Barrier_Reef%2C_Queensland_%28Ank_Kumar%29_01.jpg",
+      "q": "ما هو هذا المعلم الطبيعي؟",
+      "a": "الحاجز المرجاني العظيم - أستراليا"
+    },
+    {
+      "points": 200,
+      "desc": "Victoria Falls Zimbabwe Africa",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Cataratas_Victoria%2C_Zambia-Zimbabue%2C_2018-07-27%2C_DD_05.jpg/960px-Cataratas_Victoria%2C_Zambia-Zimbabue%2C_2018-07-27%2C_DD_05.jpg",
+      "q": "ما هي هذه الشلالات الشهيرة؟",
+      "a": "شلالات فيكتوريا - أفريقيا"
+    },
+    {
+      "points": 200,
+      "desc": "Maldives tropical island turquoise water",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Anantara_Kihavah_-_Aerial_Hero_Shot_2024.jpg/960px-Anantara_Kihavah_-_Aerial_Hero_Shot_2024.jpg",
+      "q": "ما هي هذه الجزر الشهيرة؟",
+      "a": "جزر المالديف"
+    },
+    {
+      "points": 200,
+      "desc": "Louvre Museum Paris pyramid entrance",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Mur_le_Vau_%28Louvre%29.jpg/960px-Mur_le_Vau_%28Louvre%29.jpg",
+      "q": "ما هو هذا المتحف الشهير؟",
+      "a": "متحف اللوفر - باريس، فرنسا"
+    },
+    {
+      "points": 400,
+      "desc": "Alhambra Granada Spain palace",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Alhambra_detail.jpg/960px-Alhambra_detail.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "قصر الحمراء - غرناطة، إسبانيا"
+    },
+    {
+      "points": 400,
+      "desc": "Chichen Itza Mexico Mayan pyramid",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Chichen-Itza_%2813168028764%29.jpg/960px-Chichen-Itza_%2813168028764%29.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "تشيتشن إيتزا - المكسيك"
+    },
+    {
+      "points": 400,
+      "desc": "Neuschwanstein Castle Bavaria Germany",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Alpsee_-_Hohenschwangau_Castle_-_Alpenrose_-_Neuschwanstein_Castle_01.jpg/960px-Alpsee_-_Hohenschwangau_Castle_-_Alpenrose_-_Neuschwanstein_Castle_01.jpg",
+      "q": "ما هو هذا القلعة الشهيرة؟",
+      "a": "قلعة نوشفانشتاين - بافاريا، ألمانيا"
+    },
+    {
+      "points": 400,
+      "desc": "Burj Al Arab Dubai hotel sail",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Havenwelten_Februar2008.jpg/960px-Havenwelten_Februar2008.jpg",
+      "q": "ما هو هذا الفندق الشهير؟",
+      "a": "برج العرب - دبي، الإمارات"
+    },
+    {
+      "points": 400,
+      "desc": "Forbidden City Beijing China palace",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Beijing_China_Forbidden-City-07.jpg/960px-Beijing_China_Forbidden-City-07.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "المدينة المحرمة - بكين، الصين"
+    },
+    {
+      "points": 400,
+      "desc": "Cappadocia Turkey hot air balloons",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Cappadocia_Aerial_View_Landscape.jpg/960px-Cappadocia_Aerial_View_Landscape.jpg",
+      "q": "ما هي هذه المنطقة الشهيرة؟",
+      "a": "كابادوكيا - تركيا"
+    },
+    {
+      "points": 400,
+      "desc": "Patagonia South America mountains",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Cerro_Torre_%28cropped%29.jpg/500px-Cerro_Torre_%28cropped%29.jpg",
+      "q": "ما هي هذه المنطقة الشهيرة؟",
+      "a": "باتاغونيا - جنوب أمريكا"
+    },
+    {
+      "points": 400,
+      "desc": "Amalfi Coast Italy cliffs sea",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Amalfi_Coast_-_Flickr_-_concrete%5Efells_%281%29.jpg/960px-Amalfi_Coast_-_Flickr_-_concrete%5Efells_%281%29.jpg",
+      "q": "ما هو هذا الساحل الشهير؟",
+      "a": "ساحل أمالفي - إيطاليا"
+    },
+    {
+      "points": 400,
+      "desc": "Bora Bora French Polynesia overwater bungalow",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Four_Seasons_Resort_Bora_Bora.jpg/500px-Four_Seasons_Resort_Bora_Bora.jpg",
+      "q": "ما هي هذه الجزيرة الشهيرة؟",
+      "a": "جزيرة بورا بورا - بولينيزيا الفرنسية"
+    },
+    {
+      "points": 400,
+      "desc": "Torres del Paine Chile mountains",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Andean_condor_%28Vultur_gryphus%29_male_in_flight_Torres_del_Paine.jpg/960px-Andean_condor_%28Vultur_gryphus%29_male_in_flight_Torres_del_Paine.jpg",
+      "q": "ما هو هذا المعلم الطبيعي؟",
+      "a": "توريس ديل باين - تشيلي"
+    },
+    {
+      "points": 400,
+      "desc": "Fiordland New Zealand fjord",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/00_0368_Milford_Sound_-_The_Lion.jpg/960px-00_0368_Milford_Sound_-_The_Lion.jpg",
+      "q": "ما هي هذه المنطقة الشهيرة؟",
+      "a": "فيوردلاند - نيوزيلندا"
+    },
+    {
+      "points": 400,
+      "desc": "Wadi Rum Jordan desert rock",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Jordan%2C_Wadi_Rum_Desert%2C_Khor_al_Ajram_2.jpg/960px-Jordan%2C_Wadi_Rum_Desert%2C_Khor_al_Ajram_2.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "وادي رم - الأردن"
+    },
+    {
+      "points": 400,
+      "desc": "Serengeti Tanzania wildlife safari",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Federal_Register_1980-07-14-_Vol_45_Iss_136_%28IA_sim_federal-register-find_1980-07-14_45_136_0%29.pdf/page1-960px-Federal_Register_1980-07-14-_Vol_45_Iss_136_%28IA_sim_federal-register-find_1980-07-14_45_136_0%29.pdf.jpg",
+      "q": "ما هو هذا المتنزه الشهير؟",
+      "a": "سيرنغيتي - تنزانيا"
+    },
+    {
+      "points": 400,
+      "desc": "Dead Sea Jordan salt water float",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/An_Analysis_of_the_Waters_of_the_Dead_Sea_and_the_River_Jordan_%28IA_jstor-107245%29.pdf/page1-500px-An_Analysis_of_the_Waters_of_the_Dead_Sea_and_the_River_Jordan_%28IA_jstor-107245%29.pdf.jpg",
+      "q": "ما هو هذا البحر الشهير؟",
+      "a": "البحر الميت - الأردن"
+    },
+    {
+      "points": 400,
+      "desc": "Iguazu Falls Argentina Brazil",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/00_1826_Iguazu_Falls_-_South_America%2C_Brazil.jpg/960px-00_1826_Iguazu_Falls_-_South_America%2C_Brazil.jpg",
+      "q": "ما هي هذه الشلالات الشهيرة؟",
+      "a": "شلالات إيغوازو - الأرجنتين والبرازيل"
+    },
+    {
+      "points": 400,
+      "desc": "Ha Long Bay Vietnam limestone karsts",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Bai_Tu_Long_Bay.jpeg/960px-Bai_Tu_Long_Bay.jpeg",
+      "q": "ما هو هذا الخليج الشهير؟",
+      "a": "خليج هالونغ - فيتنام"
+    },
+    {
+      "points": 400,
+      "desc": "Antelope Canyon Arizona USA slot canyon",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Antelope_Canyon_Mittags.jpg/960px-Antelope_Canyon_Mittags.jpg",
+      "q": "ما هو هذا المعلم الطبيعي؟",
+      "a": "كانيون الظبي - أريزونا، أمريكا"
+    },
+    {
+      "points": 400,
+      "desc": "Plitvice Lakes Croatia waterfalls",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Galova%C4%8Dki_Buk_Waterfall_at_Galovac_lake_in_Plitvice%2C_Croatia_%2848670303016%29.jpg/960px-Galova%C4%8Dki_Buk_Waterfall_at_Galovac_lake_in_Plitvice%2C_Croatia_%2848670303016%29.jpg",
+      "q": "ما هي هذه البحيرات الشهيرة؟",
+      "a": "بحيرات بليتفيتشه - كرواتيا"
+    },
+    {
+      "points": 400,
+      "desc": "Blue Mosque Istanbul Turkey",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Abdullah_fr%C3%A8res_-_Sultan_Ahmet_camii%2C_Istanbul.jpg/960px-Abdullah_fr%C3%A8res_-_Sultan_Ahmet_camii%2C_Istanbul.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "المسجد الأزرق - إسطنبول، تركيا"
+    },
+    {
+      "points": 400,
+      "desc": "Versailles Palace France garden",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Palace_of_Versailles%2C_France_-_April_2011_%283%29.jpg/960px-Palace_of_Versailles%2C_France_-_April_2011_%283%29.jpg",
+      "q": "ما هو هذا القصر الشهير؟",
+      "a": "قصر فرساي - فرنسا"
+    },
+    {
+      "points": 400,
+      "desc": "Uluru Ayers Rock Australia red rock",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Petermann_Ranges_%28AU%29%2C_Uluru-Kata_Tjuta_National_Park%2C_Uluru%2C_Kuniya_Walk_--_2019_--_3636.jpg/960px-Petermann_Ranges_%28AU%29%2C_Uluru-Kata_Tjuta_National_Park%2C_Uluru%2C_Kuniya_Walk_--_2019_--_3636.jpg",
+      "q": "ما هو هذا المعلم الطبيعي؟",
+      "a": "صخرة أولورو - أستراليا"
+    },
+    {
+      "points": 400,
+      "desc": "Namib Desert Sossusvlei orange dunes",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/006_Dune_45_in_Sossusvlei_at_sunrise_Photo_by_Giles_Laurent.jpg/960px-006_Dune_45_in_Sossusvlei_at_sunrise_Photo_by_Giles_Laurent.jpg",
+      "q": "ما هو هذا الصحراء الشهيرة؟",
+      "a": "صحراء ناميب - ناميبيا"
+    },
+    {
+      "points": 400,
+      "desc": "Galapagos Islands Ecuador wildlife",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Garza_azulada_%28Ardea_herodias%29%2C_Las_Bachas%2C_isla_Santa_Cruz%2C_islas_Gal%C3%A1pagos%2C_Ecuador%2C_2015-07-23%2C_DD_12_ver_II.jpg/960px-Garza_azulada_%28Ardea_herodias%29%2C_Las_Bachas%2C_isla_Santa_Cruz%2C_islas_Gal%C3%A1pagos%2C_Ecuador%2C_2015-07-23%2C_DD_12_ver_II.jpg",
+      "q": "ما هي هذه الجزر الشهيرة؟",
+      "a": "جزر غالاباغوس - الإكوادور"
+    },
+    {
+      "points": 400,
+      "desc": "Arashiyama bamboo grove Kyoto Japan",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Arashiyama%2C_Chikurin-no-michi_%28Bamboo_Grove_Road%29_-1_%28December_2015%29_-_panoramio.jpg/960px-Arashiyama%2C_Chikurin-no-michi_%28Bamboo_Grove_Road%29_-1_%28December_2015%29_-_panoramio.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "غابة الخيزران - كيوتو، اليابان"
+    },
+    {
+      "points": 400,
+      "desc": "Zhangjiajie China floating mountains",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Avatar_World_37820-Zhangjiajie_%2849047314996%29.jpg/960px-Avatar_World_37820-Zhangjiajie_%2849047314996%29.jpg",
+      "q": "ما هي هذه الجبال الشهيرة؟",
+      "a": "جبال تشانغجياجيه - الصين"
+    },
+    {
+      "points": 400,
+      "desc": "Salar de Uyuni Bolivia salt flats reflection",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Salar_de_Uyuni%2C_Bolivia%2C_2016-02-04%2C_DD_01-03_HDR.JPG/960px-Salar_de_Uyuni%2C_Bolivia%2C_2016-02-04%2C_DD_01-03_HDR.JPG",
+      "q": "ما هو هذا المعلم الطبيعي؟",
+      "a": "سهل أويوني الملحي - بوليفيا"
+    },
+    {
+      "points": 400,
+      "desc": "Lofoten Islands Norway fishing village",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Lofoten_250204.jpg/960px-Lofoten_250204.jpg",
+      "q": "ما هي هذه الجزر الشهيرة؟",
+      "a": "جزر لوفوتن - النرويج"
+    },
+    {
+      "points": 400,
+      "desc": "Dolomites Italy mountain peaks",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Baita_Segantini_and_Dolomites_-_Blue_Hour.jpg/960px-Baita_Segantini_and_Dolomites_-_Blue_Hour.jpg",
+      "q": "ما هي هذه الجبال الشهيرة؟",
+      "a": "جبال الدولوميت - إيطاليا"
+    },
+    {
+      "points": 400,
+      "desc": "Pampas Argentina grasslands gaucho",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Argentine_agriculture_-_trends_in_production_and_world_competition_%28IA_argentineagricul216smit%29.pdf/page1-960px-Argentine_agriculture_-_trends_in_production_and_world_competition_%28IA_argentineagricul216smit%29.pdf.jpg",
+      "q": "ما هي هذه المنطقة الشهيرة؟",
+      "a": "سهول البامبا - الأرجنتين"
+    },
+    {
+      "points": 400,
+      "desc": "Yellowstone National Park geyser Old Faithful",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Yellowstone_National_Park_%28WY%2C_USA%29%2C_Firehole_River%2C_Abflusskanal_des_Excelsior_Geysirs_--_2022_--_2572-4.jpg/960px-Yellowstone_National_Park_%28WY%2C_USA%29%2C_Firehole_River%2C_Abflusskanal_des_Excelsior_Geysirs_--_2022_--_2572-4.jpg",
+      "q": "ما هو هذا المتنزه الشهير؟",
+      "a": "متنزه يلوستون - الولايات المتحدة"
+    },
+    {
+      "points": 400,
+      "desc": "Bryce Canyon Utah hoodoos spires",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Bryce_Canyon_National_Park._Utah._%2852509111665%29.jpg/960px-Bryce_Canyon_National_Park._Utah._%2852509111665%29.jpg",
+      "q": "ما هو هذا المعلم الطبيعي؟",
+      "a": "كانيون برايس - يوتا، أمريكا"
+    },
+    {
+      "points": 400,
+      "desc": "Cinque Terre Italy colorful houses cliffs",
+      "image": "https://pixabay.com/get/g17ddb2b40d59568a4dd0802c375652773da0095686cb3802f9b4cb6cf2aff7649c33f8dce33b8b81e817a8ab9c9f942776763a56d8d0cf92c9fc4a5d21e00e2b_640.jpg",
+      "q": "ما هي هذه المدينة الشهيرة؟",
+      "a": "تشينكوي تيري - إيطاليا"
+    },
+    {
+      "points": 400,
+      "desc": "Hallstatt Austria lake village",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/A_short_history_of_Germany_%28IA_cu31924059320220%29.pdf/page1-500px-A_short_history_of_Germany_%28IA_cu31924059320220%29.pdf.jpg",
+      "q": "ما هي هذه القرية الشهيرة؟",
+      "a": "هالشتات - النمسا"
+    },
+    {
+      "points": 600,
+      "desc": "Trolltunga Norway cliff hiker",
+      "image": "https://pixabay.com/get/gd4b8401e889c4569416698e789dbe98fc77e7ff9b0eed7e4eaf35b0899afae3ee650d96c7a271aa1822d172663628434f2709519ca194e68cd87b2873d2b5636_640.jpg",
+      "q": "ما هو هذا المعلم الطبيعي الشهير؟",
+      "a": "ترولتونجا (لسان الترول) - النرويج"
+    },
+    {
+      "points": 600,
+      "desc": "Wave Rock Hyden Australia",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Wave-Rock-Hyden-WA.jpg/960px-Wave-Rock-Hyden-WA.jpg",
+      "q": "ما هو هذا المعلم الطبيعي؟",
+      "a": "صخرة الموجة - أستراليا الغربية"
+    },
+    {
+      "points": 600,
+      "desc": "Fly Geyser Nevada USA colorful",
+      "image": "https://pixabay.com/get/g3f65c24c92a6b4ec887c44b4f6fb70c08630c4c810cdfaa6b570a362a724459235cdc1caf768015790178f47e556b945faade76aa97d649b721754e0a1eb1679_640.jpg",
+      "q": "ما هو هذا المعلم الطبيعي النادر؟",
+      "a": "فلاي غيزر - نيفادا، أمريكا"
+    },
+    {
+      "points": 600,
+      "desc": "Socotra Island Yemen dragon blood tree",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Dragon%27s_Blood_Tree%2C_Socotra_Island%2C_Yemen_%2814495062030%29.jpg/960px-Dragon%27s_Blood_Tree%2C_Socotra_Island%2C_Yemen_%2814495062030%29.jpg",
+      "q": "ما هي هذه الجزيرة الشهيرة؟",
+      "a": "جزيرة سقطرى - اليمن"
+    },
+    {
+      "points": 600,
+      "desc": "Waitomo Glowworm Caves New Zealand",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/%27Cathedral%27_in_Waitomo_Cave.jpg/960px-%27Cathedral%27_in_Waitomo_Cave.jpg",
+      "q": "ما هي هذه الكهوف الشهيرة؟",
+      "a": "كهوف وايتومو - نيوزيلندا"
+    },
+    {
+      "points": 600,
+      "desc": "Pamukkale Turkey white terraces thermal pools",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Beautiful_step-like_formation_of_calcium_pools_%2816123139980%29.jpg/960px-Beautiful_step-like_formation_of_calcium_pools_%2816123139980%29.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "باموكالي - تركيا"
+    },
+    {
+      "points": 600,
+      "desc": "Lake Hillier Australia pink lake",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Australia%2C_New_Zealand_and_some_islands_of_the_South_seas%3BAustralia%2C_New_Zealand%2C_Thursday_island%2C_the_Samoas%2C_New_Guinea%2C_the_Fijis%2C_and_the_Tongas%2C_%28IA_australianewzeal00carp%29.pdf/page1-960px-thumbnail.pdf.jpg",
+      "q": "ما هي هذه البحيرة الوردية؟",
+      "a": "بحيرة هيلير - أستراليا"
+    },
+    {
+      "points": 600,
+      "desc": "Eye of the Sahara Richat Structure Mauritania",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/ASTER_Richat.jpg/960px-ASTER_Richat.jpg",
+      "q": "ما هو هذا التكوين الجيولوجي النادر؟",
+      "a": "عين الصحراء (هيكل ريشات) - موريتانيا"
+    },
+    {
+      "points": 600,
+      "desc": "Danakil Depression Ethiopia volcanic",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/AST-14-942_-_Apollo_Soyuz_Test_Project_-_Apollo_Soyuz_Test_Project%2C_Ethiopia%2C_Danakil_Depression%2C_Window_Dirt_-_NARA_-_16629730.jpg/960px-AST-14-942_-_Apollo_Soyuz_Test_Project_-_Apollo_Soyuz_Test_Project%2C_Ethiopia%2C_Danakil_Depression%2C_Window_Dirt_-_NARA_-_16629730.jpg",
+      "q": "ما هي هذه المنطقة الشهيرة؟",
+      "a": "منخفض دناكيل - إثيوبيا"
+    },
+    {
+      "points": 600,
+      "desc": "Hang Son Doong Cave Vietnam world largest",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Son_Doong_Cave_1.jpg/500px-Son_Doong_Cave_1.jpg",
+      "q": "ما هو هذا الكهف الشهير؟",
+      "a": "كهف هانغ سون دونغ - فيتنام"
+    },
+    {
+      "points": 600,
+      "desc": "Zhangye Danxia Landform China rainbow mountains",
+      "image": "https://pixabay.com/get/g79da70f4db629ab91a74c320ffe2dbfee3f2d1a4af51b2d2f0b2349207c6427742d615ed199e3d3f46d2c5386b5550a4c9fbdb801e979d09252566bd210a85f8_640.jpg",
+      "q": "ما هي هذه الجبال الملونة؟",
+      "a": "جبال دانشيا الملونة - الصين"
+    },
+    {
+      "points": 600,
+      "desc": "Reed Flute Cave China stalactites colorful lights",
+      "image": "https://pixabay.com/get/g9d0946b82067d61156f561f4db02569ab8b7110c9398acb3485a4253467523f6b852354658656c1d66bfd3c82b2450b960e23285b136964cdfed589c2f80cd2e_640.jpg",
+      "q": "ما هو هذا الكهف الشهير؟",
+      "a": "كهف ناي ماو - الصين"
+    },
+    {
+      "points": 600,
+      "desc": "Chocolate Hills Bohol Philippines",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Bohol_Hills%2C_Chocolate_Hills%2C_Philippines.jpg/960px-Bohol_Hills%2C_Chocolate_Hills%2C_Philippines.jpg",
+      "q": "ما هو هذا المعلم الطبيعي الشهير؟",
+      "a": "تلال الشوكولاتة - الفلبين"
+    },
+    {
+      "points": 600,
+      "desc": "Mendenhall Glacier Ice Caves Alaska",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/IceCave.jpg/500px-IceCave.jpg",
+      "q": "ما هي هذه الكهوف الجليدية؟",
+      "a": "كهوف جليد مينديجهول - ألاسكا"
+    },
+    {
+      "points": 600,
+      "desc": "Vatnajokull Glacier Ice Cave Iceland blue",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Earth_as_Art.pdf/page1-960px-Earth_as_Art.pdf.jpg",
+      "q": "ما هي هذه الكهوف الشهيرة؟",
+      "a": "كهوف جليد فاتنايوكتل - آيسلندا"
+    },
+    {
+      "points": 600,
+      "desc": "Nauru Island Pacific smallest republic",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Carbon_emissions_by_region_en.svg/960px-Carbon_emissions_by_region_en.svg.png",
+      "q": "ما هي هذه الجزيرة الشهيرة؟",
+      "a": "جزيرة ناورو - المحيط الهادئ"
+    },
+    {
+      "points": 600,
+      "desc": "Paro Taktsang Tiger Nest Monastery Bhutan cliff",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Stupas_containing_human_remains_in_cliff_crevice_near_Tiger%27s_Nest%2C_Bhutan_-_panoramio.jpg/960px-Stupas_containing_human_remains_in_cliff_crevice_near_Tiger%27s_Nest%2C_Bhutan_-_panoramio.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "دير عش النمر - بوتان"
+    },
+    {
+      "points": 600,
+      "desc": "Semuc Champey Guatemala natural pools",
+      "image": "https://pixabay.com/get/g48feeb954e7d3923eb3f135c5fe14537a10687c588b8b3249543afd6ca9c3cce42aba4bd123891d7e088ec3a3323d39af10ca752c81a2a74fb9e5913e7d253c2_640.jpg",
+      "q": "ما هو هذا المعلم الطبيعي؟",
+      "a": "سيموك شامبي - غواتيمالا"
+    },
+    {
+      "points": 600,
+      "desc": "Trona Pinnacles California USA surreal",
+      "image": "https://pixabay.com/get/gf8294c908d9a2836ba986b5692e6484a9d369f4b2bd4236c5f3bf7ef323c1322d774cf83dccd0c43c97da40ddb33d38acdc2a7b7a9eec3d924c6c433b1241fbd_640.jpg",
+      "q": "ما هو هذا المعلم الطبيعي النادر؟",
+      "a": "تكوينات ترونا - كاليفورنيا، أمريكا"
+    },
+    {
+      "points": 600,
+      "desc": "Moeraki Boulders New Zealand beach spherical rocks",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/00_1669_Moeraki_Boulders_on_Koekohe_Bay_%28New_Zealand%2C_Otago_Region%29.jpg/960px-00_1669_Moeraki_Boulders_on_Koekohe_Bay_%28New_Zealand%2C_Otago_Region%29.jpg",
+      "q": "ما هي هذه الصخور الكروية الشهيرة؟",
+      "a": "صخور موراكي - نيوزيلندا"
+    },
+    {
+      "points": 600,
+      "desc": "Derweze Door to Hell Turkmenistan gas crater fire",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Darvasa_gas_crater_panorama.jpg/960px-Darvasa_gas_crater_panorama.jpg",
+      "q": "ما هو هذا المعلم الشهير؟",
+      "a": "باب الجحيم - تركمانستان"
+    },
+    {
+      "points": 600,
+      "desc": "Mount Roraima Venezuela table mountain clouds",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Roraima_and_British_Guiana%2C_with_a_glance_at_Bermuda%2C_the_West_Indies%2C_and_the_Spanish_Main_%28IA_roraimabritishgu00boddrich%29.pdf/page1-500px-Roraima_and_British_Guiana%2C_with_a_glance_at_Bermuda%2C_the_West_Indies%2C_and_the_Spanish_Main_%28IA_roraimabritishgu00boddrich%29.pdf.jpg",
+      "q": "ما هو هذا الجبل الشهير؟",
+      "a": "جبل رورايما - فنزويلا"
+    },
+    {
+      "points": 600,
+      "desc": "Skaftafell Iceland glacial canyon",
+      "image": "https://pixabay.com/get/g5ccbef8119cf8493236d2f8eb34d9fb7a13ab0e05b4441e159db9fb7ad5fe12e3e5abd87364fa5f31496a9bfe5e1b65edb9eb47e82537f7f4c9037c3b71b0cb0_640.jpg",
+      "q": "ما هي هذه المنطقة الطبيعية؟",
+      "a": "سكافتافيل - آيسلندا"
+    },
+    {
+      "points": 600,
+      "desc": "Huacachina Peru oasis sand dunes",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Espejo_de_Sirena_-_Laguna_de_Huacachina-4.jpg/960px-Espejo_de_Sirena_-_Laguna_de_Huacachina-4.jpg",
+      "q": "ما هي هذه الواحة الشهيرة؟",
+      "a": "واحة هواكاشينا - بيرو"
+    },
+    {
+      "points": 600,
+      "desc": "Spotted Lake Osoyoos Canada Khiluk",
+      "image": "https://pixabay.com/get/gfa2575ce7d0f6c82ee4b8a89029c6a7c90d8a937c428b58aed46df9db05ff6bff6c7757d6a8e434c15b84658233a30b93d4dc520c490d7a9df499775f2a8589e_640.jpg",
+      "q": "ما هي هذه البحيرة النادرة؟",
+      "a": "البحيرة المرقطة - كندا"
+    },
+    {
+      "points": 600,
+      "desc": "Goblin Valley Utah hoodoos alien landscape",
+      "image": "https://pixabay.com/get/ga7dd543e3db696862e955be2cf98130b12c772123d9053f5ba2fbd3d75b61b644d5e9e6ee80d7792961c129d5eb66993_640.jpg",
+      "q": "ما هو هذا الوادي الشهير؟",
+      "a": "وادي العفاريت - يوتا، أمريكا"
+    },
+    {
+      "points": 600,
+      "desc": "Crooked Forest Poland curved pine trees",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/A_history_of_the_lumber_industry_in_the_state_of_New_York_%28IA_historyoflumberi34foxw%29.pdf/page1-960px-A_history_of_the_lumber_industry_in_the_state_of_New_York_%28IA_historyoflumberi34foxw%29.pdf.jpg",
+      "q": "ما هي هذه الغابة الغريبة؟",
+      "a": "الغابة المعوجة - بولندا"
+    },
+    {
+      "points": 600,
+      "desc": "Abraham Lake Alberta Canada bubbles ice frozen",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Ice_Eye_Watching_Star_%28210072813%29.jpeg/960px-Ice_Eye_Watching_Star_%28210072813%29.jpeg",
+      "q": "ما هي هذه البحيرة النادرة؟",
+      "a": "بحيرة أبراهام - ألبرتا، كندا"
+    },
+    {
+      "points": 600,
+      "desc": "Antelope Island Utah Great Salt Lake",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/2012.10.01.095858_Great_Salt_Lake_Antelope_Island_Utah.jpg/960px-2012.10.01.095858_Great_Salt_Lake_Antelope_Island_Utah.jpg",
+      "q": "ما هي هذه الجزيرة الشهيرة؟",
+      "a": "جزيرة الظبي - يوتا، أمريكا"
+    },
+    {
+      "points": 600,
+      "desc": "Mount Thor Baffin Island Canada vertical cliff",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/An_Arctic_boat_journey_in_the_autumn_of_1854_%28microform%29_%28IA_cihm_41352%29.pdf/page1-960px-An_Arctic_boat_journey_in_the_autumn_of_1854_%28microform%29_%28IA_cihm_41352%29.pdf.jpg",
+      "q": "ما هو هذا الجبل ذو الجرف الرأسي؟",
+      "a": "جبل ثور - جزيرة بافن، كندا"
+    },
+    {
+      "points": 600,
+      "desc": "Verzasca Valley Switzerland crystal clear river",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/The_scenery_of_Switzerland_and_the_causes_to_which_it_is_due_%28IA_cu31924004022137%29.pdf/page1-500px-The_scenery_of_Switzerland_and_the_causes_to_which_it_is_due_%28IA_cu31924004022137%29.pdf.jpg",
+      "q": "ما هو هذا الوادي الشهير؟",
+      "a": "وادي فيرزاسكا - سويسرا"
+    },
+    {
+      "points": 600,
+      "desc": "Zhangjiajie Glass Bridge China longest highest",
+      "image": "https://pixabay.com/get/gd316c272eb0aa9a881e1f67214eaaf8de43dcee35a3f96202627629665ab161ed152916520c8234abce397993c627c7f0549b72ea47cfda4473ed6091cfdc711_640.jpg",
+      "q": "ما هو هذا الجسر الشهير؟",
+      "a": "جسر الزجاج - تشانغجياجيه، الصين"
+    },
+    {
+      "points": 600,
+      "desc": "Kawah Ijen Java Indonesia blue fire sulfur volcano",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Kawah_Ijen_%2848140807781%29.jpg/960px-Kawah_Ijen_%2848140807781%29.jpg",
+      "q": "ما هو هذا البركان الشهير؟",
+      "a": "بركان كاواه إيجن - جاوة، إندونيسيا"
+    }
+  ]
+}

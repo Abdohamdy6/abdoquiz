@@ -1,0 +1,705 @@
+{
+  "category": "Guess the Animal",
+  "questions": [
+    {
+      "points": 200,
+      "desc": "lion African savanna mane",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Alsace_throughout_the_ages_%28IA_alsacethroughout00kaep%29.pdf/page1-500px-Alsace_throughout_the_ages_%28IA_alsacethroughout00kaep%29.pdf.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الأسد"
+    },
+    {
+      "points": 200,
+      "desc": "elephant African large ears",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/African_Bush_Elephants_of_Samburu.jpg/960px-African_Bush_Elephants_of_Samburu.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الفيل"
+    },
+    {
+      "points": 200,
+      "desc": "giraffe long neck Africa",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/%22Me_and_my_home%22_giraffe_and_it%27s_sense_of_humor.jpg/960px-%22Me_and_my_home%22_giraffe_and_it%27s_sense_of_humor.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الزرافة"
+    },
+    {
+      "points": 200,
+      "desc": "zebra black white stripes",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/011_Plains_zebra_eye_close-up_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg/960px-011_Plains_zebra_eye_close-up_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الحمار الوحشي"
+    },
+    {
+      "points": 200,
+      "desc": "dolphin jumping ocean",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Common_dolphin_noaa.jpg/960px-Common_dolphin_noaa.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الدلفين"
+    },
+    {
+      "points": 200,
+      "desc": "penguin Antarctica ice",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Antarctica_penguins%2C_seals%2C_ice_and_people_%2852917506374%29.jpg/960px-Antarctica_penguins%2C_seals%2C_ice_and_people_%2852917506374%29.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "البطريق"
+    },
+    {
+      "points": 200,
+      "desc": "koala eucalyptus tree Australia",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Koala_aggrip%C3%A9_%C3%A0_une_feuille_d%27eucalyptus%2C_Queensland%2C_2014.jpg/960px-Koala_aggrip%C3%A9_%C3%A0_une_feuille_d%27eucalyptus%2C_Queensland%2C_2014.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الكوالا"
+    },
+    {
+      "points": 200,
+      "desc": "kangaroo Australia jump pouch",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/%22Out_there%22_-_a_romance_of_Australia_%28IA_outthereromanceo00donoiala%29.pdf/page1-500px-%22Out_there%22_-_a_romance_of_Australia_%28IA_outthereromanceo00donoiala%29.pdf.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الكنغر"
+    },
+    {
+      "points": 200,
+      "desc": "polar bear white snow Arctic",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/%22Beats_the_Arctic_ice_and_snow%22_so_said_Mr._Polar_Bear_at_the_Washington_Zoo%2C_when_the_%22Better_Ole%22_club_orchestra%2C_assisted_by_Dolly_Daye%2C_dancer%2C_tried_their_wildest_notes_and_dances_in_LCCN2016894061.jpg/960px-thumbnail.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الدب القطبي"
+    },
+    {
+      "points": 200,
+      "desc": "cheetah running fast spots",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Curious_and_instructive_stories_about_wild_animals_and_birds_%28IA_curiousinstructi00ediniala%29.pdf/page1-500px-Curious_and_instructive_stories_about_wild_animals_and_birds_%28IA_curiousinstructi00ediniala%29.pdf.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الفهد"
+    },
+    {
+      "points": 200,
+      "desc": "gorilla silverback jungle",
+      "image": "https://pixabay.com/get/g36f4eca753b82d09fcd4e936cca82e9f676bf125fe14f7d7e76004d46612bfffd555a6029f8e99a2ef8bece7aafbcfe0_640.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الغوريلا"
+    },
+    {
+      "points": 200,
+      "desc": "flamingo pink standing water",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Flickr_-_law_keven_-_Think_Pink.....jpg/960px-Flickr_-_law_keven_-_Think_Pink.....jpg",
+      "q": "ما هو هذا الطائر؟",
+      "a": "النحام (الفلامينغو)"
+    },
+    {
+      "points": 200,
+      "desc": "eagle flying spread wings",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Balloons%2C_airships_and_flying_machines%3B_%28IA_balloonsairships00baco%29.pdf/page1-500px-Balloons%2C_airships_and_flying_machines%3B_%28IA_balloonsairships00baco%29.pdf.jpg",
+      "q": "ما هو هذا الطائر؟",
+      "a": "النسر"
+    },
+    {
+      "points": 200,
+      "desc": "wolf howling moon forest",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/A_wilderness_dog%3B_the_biography_of_a_gray_wolf_%28IA_wildernessdogbio00hawk%29.pdf/page1-500px-A_wilderness_dog%3B_the_biography_of_a_gray_wolf_%28IA_wildernessdogbio00hawk%29.pdf.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الذئب"
+    },
+    {
+      "points": 200,
+      "desc": "camel desert hump sand",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/A_Treatise_on_the_One-Humped_Camel_in_Health_and_in_Disease.djvu/page1-800px-A_Treatise_on_the_One-Humped_Camel_in_Health_and_in_Disease.djvu.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الجمل"
+    },
+    {
+      "points": 200,
+      "desc": "crocodile river teeth",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/A_horrible_river-horse_with_giant_teeth_from_India%2C_Cosmographia_%281544%29_by_Sebastian_M%C3%BCnster.jpg/120px-A_horrible_river-horse_with_giant_teeth_from_India%2C_Cosmographia_%281544%29_by_Sebastian_M%C3%BCnster.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "التمساح"
+    },
+    {
+      "points": 200,
+      "desc": "peacock feathers colorful display",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Peacock._%288315385611%29.jpg/960px-Peacock._%288315385611%29.jpg",
+      "q": "ما هو هذا الطائر؟",
+      "a": "الطاووس"
+    },
+    {
+      "points": 200,
+      "desc": "panda black white bamboo China",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/A_naturalist_in_Western_China_-_with_vasculum%2C_camera%2C_and_gun%2C_being_some_account_of_eleven_year%27s_travel%2C_exploration%2C_and_observation_in_the_more_remote_parts_of_the_flowery_kingdom%3B_%28IA_naturalistinwes02wils%29.pdf/page1-500px-thumbnail.pdf.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الباندا"
+    },
+    {
+      "points": 200,
+      "desc": "parrot colorful tropical bird",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Birds_of_the_world_%281938%29_%28IA_birdsofworldanil00fede%29.pdf/page1-960px-Birds_of_the_world_%281938%29_%28IA_birdsofworldanil00fede%29.pdf.jpg",
+      "q": "ما هو هذا الطائر؟",
+      "a": "الببغاء"
+    },
+    {
+      "points": 200,
+      "desc": "shark great white ocean teeth",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/In_ocean_land%2C_%28IA_inoceanland00atwa%29.pdf/page1-960px-In_ocean_land%2C_%28IA_inoceanland00atwa%29.pdf.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "سمكة القرش"
+    },
+    {
+      "points": 200,
+      "desc": "owl big eyes night bird",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Big_Sur_%281963%29.djvu/page1-800px-Big_Sur_%281963%29.djvu.jpg",
+      "q": "ما هو هذا الطائر؟",
+      "a": "البومة"
+    },
+    {
+      "points": 200,
+      "desc": "fox red forest cunning",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Fox_coloring_page.jpg/960px-Fox_coloring_page.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الثعلب"
+    },
+    {
+      "points": 200,
+      "desc": "hippopotamus river Africa open mouth",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Chobe_River_Front%2C_Botswana_%282625496300%29.jpg/960px-Chobe_River_Front%2C_Botswana_%282625496300%29.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "فرس النهر"
+    },
+    {
+      "points": 200,
+      "desc": "rhinoceros horn Africa",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Black_or_Hook-lipped_Rhinoceros.jpg/960px-Black_or_Hook-lipped_Rhinoceros.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "وحيد القرن"
+    },
+    {
+      "points": 200,
+      "desc": "tiger orange stripes jungle",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/A_handbook_to_the_carnivora_%28IA_b28137309%29.pdf/page1-500px-A_handbook_to_the_carnivora_%28IA_b28137309%29.pdf.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "النمر المخطط"
+    },
+    {
+      "points": 200,
+      "desc": "monkey swinging tree jungle",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Edge_of_the_jungle_%28IA_edgeofjungle00beebiala%29.pdf/page1-500px-Edge_of_the_jungle_%28IA_edgeofjungle00beebiala%29.pdf.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "القرد"
+    },
+    {
+      "points": 200,
+      "desc": "butterfly colorful wings flower",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/A_Common_Jezebel_Enjoying_a_Flower_%2850633396197%29.jpg/960px-A_Common_Jezebel_Enjoying_a_Flower_%2850633396197%29.jpg",
+      "q": "ما هي هذه الحشرة؟",
+      "a": "الفراشة"
+    },
+    {
+      "points": 200,
+      "desc": "turtle sea ocean swimming",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Baby_Green_Sea_Turtle._%2811180225963%29.jpg/960px-Baby_Green_Sea_Turtle._%2811180225963%29.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "السلحفاة البحرية"
+    },
+    {
+      "points": 200,
+      "desc": "octopus tentacles underwater",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Annals_of_the_South_African_Museum_%3D_Annale_van_die_Suid-Afrikaanse_Museum_%28IA_annalsofsoutha8941982sout%29.pdf/page1-500px-Annals_of_the_South_African_Museum_%3D_Annale_van_die_Suid-Afrikaanse_Museum_%28IA_annalsofsoutha8941982sout%29.pdf.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الأخطبوط"
+    },
+    {
+      "points": 200,
+      "desc": "swan white lake elegant",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/A_swan_and_her_friends_%28IA_swanherfriends00lucarich%29.pdf/page1-500px-A_swan_and_her_friends_%28IA_swanherfriends00lucarich%29.pdf.jpg",
+      "q": "ما هو هذا الطائر؟",
+      "a": "البجعة"
+    },
+    {
+      "points": 200,
+      "desc": "hummingbird tiny flower nectar",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Attracting_hummingbirds_to_your_garden_using_native_plants_%28IA_CAT31323772%29.pdf/page1-500px-Attracting_hummingbirds_to_your_garden_using_native_plants_%28IA_CAT31323772%29.pdf.jpg",
+      "q": "ما هو هذا الطائر؟",
+      "a": "الطائر الطنان"
+    },
+    {
+      "points": 200,
+      "desc": "seal beach rock ocean",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/San_Francisco_Ocean_Beach_01.jpg/960px-San_Francisco_Ocean_Beach_01.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الفقمة"
+    },
+    {
+      "points": 200,
+      "desc": "deer forest antlers graceful",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/A-Hunting_of_Deer-1906.djvu/page1-800px-A-Hunting_of_Deer-1906.djvu.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الغزال"
+    },
+    {
+      "points": 400,
+      "desc": "mantis shrimp colorful punch",
+      "image": "https://pixabay.com/get/gc4d1c18567fde9d22af2ceb7ffe95d8863aa98abef746ce0bca9b8399549a0b15452adb12fc3a818edde43e4ab6d3801383438af129a9f375102fc6a3619c04f_640.jpg",
+      "q": "ما هو هذا الحيوان البحري؟",
+      "a": "جمبري المانتيس"
+    },
+    {
+      "points": 400,
+      "desc": "axolotl salamander pink gills Mexico",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/A_popular_history_of_reptiles%2C_or%2C_An_introduction_to_the_study_of_the_class_of_reptilia_on_scientific_principles_%28IA_b2811615x%29.pdf/page1-500px-A_popular_history_of_reptiles%2C_or%2C_An_introduction_to_the_study_of_the_class_of_reptilia_on_scientific_principles_%28IA_b2811615x%29.pdf.jpg",
+      "q": "ما هو هذا الحيوان النادر؟",
+      "a": "الأكسولوتل"
+    },
+    {
+      "points": 400,
+      "desc": "platypus duck bill Australia",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Duck-billed_platypus_%28Ornithorhynchus_anatinus%29_Scottsdale.jpg/960px-Duck-billed_platypus_%28Ornithorhynchus_anatinus%29_Scottsdale.jpg",
+      "q": "ما هو هذا الحيوان الغريب؟",
+      "a": "خلد الماء"
+    },
+    {
+      "points": 400,
+      "desc": "narwhal unicorn whale horn Arctic",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Diana_and_Chase_in_the_Arctic.jpg/960px-Diana_and_Chase_in_the_Arctic.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الحوت أحادي القرن (النارواhal)"
+    },
+    {
+      "points": 400,
+      "desc": "pangolin scales Africa rolling",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Big_game_hunting_in_Africa_and_other_lands%3B_the_appearance%2C_habits%2C_traits_of_character_and_every_detail_of_wild_animal_life_.._%28IA_biggamehuntingin00lundrich%29.pdf/page1-960px-thumbnail.pdf.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "آكل النمل الحرشفي (البنغولين)"
+    },
+    {
+      "points": 400,
+      "desc": "snow leopard mountains Central Asia",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Snow-Leopard_Uncia-uncia.jpg/960px-Snow-Leopard_Uncia-uncia.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الفهد الثلجي"
+    },
+    {
+      "points": 400,
+      "desc": "manta ray ocean flying underwater",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/OJ_L_24_of_2021_-_EN_English.pdf/page1-960px-OJ_L_24_of_2021_-_EN_English.pdf.jpg",
+      "q": "ما هو هذا الحيوان البحري؟",
+      "a": "شفنين المانتا"
+    },
+    {
+      "points": 400,
+      "desc": "chameleon color changing lizard",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Beautiful_camouflage_Chameleon_-_reptile_~_colour_changing_Chameleon.jpg/960px-Beautiful_camouflage_Chameleon_-_reptile_~_colour_changing_Chameleon.jpg",
+      "q": "ما هو هذا الزاحف؟",
+      "a": "الحرباء"
+    },
+    {
+      "points": 400,
+      "desc": "cassowary blue head dangerous bird Australia",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Among_cannibals%3B_an_account_of_four_years%27_travels_in_Australia_and_of_camp_life_with_the_aborigines_of_Queensland%3B_%28IA_amongcannibalsac1889lumh%29.pdf/page1-960px-Among_cannibals%3B_an_account_of_four_years%27_travels_in_Australia_and_of_camp_life_with_the_aborigines_of_Queensland%3B_%28IA_amongcannibalsac1889lumh%29.pdf.jpg",
+      "q": "ما هو هذا الطائر؟",
+      "a": "طائر الكاسواري"
+    },
+    {
+      "points": 400,
+      "desc": "capybara largest rodent South America",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Baby_Capybara_And_Mom.jpg/960px-Baby_Capybara_And_Mom.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الكابيبارا"
+    },
+    {
+      "points": 400,
+      "desc": "mandrill colorful face monkey Africa",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Vietnam_Magazine_Vol._V%2C_N%C2%BA_6_1972.pdf/page1-960px-Vietnam_Magazine_Vol._V%2C_N%C2%BA_6_1972.pdf.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "المانديل"
+    },
+    {
+      "points": 400,
+      "desc": "sun bear smallest bear Southeast Asia",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Butterflies_of_Hongkong_%28IA_CAT11016849%29.pdf/page1-120px-Butterflies_of_Hongkong_%28IA_CAT11016849%29.pdf.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الدب الشمسي"
+    },
+    {
+      "points": 400,
+      "desc": "wolverine fierce small mammal",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/American_animals-_a_popular_guide_to_the_mammals_of_North_America_north_of_Mexico%2C_with_intimate_biographies_of_the_more_familiar_species_%28IA_americananimalsp00ston%29.pdf/page1-500px-thumbnail.pdf.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الولورين (شرهان)"
+    },
+    {
+      "points": 400,
+      "desc": "moose large antlers Canada forest",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Deer_on_the_road_%28Unsplash%29.jpg/960px-Deer_on_the_road_%28Unsplash%29.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "أيل الموظ"
+    },
+    {
+      "points": 400,
+      "desc": "komodo dragon large lizard Indonesia",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Amazing_komodo_dragon.jpg/960px-Amazing_komodo_dragon.jpg",
+      "q": "ما هو هذا الزاحف؟",
+      "a": "تنين كومودو"
+    },
+    {
+      "points": 400,
+      "desc": "bison buffalo American plains",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/American_bison_in_Yellowstone_National_Park.jpg/960px-American_bison_in_Yellowstone_National_Park.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "البيسون الأمريكي"
+    },
+    {
+      "points": 400,
+      "desc": "porcupine quills spiky",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/The_tour_of_the_400_to_Mexico_%28IA_tourof400tomexic00brow%29.pdf/page1-500px-The_tour_of_the_400_to_Mexico_%28IA_tourof400tomexic00brow%29.pdf.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "النيص"
+    },
+    {
+      "points": 400,
+      "desc": "tapir long nose South America",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Carpenter%27s_geographical_reader%3B_South_America_%28IA_carpentersgeogra01carp%29.pdf/page1-500px-Carpenter%27s_geographical_reader%3B_South_America_%28IA_carpentersgeogra01carp%29.pdf.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "التابير"
+    },
+    {
+      "points": 400,
+      "desc": "blue footed booby bird Galapagos",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Blue-footed_booby_01.jpg/960px-Blue-footed_booby_01.jpg",
+      "q": "ما هو هذا الطائر؟",
+      "a": "طائر البوبي ذو القدم الزرقاء"
+    },
+    {
+      "points": 400,
+      "desc": "manatee sea cow floating",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Beneath_tropic_seas%3B_a_record_of_diving_among_the_coral_reefs_of_Haiti_%28IA_beneathtropicsea00beeb%29.pdf/page1-500px-Beneath_tropic_seas%3B_a_record_of_diving_among_the_coral_reefs_of_Haiti_%28IA_beneathtropicsea00beeb%29.pdf.jpg",
+      "q": "ما هو هذا الحيوان البحري؟",
+      "a": "أبقار البحر (المانتي)"
+    },
+    {
+      "points": 400,
+      "desc": "albatross large wingspan ocean",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Foraging_niche_overlap_during_chick-rearing_in_the_sexually_dimorphic_Westland_petrel.pdf/page1-960px-Foraging_niche_overlap_during_chick-rearing_in_the_sexually_dimorphic_Westland_petrel.pdf.jpg",
+      "q": "ما هو هذا الطائر؟",
+      "a": "طائر الألباتروس"
+    },
+    {
+      "points": 400,
+      "desc": "fennec fox big ears desert",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Animal_welfare._List_of_registered_research_facilities_-_United_States_Department_of_Agriculture%2C_Animal_and_Plant_Health_Inspection_Service%2C_Veterinary_Services._%28IA_CAT10310747009%29.pdf/page1-960px-thumbnail.pdf.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "ثعلب الفنك الصحراوي"
+    },
+    {
+      "points": 400,
+      "desc": "binturong bearcat Southeast Asia",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/A_captive_binturong_held_at_Burgers_Zoo.jpg/960px-A_captive_binturong_held_at_Burgers_Zoo.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "البينتورونج"
+    },
+    {
+      "points": 400,
+      "desc": "saiga antelope strange nose Russia",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Animal_Life_and_the_World_of_Nature%3B_A_magazine_of_Natural_History_%28IA_animallifeworldo119021903lond%29.pdf/page1-500px-Animal_Life_and_the_World_of_Nature%3B_A_magazine_of_Natural_History_%28IA_animallifeworldo119021903lond%29.pdf.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الظبي السايغا"
+    },
+    {
+      "points": 400,
+      "desc": "quokka happy face Australia Rottnest",
+      "image": "https://pixabay.com/get/g2dc7d7159b773022c204be9e3d7c55791f813ff55abfaa185a01477a507d260f19516ef8925c4ee13c612906c91c17e81446f1767c19afe52f18604e4a3d463d_640.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الكوكا"
+    },
+    {
+      "points": 400,
+      "desc": "hornbill large beak colorful bird",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Birds_of_the_world_%281938%29_%28IA_birdsofworldanil00fede%29.pdf/page1-960px-Birds_of_the_world_%281938%29_%28IA_birdsofworldanil00fede%29.pdf.jpg",
+      "q": "ما هو هذا الطائر؟",
+      "a": "طائر الكركي (الهورنبيل)"
+    },
+    {
+      "points": 400,
+      "desc": "wombat burrowing marsupial Australia",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Additional_evidence_on_the_affinities_of_the_extinct_marsupial_quadruped_Thylacoleo_carnifex_%28Owen%29_%28IA_additionaleviden00owen%29.pdf/page1-960px-Additional_evidence_on_the_affinities_of_the_extinct_marsupial_quadruped_Thylacoleo_carnifex_%28Owen%29_%28IA_additionaleviden00owen%29.pdf.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الومبات"
+    },
+    {
+      "points": 400,
+      "desc": "arctic fox white winter tundra",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Across_Arctic_America.djvu/page1-800px-Across_Arctic_America.djvu.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الثعلب القطبي"
+    },
+    {
+      "points": 400,
+      "desc": "meerkat standing sentinel Africa",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Meerkat_%28Suricata_suricatta%29_sentinel_%2854759285773%29.jpg/960px-Meerkat_%28Suricata_suricatta%29_sentinel_%2854759285773%29.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الميركات"
+    },
+    {
+      "points": 400,
+      "desc": "jaguar rainforest spots South America",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Amazon_Rainforest_%28MODIS_2022-01-05%29.jpg/960px-Amazon_Rainforest_%28MODIS_2022-01-05%29.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "النمر الأمريكي (الجاغوار)"
+    },
+    {
+      "points": 400,
+      "desc": "electric eel Amazon river shock",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Armstrong%27s_treasury_of_ready_reference.1%2C000%2C001_figures_and_facts_compactly_and_conveniently_arranged._%28IA_armstrongstreasu00schu%29.pdf/page1-960px-Armstrong%27s_treasury_of_ready_reference.1%2C000%2C001_figures_and_facts_compactly_and_conveniently_arranged._%28IA_armstrongstreasu00schu%29.pdf.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الثعبان الكهربائي"
+    },
+    {
+      "points": 400,
+      "desc": "frilled neck lizard Australia display",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Frilled_Lizard_%282863780749%29.jpg/500px-Frilled_Lizard_%282863780749%29.jpg",
+      "q": "ما هو هذا الزاحف؟",
+      "a": "سحلية ذات رقبة هامش"
+    },
+    {
+      "points": 600,
+      "desc": "blobfish deep sea ugly face",
+      "image": "https://pixabay.com/get/ga7796cd4fb9f579a190dea76b46a51bedc91d83bc9641783e0b0d79ddf9677a7263ff9f90f32001877d85d664f210869a538984a4ddb3bad334ffebd87f45e77_640.jpg",
+      "q": "ما هو هذا الحيوان البحري النادر؟",
+      "a": "سمكة البلوب"
+    },
+    {
+      "points": 600,
+      "desc": "aye aye Madagascar nocturnal primate",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/A_hand-book_to_the_primates_%28IA_b28137164%29.pdf/page1-960px-A_hand-book_to_the_primates_%28IA_b28137164%29.pdf.jpg",
+      "q": "ما هو هذا الحيوان النادر؟",
+      "a": "آي آي (ليمور مدغشقر)"
+    },
+    {
+      "points": 600,
+      "desc": "goblin shark deep ocean pink elongated snout",
+      "image": "https://pixabay.com/get/gdfea2c95855c49718637c2dc74a280d47b2bb0900178e61da6bbec27907614d06a89116da4b4e525599117ae5f856f7adf5b40d36bada20181cb7b9803b27897_640.jpg",
+      "q": "ما هو هذا الحيوان البحري النادر؟",
+      "a": "قرش الغوبلين"
+    },
+    {
+      "points": 600,
+      "desc": "star nosed mole tentacles nose",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/A_guide_to_the_exhibition_rooms_of_the_departments_of_natural_history_and_antiquities_%28IA_guidetoexhibitio1867brit%29.pdf/page1-500px-A_guide_to_the_exhibition_rooms_of_the_departments_of_natural_history_and_antiquities_%28IA_guidetoexhibitio1867brit%29.pdf.jpg",
+      "q": "ما هو هذا الحيوان الغريب؟",
+      "a": "الخلد ذو الأنف النجمي"
+    },
+    {
+      "points": 600,
+      "desc": "mimic octopus Indonesia shape shifting",
+      "image": "https://pixabay.com/get/ga6f18882ff78175308cefc1b5e80ff8bd819d327deb32353b14577bac07cdacc7dd5035f94c0fec6f5eabcee96228f443098938dcf0aeed61f19044701ffef36_640.jpg",
+      "q": "ما هو هذا الأخطبوط النادر؟",
+      "a": "الأخطبوط المقلّد"
+    },
+    {
+      "points": 600,
+      "desc": "tardigrade water bear microscopic",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/BeautifulTardigrade.png/330px-BeautifulTardigrade.png",
+      "q": "ما هو هذا الكائن الدقيق؟",
+      "a": "الدببة المائية (التارديغراد)"
+    },
+    {
+      "points": 600,
+      "desc": "shoebill stork Africa large beak",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Commission_Regulation_%28EU%29_2016-2029_of_10_November_2016_amending_Council_Regulation_%28EC%29_No_338-97_on_the_protection_of_species_of_wild_fauna_and_flora_by_regulating_trade_therein_%28EUR_2016-2029%29.pdf/page1-960px-thumbnail.pdf.jpg",
+      "q": "ما هو هذا الطائر النادر؟",
+      "a": "طائر أبو المنجل (شوبيل)"
+    },
+    {
+      "points": 600,
+      "desc": "okapi zebra giraffe hybrid Congo",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/A_general_guide_to_the_British_Museum_%28Natural_History%29%2C_Cromwell_Road%2C_London%2C_S.W._-_with_plans_and_a_view_of_the_building_%28IA_generalguidetobr1906brit%29.pdf/page1-500px-A_general_guide_to_the_British_Museum_%28Natural_History%29%2C_Cromwell_Road%2C_London%2C_S.W._-_with_plans_and_a_view_of_the_building_%28IA_generalguidetobr1906brit%29.pdf.jpg",
+      "q": "ما هو هذا الحيوان النادر؟",
+      "a": "الأوكابي"
+    },
+    {
+      "points": 600,
+      "desc": "glass frog transparent body organs",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Frog_culture_for_profit_%28IA_frogcultureforpr00rand%29.pdf/page1-500px-Frog_culture_for_profit_%28IA_frogcultureforpr00rand%29.pdf.jpg",
+      "q": "ما هو هذا الحيوان الغريب؟",
+      "a": "الضفدع الزجاجي"
+    },
+    {
+      "points": 600,
+      "desc": "barreleye fish transparent head deep sea",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Barreleye-fish_GoK.jpg/960px-Barreleye-fish_GoK.jpg",
+      "q": "ما هو هذا السمكة النادرة؟",
+      "a": "سمكة برميل العين"
+    },
+    {
+      "points": 600,
+      "desc": "naked mole rat underground colony",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/%28Publications%29_-_Bureau_of_Government_Laboratories_%28IA_acx2261.0011.001.umich.edu%29.pdf/page1-500px-%28Publications%29_-_Bureau_of_Government_Laboratories_%28IA_acx2261.0011.001.umich.edu%29.pdf.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الجرذ العاري"
+    },
+    {
+      "points": 600,
+      "desc": "anglerfish deep sea bioluminescent lure",
+      "image": "https://pixabay.com/get/g386223c33ca7502e625043be47696ca29792325c3225d61bcd06d2f31957364811ae25631566f300d9ed8cce121e00245f81b34a4f897dc2b0bbaf30ee630563_640.jpg",
+      "q": "ما هو هذا السمكة النادرة؟",
+      "a": "سمكة الصياد"
+    },
+    {
+      "points": 600,
+      "desc": "geoduck giant clam Pacific",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Geoduck.jpg/960px-Geoduck.jpg",
+      "q": "ما هو هذا الرخوي البحري؟",
+      "a": "الجيوداك (محار عملاق)"
+    },
+    {
+      "points": 600,
+      "desc": "fossa Madagascar cat mongoose hybrid",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Commission_Regulation_%28EC%29_No_1332-2005_of_9_August_2005_amending_Council_Regulation_%28EC%29_No_338-97_on_the_protection_of_species_of_wild_fauna_and_flora_by_regulating_trade_therein_%28EUR_2005-1332%29.pdf/page1-960px-thumbnail.pdf.jpg",
+      "q": "ما هو هذا الحيوان النادر؟",
+      "a": "الفوسا"
+    },
+    {
+      "points": 600,
+      "desc": "thorny devil lizard Australia spikes",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Australasia_-_eight_lectures_prepared_for_the_Visual_Instruction_Committee_of_the_Colonial_Office_%28IA_australasiaeight00sargrich%29.pdf/page1-500px-Australasia_-_eight_lectures_prepared_for_the_Visual_Instruction_Committee_of_the_Colonial_Office_%28IA_australasiaeight00sargrich%29.pdf.jpg",
+      "q": "ما هو هذا الزاحف؟",
+      "a": "الشيطان الشائك"
+    },
+    {
+      "points": 600,
+      "desc": "leafy sea dragon seaweed camouflage",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Leafy_Sea_Dragon_video.webm/640px--Leafy_Sea_Dragon_video.webm.jpg",
+      "q": "ما هو هذا الحيوان البحري؟",
+      "a": "التنين البحري الورقي"
+    },
+    {
+      "points": 600,
+      "desc": "hoatzin stinky bird Amazon crest",
+      "image": "https://pixabay.com/get/g322f62e66789b109c92e22e02e23466ffed16fdcd858d0c38bf334049ffd374bfcedcd2037491b9525b15c39fa1c63db363146b26bbd718c0cb0cd2c268baba8_640.jpg",
+      "q": "ما هو هذا الطائر؟",
+      "a": "طائر الهواتزين"
+    },
+    {
+      "points": 600,
+      "desc": "irrawaddy dolphin round head Southeast Asia",
+      "image": "https://pixabay.com/get/g71be9583fd5d40aba49f6496f7f0098ad3c43f8af2929d552aa5e853b3a6eb36563381a51e93014f8a68d50e85abcfa4016b4a9580f201b2771dfed5fd243cfb_640.jpg",
+      "q": "ما هو هذا الحيوان البحري النادر؟",
+      "a": "دلفين إيراوادي"
+    },
+    {
+      "points": 600,
+      "desc": "vampire squid deep sea red",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Books_from_the_Biodiversity_Heritage_Library_%28IA_savageworldcompl00buel%29.pdf/page1-960px-Books_from_the_Biodiversity_Heritage_Library_%28IA_savageworldcompl00buel%29.pdf.jpg",
+      "q": "ما هو هذا الحيوان البحري؟",
+      "a": "الحبار المصاص للدماء"
+    },
+    {
+      "points": 600,
+      "desc": "pink fairy armadillo tiny Argentina",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Animal_curiosities%2C_%28IA_animalcuriositie00berr%29.pdf/page1-960px-Animal_curiosities%2C_%28IA_animalcuriositie00berr%29.pdf.jpg",
+      "q": "ما هو هذا الحيوان النادر؟",
+      "a": "الأرمادلو الوردي الصغير"
+    },
+    {
+      "points": 600,
+      "desc": "tarsier tiny primate big eyes Philippines",
+      "image": "https://pixabay.com/get/g3069f165ccc6abf94ac2915b4e838fe08a40968935bb2768653405f0d27a8d151ace084f9985d3785f8ded8b01d8fdcb3708726f6d32b5835009655cee84ceef_640.jpg",
+      "q": "ما هو هذا الحيوان الغريب؟",
+      "a": "التارسييه"
+    },
+    {
+      "points": 600,
+      "desc": "hagfish slime deep sea jawless",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Bulletin_of_the_United_States_Fish_Commission_%28IA_bulletinofunited40011924unit%29.pdf/page1-960px-Bulletin_of_the_United_States_Fish_Commission_%28IA_bulletinofunited40011924unit%29.pdf.jpg",
+      "q": "ما هو هذا الحيوان البحري؟",
+      "a": "سمكة الهاغ"
+    },
+    {
+      "points": 600,
+      "desc": "kakapo flightless parrot New Zealand nocturnal",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Bird-life%3B_a_guide_to_the_study_of_our_common_birds%2C_With_seventy-five_full-page_colored_plates_after_drawings_by_Ernest_Seton-Thompson_%28IA_birdlifeguidestudy00chaprich%29.pdf/page1-500px-thumbnail.pdf.jpg",
+      "q": "ما هو هذا الطائر النادر؟",
+      "a": "الكاكابو"
+    },
+    {
+      "points": 600,
+      "desc": "blue dragon sea slug nudibranch floating",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Books_from_the_Biodiversity_Heritage_Library_%28IA_cu31924024005807%29.pdf/page1-500px-Books_from_the_Biodiversity_Heritage_Library_%28IA_cu31924024005807%29.pdf.jpg",
+      "q": "ما هو هذا الحيوان البحري النادر؟",
+      "a": "التنين الأزرق (بزاق البحر)"
+    },
+    {
+      "points": 600,
+      "desc": "proboscis monkey long nose Borneo",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Proboscis_Monkey_in_Borneo.jpg/960px-Proboscis_Monkey_in_Borneo.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "القرد الخرطومي"
+    },
+    {
+      "points": 600,
+      "desc": "olm cave salamander blind white Slovenia",
+      "image": "https://pixabay.com/get/gd26372cc909b8e9cf21a2fedfa7d292f4882a2c8188afa86ef1199b3a95550bea4f78df4d74ba9f3e1ae08ce7cf38d6d3a8f239d9e3f03df740578e0586504a8_640.jpg",
+      "q": "ما هو هذا الحيوان النادر؟",
+      "a": "سمندر الكهف الأبيض"
+    },
+    {
+      "points": 600,
+      "desc": "dhole Asian wild dog pack India",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Dogs-_their_sagacity%2C_instinct%2C_and_uses_-_with_descriptions_of_their_several_varieties_%28IA_b28079206%29.pdf/page1-500px-Dogs-_their_sagacity%2C_instinct%2C_and_uses_-_with_descriptions_of_their_several_varieties_%28IA_b28079206%29.pdf.jpg",
+      "q": "ما هو هذا الحيوان النادر؟",
+      "a": "الكلب البري الآسيوي"
+    },
+    {
+      "points": 600,
+      "desc": "lowland streaked tenrec spiky yellow Madagascar",
+      "image": "https://pixabay.com/get/g9426290df691c3f05846846a997915c062dbac799d81f7ee31db17b2c0b0fa7faa4cea3cb5829c3bd7abcc6d7878945b74d03d2af733abcc59d6396d02bd951c_640.jpg",
+      "q": "ما هو هذا الحيوان النادر؟",
+      "a": "التنرك المخطط"
+    },
+    {
+      "points": 600,
+      "desc": "mata mata turtle Amazon flat camouflage",
+      "image": "https://pixabay.com/get/g660e89aad9f537be6739ebf6339f38fdb33f8b824fb50af839e1978da87a2b743f849107fb512b936e7a5aa398c1906a_640.jpg",
+      "q": "ما هو هذا الزاحف النادر؟",
+      "a": "سلحفاة ماتا ماتا"
+    },
+    {
+      "points": 600,
+      "desc": "saola Vietnam Laos rare antelope",
+      "image": "https://pixabay.com/get/gb998185d4b81a49dc9a56c50202d37300f45094c840fed23047b5ab2a3a4db4778d855033a589b470af43785acff2231c7b0cc70a32f0992ea5f14081e3a3f63_640.jpg",
+      "q": "ما هو هذا الحيوان النادر جداً؟",
+      "a": "السولا (وحيد القرن الآسيوي)"
+    },
+    {
+      "points": 600,
+      "desc": "dugong sea cow Indian Ocean seagrass",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Functional_extinction_of_dugongs_in_China.pdf/page1-960px-Functional_extinction_of_dugongs_in_China.pdf.jpg",
+      "q": "ما هو هذا الحيوان البحري؟",
+      "a": "الدوغونج (عجل البحر)"
+    },
+    {
+      "points": 600,
+      "desc": "velvet worm ancient predator forest",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Our_struggle_against_pests%3B_an_introduction_for_American_youth_%28IA_CAT10234957%29.pdf/page1-960px-Our_struggle_against_pests%3B_an_introduction_for_American_youth_%28IA_CAT10234957%29.pdf.jpg",
+      "q": "ما هو هذا الحيوان القديم؟",
+      "a": "الدودة المخملية"
+    },
+    {
+      "points": 600,
+      "desc": "pirarucu arapaima giant Amazon fish",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Arapaima_gigas_3874.ogv/640px--Arapaima_gigas_3874.ogv.jpg",
+      "q": "ما هو هذه السمكة العملاقة؟",
+      "a": "سمكة البيراروكو"
+    },
+    {
+      "points": 400,
+      "desc": "red panda firefox small mammal Asia",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Ailurus_fulgens_%28Panda_roux%29_-_128.jpg/960px-Ailurus_fulgens_%28Panda_roux%29_-_128.jpg",
+      "q": "ما هو هذا الحيوان؟",
+      "a": "الباندا الحمراء"
+    },
+    {
+      "points": 200,
+      "desc": "sea horse tiny ocean male pregnancy",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Breeding%2C_training%2C_management%2C_diseases_etc._of_dogs-_%28IA_breedingtraining00butl%29.pdf/page1-500px-Breeding%2C_training%2C_management%2C_diseases_etc._of_dogs-_%28IA_breedingtraining00butl%29.pdf.jpg",
+      "q": "ما هو هذا الحيوان البحري؟",
+      "a": "أبو الشص (الحصان البحري)"
+    }
+  ]
+}
