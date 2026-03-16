@@ -1972,7 +1972,7 @@ function _openQuestionModal(isDouble, q, cat) {
   
   const imgEl = document.getElementById('modal-q-image');
   if (q.image) {
-    imgEl.src = q.image;
+    imgEl.src = q.image.startsWith('http') ? q.image : '/' + q.image;
     imgEl.style.display = 'block';
   } else {
     imgEl.style.display = 'none';
